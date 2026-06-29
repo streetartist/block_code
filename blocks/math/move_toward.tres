@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_move_toward"]
+
+[resource]
+script = ExtResource("1_move_toward")
+name = &"move_toward"
+description = "Move a number toward another number by a fixed amount."
+category = "Math"
+type = 3
+variant_type = 3
+display_template = "move {from: FLOAT} toward {to: FLOAT} by {delta: FLOAT}"
+code_template = "move_toward({from}, {to}, {delta})"
+defaults = {
+"from": 0.0,
+"to": 10.0,
+"delta": 1.0
+}
+

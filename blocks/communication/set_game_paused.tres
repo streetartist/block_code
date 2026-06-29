@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_set_game_paused"]
+
+[resource]
+script = ExtResource("1_set_game_paused")
+name = &"set_game_paused"
+description = "Pause or unpause the game."
+category = "Communication | Scenes"
+type = 2
+variant_type = 0
+display_template = "set game paused to {paused: BOOL}"
+code_template = "get_tree().paused = {paused}"
+defaults = {
+"paused": true
+}
+

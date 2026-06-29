@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_abs"]
+
+[resource]
+script = ExtResource("1_abs")
+name = &"abs"
+description = "Get the absolute value of a number."
+category = "Math"
+type = 3
+variant_type = 3
+display_template = "absolute value of {value: FLOAT}"
+code_template = "absf({value})"
+defaults = {
+"value": -1.0
+}
+

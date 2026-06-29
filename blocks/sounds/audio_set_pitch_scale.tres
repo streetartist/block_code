@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_audio_set_pitch_scale"]
+
+[resource]
+script = ExtResource("1_audio_set_pitch_scale")
+name = &"audio_set_pitch_scale"
+target_node_class = "AudioStreamPlayer"
+description = "Set this audio player's pitch scale."
+category = "Sounds"
+type = 2
+variant_type = 0
+display_template = "set pitch scale to {pitch_scale: FLOAT}"
+code_template = "pitch_scale = {pitch_scale}"
+defaults = {
+"pitch_scale": 1.0
+}
+

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_vector2_direction_to"]
+
+[resource]
+script = ExtResource("1_vector2_direction_to")
+name = &"vector2_direction_to"
+description = "Get the direction from one Vector2 to another."
+category = "Math"
+type = 3
+variant_type = 5
+display_template = "direction from {from: VECTOR2} to {to: VECTOR2}"
+code_template = "{from}.direction_to({to})"
+defaults = {
+"from": Vector2(0, 0),
+"to": Vector2(1, 0)
+}
+

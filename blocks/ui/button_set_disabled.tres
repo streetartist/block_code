@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_button_set_disabled"]
+
+[resource]
+script = ExtResource("1_button_set_disabled")
+name = &"button_set_disabled"
+target_node_class = "BaseButton"
+description = "Enable or disable the button."
+category = "UI"
+type = 2
+variant_type = 0
+display_template = "set disabled to {disabled: BOOL}"
+code_template = "disabled = {disabled}"
+defaults = {
+"disabled": true
+}
+

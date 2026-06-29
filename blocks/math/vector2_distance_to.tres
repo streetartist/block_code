@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_vector2_distance_to"]
+
+[resource]
+script = ExtResource("1_vector2_distance_to")
+name = &"vector2_distance_to"
+description = "Get the distance between two Vector2 values."
+category = "Math"
+type = 3
+variant_type = 3
+display_template = "distance from {from: VECTOR2} to {to: VECTOR2}"
+code_template = "{from}.distance_to({to})"
+defaults = {
+"from": Vector2(0, 0),
+"to": Vector2(1, 1)
+}
+

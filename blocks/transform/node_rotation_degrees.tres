@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_node_rotation_degrees"]
+
+[resource]
+script = ExtResource("1_node_rotation_degrees")
+name = &"node_rotation_degrees"
+description = "Get the rotation of a Node2D in degrees."
+category = "Transform | Rotation"
+type = 3
+variant_type = 3
+display_template = "rotation degrees of {node: OBJECT}"
+code_template = "{node}.rotation_degrees"
+defaults = {}
+

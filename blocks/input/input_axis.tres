@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_input_axis"]
+
+[resource]
+script = ExtResource("1_input_axis")
+name = &"input_axis"
+description = "Get a value from -1 to 1 using two input actions."
+category = "Input"
+type = 3
+variant_type = 3
+display_template = "input axis negative {negative_action: STRING_NAME} positive {positive_action: STRING_NAME}"
+code_template = "Input.get_axis('{negative_action}', '{positive_action}')"
+defaults = {
+"negative_action": &"ui_left",
+"positive_action": &"ui_right"
+}
+

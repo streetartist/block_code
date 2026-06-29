@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_get_child"]
+
+[resource]
+script = ExtResource("1_get_child")
+name = &"get_child"
+description = "Get a child node by index."
+category = "Communication | Nodes"
+type = 3
+variant_type = 24
+display_template = "child {index: INT} of {node: OBJECT}"
+code_template = "{node}.get_child({index})"
+defaults = {
+"index": 0
+}
+

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_get_parent"]
+
+[resource]
+script = ExtResource("1_get_parent")
+name = &"get_parent"
+description = "Get this node's parent."
+category = "Communication | Nodes"
+type = 3
+variant_type = 24
+display_template = "parent"
+code_template = "get_parent()"
+defaults = {}
+

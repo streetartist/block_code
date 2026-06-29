@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_set_node_scale"]
+
+[resource]
+script = ExtResource("1_set_node_scale")
+name = &"set_node_scale"
+description = "Set the scale of a Node2D or Control node."
+category = "Transform | Scale"
+type = 2
+variant_type = 0
+display_template = "set {node: OBJECT} scale to {scale: VECTOR2}"
+code_template = "{node}.scale = {scale}"
+defaults = {
+"scale": Vector2(1, 1)
+}
+

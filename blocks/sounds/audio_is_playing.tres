@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_audio_is_playing"]
+
+[resource]
+script = ExtResource("1_audio_is_playing")
+name = &"audio_is_playing"
+target_node_class = "AudioStreamPlayer"
+description = "True if this audio player is playing."
+category = "Sounds"
+type = 3
+variant_type = 1
+display_template = "is playing"
+code_template = "playing"
+defaults = {}
+

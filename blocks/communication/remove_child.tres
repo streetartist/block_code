@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_remove_child"]
+
+[resource]
+script = ExtResource("1_remove_child")
+name = &"remove_child"
+description = "Remove a child from this node without deleting it."
+category = "Communication | Nodes"
+type = 2
+variant_type = 0
+display_template = "remove child {child: OBJECT}"
+code_template = "remove_child({child})"
+defaults = {}
+

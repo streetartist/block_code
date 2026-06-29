@@ -1,0 +1,1443 @@
+# LANGUAGE translation for Block Coding Plugin for the following files:
+# res://addons/block_code/block_code_plugin.gd
+# res://addons/block_code/block_code_node/block_code.gd
+# res://addons/block_code/blocks/communication/add_node_to_group.tres
+# res://addons/block_code/blocks/communication/add_to_group.tres
+# res://addons/block_code/blocks/communication/area2d_on_entered.tres
+# res://addons/block_code/blocks/communication/area2d_on_exited.tres
+# res://addons/block_code/blocks/communication/call_method_group.tres
+# res://addons/block_code/blocks/communication/call_method_node.tres
+# res://addons/block_code/blocks/communication/define_method.tres
+# res://addons/block_code/blocks/communication/get_node.gd
+# res://addons/block_code/blocks/communication/get_node.tres
+# res://addons/block_code/blocks/communication/groups.gd
+# res://addons/block_code/blocks/communication/is_in_group.tres
+# res://addons/block_code/blocks/communication/is_node_in_group.tres
+# res://addons/block_code/blocks/communication/remove_from_group.tres
+# res://addons/block_code/blocks/communication/remove_node_from_group.tres
+# res://addons/block_code/blocks/communication/rigidbody2d_on_entered.tres
+# res://addons/block_code/blocks/communication/rigidbody2d_on_exited.tres
+# res://addons/block_code/blocks/graphics/animationplayer_is_playing.tres
+# res://addons/block_code/blocks/graphics/animationplayer_pause.tres
+# res://addons/block_code/blocks/graphics/animationplayer_play.gd
+# res://addons/block_code/blocks/graphics/animationplayer_play.tres
+# res://addons/block_code/blocks/graphics/animationplayer_stop.tres
+# res://addons/block_code/blocks/graphics/viewport_center.tres
+# res://addons/block_code/blocks/graphics/viewport_height.tres
+# res://addons/block_code/blocks/graphics/viewport_width.tres
+# res://addons/block_code/blocks/input/characterbody2d_is_on_floor.tres
+# res://addons/block_code/blocks/input/characterbody2d_move.tres
+# res://addons/block_code/blocks/input/is_input_actioned.gd
+# res://addons/block_code/blocks/input/is_input_actioned.tres
+# res://addons/block_code/blocks/lifecycle/process.tres
+# res://addons/block_code/blocks/lifecycle/queue_free.tres
+# res://addons/block_code/blocks/lifecycle/queue_free_node.tres
+# res://addons/block_code/blocks/lifecycle/ready.tres
+# res://addons/block_code/blocks/log/breakpoint.tres
+# res://addons/block_code/blocks/log/concat.tres
+# res://addons/block_code/blocks/log/print.tres
+# res://addons/block_code/blocks/logic/and.tres
+# res://addons/block_code/blocks/logic/compare.tres
+# res://addons/block_code/blocks/logic/else.tres
+# res://addons/block_code/blocks/logic/else_if.tres
+# res://addons/block_code/blocks/logic/if.tres
+# res://addons/block_code/blocks/logic/not.tres
+# res://addons/block_code/blocks/logic/or.tres
+# res://addons/block_code/blocks/loops/await_scene_ready.tres
+# res://addons/block_code/blocks/loops/break.tres
+# res://addons/block_code/blocks/loops/continue.tres
+# res://addons/block_code/blocks/loops/for.tres
+# res://addons/block_code/blocks/loops/while.tres
+# res://addons/block_code/blocks/math/add.tres
+# res://addons/block_code/blocks/math/cos.tres
+# res://addons/block_code/blocks/math/divide.tres
+# res://addons/block_code/blocks/math/multiply.tres
+# res://addons/block_code/blocks/math/pow.tres
+# res://addons/block_code/blocks/math/randf_range.tres
+# res://addons/block_code/blocks/math/randi_range.tres
+# res://addons/block_code/blocks/math/sin.tres
+# res://addons/block_code/blocks/math/subtract.tres
+# res://addons/block_code/blocks/math/tan.tres
+# res://addons/block_code/blocks/math/vector_from_angle.tres
+# res://addons/block_code/blocks/math/vector_multiply.tres
+# res://addons/block_code/blocks/physics/characterbody2d_move_and_slide.tres
+# res://addons/block_code/blocks/sounds/audiostreamplayer_play.tres
+# res://addons/block_code/blocks/sounds/audiostreamplayer_stop.tres
+# res://addons/block_code/blocks/sounds/load_sound.tres
+# res://addons/block_code/blocks/sounds/pause_continue_sound.tres
+# res://addons/block_code/blocks/sounds/play_sound.tres
+# res://addons/block_code/blocks/sounds/stop_sound.tres
+# res://addons/block_code/blocks/spawn/cpuparticles2d_finished.tres
+# res://addons/block_code/blocks/transform/rigidbody2d_physics_position.tres
+# res://addons/block_code/blocks/ui/label_set_text.tres
+# res://addons/block_code/blocks/variables/vector2.tres
+# res://addons/block_code/code_generation/ast_list.gd
+# res://addons/block_code/code_generation/block_ast.gd
+# res://addons/block_code/code_generation/block_definition.gd
+# res://addons/block_code/code_generation/block_extension.gd
+# res://addons/block_code/code_generation/blocks_catalog.gd
+# res://addons/block_code/code_generation/option_data.gd
+# res://addons/block_code/code_generation/script_generator.gd
+# res://addons/block_code/code_generation/util.gd
+# res://addons/block_code/code_generation/variable_definition.gd
+# res://addons/block_code/drag_manager/drag.gd
+# res://addons/block_code/drag_manager/drag_manager.gd
+# res://addons/block_code/drag_manager/drag_manager.tscn
+# res://addons/block_code/inspector_plugin/block_script_inspector.gd
+# res://addons/block_code/serialization/block_script_serialization.gd
+# res://addons/block_code/serialization/block_serialization.gd
+# res://addons/block_code/serialization/block_serialization_tree.gd
+# res://addons/block_code/serialization/default_block_script.tres
+# res://addons/block_code/serialization/value_block_serialization.gd
+# res://addons/block_code/simple_nodes/simple_character/simple_character.gd
+# res://addons/block_code/simple_nodes/simple_ending/simple_ending.gd
+# res://addons/block_code/simple_nodes/simple_scoring/simple_scoring.gd
+# res://addons/block_code/simple_spawner/simple_spawner.gd
+# res://addons/block_code/translation/parser.gd
+# res://addons/block_code/translation/utils.gd
+# res://addons/block_code/types/types.gd
+# res://addons/block_code/ui/block_editor_context.gd
+# res://addons/block_code/ui/block_tree_util.gd
+# res://addons/block_code/ui/constants.gd
+# res://addons/block_code/ui/main_panel.gd
+# res://addons/block_code/ui/main_panel.tscn
+# res://addons/block_code/ui/util.gd
+# res://addons/block_code/ui/block_canvas/block_canvas.gd
+# res://addons/block_code/ui/block_canvas/block_canvas.tscn
+# res://addons/block_code/ui/blocks/block/block.gd
+# res://addons/block_code/ui/blocks/control_block/control_block.gd
+# res://addons/block_code/ui/blocks/control_block/control_block.tscn
+# res://addons/block_code/ui/blocks/entry_block/entry_block.gd
+# res://addons/block_code/ui/blocks/entry_block/entry_block.tscn
+# res://addons/block_code/ui/blocks/parameter_block/parameter_block.gd
+# res://addons/block_code/ui/blocks/parameter_block/parameter_block.tscn
+# res://addons/block_code/ui/blocks/statement_block/statement_block.gd
+# res://addons/block_code/ui/blocks/statement_block/statement_block.tscn
+# res://addons/block_code/ui/blocks/utilities/background/background.gd
+# res://addons/block_code/ui/blocks/utilities/background/gutter.gd
+# res://addons/block_code/ui/blocks/utilities/drag_drop_area/drag_drop_area.gd
+# res://addons/block_code/ui/blocks/utilities/drag_drop_area/drag_drop_area.tscn
+# res://addons/block_code/ui/blocks/utilities/parameter_input/parameter_input.gd
+# res://addons/block_code/ui/blocks/utilities/parameter_input/parameter_input.tscn
+# res://addons/block_code/ui/blocks/utilities/parameter_output/parameter_output.gd
+# res://addons/block_code/ui/blocks/utilities/parameter_output/parameter_output.tscn
+# res://addons/block_code/ui/blocks/utilities/snap_point/snap_point.gd
+# res://addons/block_code/ui/blocks/utilities/snap_point/snap_point.tscn
+# res://addons/block_code/ui/blocks/utilities/template_editor/template_editor.gd
+# res://addons/block_code/ui/blocks/utilities/template_editor/template_editor.tscn
+# res://addons/block_code/ui/picker/picker.gd
+# res://addons/block_code/ui/picker/picker.tscn
+# res://addons/block_code/ui/picker/categories/block_category.gd
+# res://addons/block_code/ui/picker/categories/block_category_button.gd
+# res://addons/block_code/ui/picker/categories/block_category_button.tscn
+# res://addons/block_code/ui/picker/categories/block_category_display.gd
+# res://addons/block_code/ui/picker/categories/block_category_display.tscn
+# res://addons/block_code/ui/picker/categories/category_factory.gd
+# res://addons/block_code/ui/picker/categories/variable_category/create_variable_button.gd
+# res://addons/block_code/ui/picker/categories/variable_category/create_variable_button.tscn
+# res://addons/block_code/ui/picker/categories/variable_category/create_variable_dialog.gd
+# res://addons/block_code/ui/picker/categories/variable_category/create_variable_dialog.tscn
+# res://addons/block_code/ui/picker/categories/variable_category/variable_category_display.gd
+# res://addons/block_code/ui/picker/categories/variable_category/variable_category_display.tscn
+# res://addons/block_code/ui/script_window/script_window.gd
+# res://addons/block_code/ui/script_window/script_window.tscn
+# res://addons/block_code/ui/title_bar/title_bar.gd
+# res://addons/block_code/ui/title_bar/title_bar.tscn
+# res://addons/block_code/ui/tooltip/tooltip.gd
+# res://addons/block_code/ui/tooltip/tooltip.tscn
+# res://addons/block_code/blocks/input/mouse_position.tres
+# res://addons/block_code/blocks/math/vector2_xy.tres
+# res://addons/block_code/blocks/math/vector3_xyz.tres
+# res://addons/block_code/blocks/math/vector3_multiply.tres
+# res://addons/block_code/blocks/communication/switch_scene.tres
+# res://addons/block_code/blocks/variables/vector3.tres
+# res://addons/block_code/blocks/lifecycle/physics_process.tres
+# 
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Deep ChTi, 2024
+# Jimmy Lu, 2025
+# Manuel Quiñones, 2025
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Block Coding Plugin\n"
+"Last-Translator: Manuel Quiñones, 2025\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/endless-os/teams/9016/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8-bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: addons/block_code/block_code_plugin.gd
+msgid "Regenerate %s POT file"
+msgstr "重新生成%s个 POT 文件"
+
+#: addons/block_code/block_code_plugin.gd
+msgid "Update %s translated files"
+msgstr "更新%s已翻译的文件"
+
+#: addons/block_code/blocks/communication/add_node_to_group.tres
+#: addons/block_code/blocks/communication/add_to_group.tres
+#: addons/block_code/blocks/communication/is_in_group.tres
+#: addons/block_code/blocks/communication/is_node_in_group.tres
+#: addons/block_code/blocks/communication/remove_from_group.tres
+#: addons/block_code/blocks/communication/remove_node_from_group.tres
+msgid "Communication | Groups"
+msgstr "通信|组"
+
+#: addons/block_code/blocks/communication/add_node_to_group.tres
+msgid "Add the node into the group"
+msgstr "将node节点添加到组中"
+
+#: addons/block_code/blocks/communication/add_node_to_group.tres
+msgid "add {node: OBJECT} to group {group: STRING}"
+msgstr "将{node: OBJECT}添加到组{group: STRING}"
+
+#: addons/block_code/blocks/communication/add_to_group.tres
+msgid "Add this node into the group"
+msgstr "将此节点添加到组中"
+
+#: addons/block_code/blocks/communication/add_to_group.tres
+msgid "add to group {group: STRING}"
+msgstr "添加到组{group: STRING}"
+
+#: addons/block_code/blocks/communication/area2d_on_entered.tres
+#: addons/block_code/blocks/communication/area2d_on_exited.tres
+#: addons/block_code/blocks/communication/call_method_group.tres
+#: addons/block_code/blocks/communication/call_method_node.tres
+#: addons/block_code/blocks/communication/define_method.tres
+#: addons/block_code/blocks/communication/rigidbody2d_on_entered.tres
+#: addons/block_code/blocks/communication/rigidbody2d_on_exited.tres
+#: addons/block_code/blocks/communication/switch_scene.tres
+msgid "Communication | Methods"
+msgstr "通信|方法"
+
+#: addons/block_code/blocks/communication/area2d_on_entered.tres
+#: addons/block_code/blocks/communication/rigidbody2d_on_entered.tres
+msgid "when this node collides with [something: OBJECT]"
+msgstr "当此节点与[something: OBJECT]"
+
+#: addons/block_code/blocks/communication/area2d_on_exited.tres
+#: addons/block_code/blocks/communication/rigidbody2d_on_exited.tres
+msgid "when this node stops colliding with [something: OBJECT]"
+msgstr "当此节点与[something: OBJECT]停止"
+
+#: addons/block_code/blocks/communication/call_method_group.tres
+msgid "Calls the method/function on each member of the given group"
+msgstr "对给定组的每个成员调用方法/函数"
+
+#: addons/block_code/blocks/communication/call_method_group.tres
+msgid "call method {method_name: STRING} in group {group: STRING}"
+msgstr "调用组{group: STRING}中的{method_name: STRING}方法"
+
+#: addons/block_code/blocks/communication/call_method_node.tres
+msgid "Calls the method/function of the given node"
+msgstr "调用给定节点的方法/函数"
+
+#: addons/block_code/blocks/communication/call_method_node.tres
+msgid "call method {method_name: STRING} on node {node: OBJECT}"
+msgstr "在节点{node: OBJECT}上调用方法{method_name: STRING}"
+
+#: addons/block_code/blocks/communication/define_method.tres
+msgid "Define a method/function with following statements"
+msgstr "使用以下语句定义方法/函数"
+
+#: addons/block_code/blocks/communication/define_method.tres
+msgid "define method {method_name: STRING_NAME}"
+msgstr "定义方法{method_name: STRING_NAME}"
+
+#: addons/block_code/blocks/communication/get_node.tres
+msgid "Communication | Nodes"
+msgstr "通信|节点"
+
+#: addons/block_code/blocks/communication/get_node.tres
+msgid "Get the node at the given path"
+msgstr "获取指定路径上的节点"
+
+#: addons/block_code/blocks/communication/get_node.tres
+msgid "{path: NIL}"
+msgstr "{path: NIL}"
+
+#: addons/block_code/blocks/communication/is_in_group.tres
+msgid "Is this node in the group"
+msgstr "此节点是否在该组中"
+
+#: addons/block_code/blocks/communication/is_in_group.tres
+msgid "is in group {group: STRING}"
+msgstr "在组{group: STRING}中"
+
+#: addons/block_code/blocks/communication/is_node_in_group.tres
+msgid "Is the node in the group"
+msgstr "节点是否在该组中"
+
+#: addons/block_code/blocks/communication/is_node_in_group.tres
+msgid "{node: OBJECT} is in group {group: STRING}"
+msgstr "{node: OBJECT}在组{group: STRING}中"
+
+#: addons/block_code/blocks/communication/remove_from_group.tres
+msgid "Remove this node from the group"
+msgstr "从此组中移除该节点"
+
+#: addons/block_code/blocks/communication/remove_from_group.tres
+msgid "remove from group {group: STRING}"
+msgstr "从组{group: STRING}移除"
+
+#: addons/block_code/blocks/communication/remove_node_from_group.tres
+msgid "Remove the node from the group"
+msgstr "从组中移除节点"
+
+#: addons/block_code/blocks/communication/remove_node_from_group.tres
+msgid "remove {node: OBJECT} from group {group: NIL}"
+msgstr "从组{group: NIL}中移除{node: OBJECT}"
+
+#: addons/block_code/blocks/graphics/animationplayer_is_playing.tres
+#: addons/block_code/blocks/graphics/animationplayer_pause.tres
+#: addons/block_code/blocks/graphics/animationplayer_play.tres
+#: addons/block_code/blocks/graphics/animationplayer_stop.tres
+msgid "Graphics | Animation"
+msgstr "图形|动画"
+
+#: addons/block_code/blocks/graphics/animationplayer_is_playing.tres
+msgid "Check if an animation is currently playing."
+msgstr "检查动画当前是否正在播放。"
+
+#: addons/block_code/blocks/graphics/animationplayer_is_playing.tres
+msgid "is playing"
+msgstr "正在播放"
+
+#: addons/block_code/blocks/graphics/animationplayer_pause.tres
+msgid "Pause the currently playing animation."
+msgstr "暂停当前正在播放的动画。"
+
+#: addons/block_code/blocks/graphics/animationplayer_pause.tres
+msgid "pause"
+msgstr "暂停"
+
+#: addons/block_code/blocks/graphics/animationplayer_play.tres
+msgid "Play the animation."
+msgstr "播放动画"
+
+#: addons/block_code/blocks/graphics/animationplayer_play.tres
+msgid "play {animation: STRING} | {direction: NIL} {wait_mode: NIL}"
+msgstr "播放动画 {animation: STRING} | {direction: NIL} {wait_mode: NIL}"
+
+#: addons/block_code/blocks/graphics/animationplayer_stop.tres
+msgid "Stop the currently playing animation."
+msgstr "停止当前播放的动画"
+
+#: addons/block_code/blocks/graphics/animationplayer_stop.tres
+#: addons/block_code/blocks/sounds/audiostreamplayer_stop.tres
+msgid "stop"
+msgstr "停止"
+
+#: addons/block_code/blocks/graphics/viewport_center.tres
+#: addons/block_code/blocks/graphics/viewport_height.tres
+#: addons/block_code/blocks/graphics/viewport_width.tres
+msgid "Graphics | Viewport"
+msgstr "图形|视窗"
+
+#: addons/block_code/blocks/graphics/viewport_center.tres
+msgid "Coordinates of the middle of the viewable screen when playing."
+msgstr "播放时可视屏幕中间的坐标"
+
+#: addons/block_code/blocks/graphics/viewport_center.tres
+msgid "viewport center"
+msgstr "视区居中"
+
+#: addons/block_code/blocks/graphics/viewport_height.tres
+msgid "How tall the viewable screen is when playing."
+msgstr "播放时可视屏幕的高度"
+
+#: addons/block_code/blocks/graphics/viewport_height.tres
+msgid "viewport height"
+msgstr "视区高度"
+
+#: addons/block_code/blocks/graphics/viewport_width.tres
+msgid "How wide the viewable screen is when playing."
+msgstr "播放时可视屏幕的宽度"
+
+#: addons/block_code/blocks/graphics/viewport_width.tres
+msgid "viewport width"
+msgstr "视区宽度"
+
+#: addons/block_code/blocks/input/characterbody2d_is_on_floor.tres
+#: addons/block_code/blocks/physics/characterbody2d_move_and_slide.tres
+msgid "Physics | Velocity"
+msgstr "物理|速度"
+
+#: addons/block_code/blocks/input/characterbody2d_is_on_floor.tres
+msgid "True if the character is on the floor."
+msgstr "如果角色在地板上，则为 True"
+
+#: addons/block_code/blocks/input/characterbody2d_is_on_floor.tres
+msgid "is on floor"
+msgstr "在地板上"
+
+#: addons/block_code/blocks/input/characterbody2d_move.tres
+#: addons/block_code/blocks/input/is_input_actioned.tres
+#: addons/block_code/blocks/input/mouse_position.tres
+msgid "Input"
+msgstr "输入"
+
+#: addons/block_code/blocks/input/characterbody2d_move.tres
+msgid ""
+"Move the character up, down, left, and right with the keyboard using the "
+"given keys. The speed of movement can be adjusted separately for x (left and"
+" right) and y (up and down)."
+msgstr "使用给定的按键，通过键盘让角色上、下、左、右移动。x（左/右）与 y（上/下）的移动速度可分别调整。"
+
+#: addons/block_code/blocks/input/characterbody2d_move.tres
+msgid ""
+"move with keys {up: STRING} {down: STRING} {left: STRING} {right: STRING} at"
+" speed {speed: VECTOR2}"
+msgstr ""
+"使用按键 {up: STRING} {down: STRING} {left: STRING} {right: STRING} 以速度"
+" {speed: VECTOR2} 移动"
+
+#: addons/block_code/blocks/input/is_input_actioned.tres
+msgid "True if the specified input action has been pressed or released."
+msgstr "如果已按下或释放指定的输入操作，则为 True。"
+
+#: addons/block_code/blocks/input/is_input_actioned.tres
+msgid "action {action_name: STRING_NAME} is {action: NIL}"
+msgstr "动作{action_name: STRING_NAME}为{action: NIL}"
+
+#: addons/block_code/blocks/lifecycle/process.tres
+#: addons/block_code/blocks/lifecycle/queue_free.tres
+#: addons/block_code/blocks/lifecycle/queue_free_node.tres
+#: addons/block_code/blocks/lifecycle/ready.tres
+#: addons/block_code/blocks/lifecycle/physics_process.tres
+msgid "Lifecycle"
+msgstr "生命周期"
+
+#: addons/block_code/blocks/lifecycle/process.tres
+msgid ""
+"Attached blocks will be executed during the processing step of the main loop"
+msgstr "附加的块将在主循环的处理步骤中执行"
+
+#: addons/block_code/blocks/lifecycle/process.tres
+msgid "every frame"
+msgstr "每一帧"
+
+#: addons/block_code/blocks/lifecycle/queue_free.tres
+msgid "Queues this node to be deleted at the end of the current frame"
+msgstr "将本节点排入队列,在当前帧结束时删除"
+
+#: addons/block_code/blocks/lifecycle/queue_free.tres
+msgid "remove"
+msgstr "移除"
+
+#: addons/block_code/blocks/lifecycle/queue_free_node.tres
+msgid "Queues the given node to be deleted at the end of the current frame"
+msgstr "将指定的节点排入队列,在当前帧结束时删除"
+
+#: addons/block_code/blocks/lifecycle/queue_free_node.tres
+msgid "remove {node: OBJECT}"
+msgstr "移除{node: OBJECT}"
+
+#: addons/block_code/blocks/lifecycle/ready.tres
+msgid "Attached blocks will be executed once when the node is \"ready\""
+msgstr "附加的块将在节点“就绪”时执行一次"
+
+#: addons/block_code/blocks/lifecycle/ready.tres
+msgid "when starting"
+msgstr "启动时"
+
+#: addons/block_code/blocks/log/breakpoint.tres
+#: addons/block_code/blocks/log/concat.tres
+#: addons/block_code/blocks/log/print.tres
+msgid "Log"
+msgstr "日志"
+
+#: addons/block_code/blocks/log/breakpoint.tres
+msgid "Pause execution and show the current line of code in the debugger."
+msgstr "暂停执行,并在调试器中显示当前代码行。"
+
+#: addons/block_code/blocks/log/breakpoint.tres
+msgid "breakpoint"
+msgstr "断点"
+
+#: addons/block_code/blocks/log/concat.tres
+msgid "{string1: STRING} + {string2: STRING}"
+msgstr "{string1: STRING} + {string2: STRING}"
+
+#: addons/block_code/blocks/log/print.tres
+msgid "Print the text to output"
+msgstr "将文本输出至控制台"
+
+#: addons/block_code/blocks/log/print.tres
+msgid "log text {text: STRING}"
+msgstr "打印文本{text: STRING}"
+
+#: addons/block_code/blocks/logic/and.tres
+#: addons/block_code/blocks/logic/not.tres
+#: addons/block_code/blocks/logic/or.tres
+msgid "Logic | Boolean"
+msgstr "逻辑|布尔值"
+
+#: addons/block_code/blocks/logic/and.tres
+msgid "{bool1: BOOL} and {bool2: BOOL}"
+msgstr "{bool1: BOOL} 与 {bool2: BOOL}"
+
+#: addons/block_code/blocks/logic/compare.tres
+msgid "Logic | Comparison"
+msgstr "逻辑|比较"
+
+#: addons/block_code/blocks/logic/compare.tres
+msgid "{float1: FLOAT} {op: NIL} {float2: FLOAT}"
+msgstr "{float1: FLOAT} {op: NIL} {float2: FLOAT}"
+
+#: addons/block_code/blocks/logic/else.tres
+#: addons/block_code/blocks/logic/else_if.tres
+#: addons/block_code/blocks/logic/if.tres
+msgid "Logic | Conditionals"
+msgstr "逻辑|条件"
+
+#: addons/block_code/blocks/logic/else.tres
+msgid "else"
+msgstr "否则"
+
+#: addons/block_code/blocks/logic/else_if.tres
+msgid "else if {condition: BOOL}"
+msgstr "否则当{condition: BOOL}"
+
+#: addons/block_code/blocks/logic/if.tres
+msgid "if {condition: BOOL}"
+msgstr "当{condition: BOOL}"
+
+#: addons/block_code/blocks/logic/not.tres
+msgid "not {bool: BOOL}"
+msgstr "非{bool: BOOL}"
+
+#: addons/block_code/blocks/logic/or.tres
+msgid "{bool1: BOOL} or {bool2: BOOL}"
+msgstr "{bool1: BOOL} 或 {bool2: BOOL}"
+
+#: addons/block_code/blocks/loops/await_scene_ready.tres
+#: addons/block_code/blocks/loops/break.tres
+#: addons/block_code/blocks/loops/continue.tres
+#: addons/block_code/blocks/loops/for.tres
+#: addons/block_code/blocks/loops/while.tres
+msgid "Loops"
+msgstr "循环"
+
+#: addons/block_code/blocks/loops/await_scene_ready.tres
+msgid "wait for the scene to be ready"
+msgstr "等待场景就绪"
+
+#: addons/block_code/blocks/loops/break.tres
+msgid "break"
+msgstr "跳出"
+
+#: addons/block_code/blocks/loops/continue.tres
+msgid "continue"
+msgstr "继续"
+
+#: addons/block_code/blocks/loops/for.tres
+msgid "Run the connected blocks [i]number[/i] times"
+msgstr "将连接的块运行[i]次数[/i]"
+
+#: addons/block_code/blocks/loops/for.tres
+msgid "repeat {number: INT}"
+msgstr "重复{number: INT}次"
+
+#: addons/block_code/blocks/loops/while.tres
+msgid ""
+"Run the connected blocks as long as [i]condition[/i] is true.\n"
+"\n"
+"Hint: snap a [b]Comparison[/b] block into the condition."
+msgstr ""
+"只要[i]条件[/i]为真,就重复运行所连接的块。\n"
+"\n"
+"提示：将一个[b]比较[/b]块对齐到条件中。"
+
+#: addons/block_code/blocks/loops/while.tres
+msgid "while {condition: BOOL}"
+msgstr "当{condition: BOOL}就重复执行"
+
+#: addons/block_code/blocks/math/add.tres
+#: addons/block_code/blocks/math/cos.tres
+#: addons/block_code/blocks/math/divide.tres
+#: addons/block_code/blocks/math/multiply.tres
+#: addons/block_code/blocks/math/pow.tres
+#: addons/block_code/blocks/math/randf_range.tres
+#: addons/block_code/blocks/math/randi_range.tres
+#: addons/block_code/blocks/math/sin.tres
+#: addons/block_code/blocks/math/subtract.tres
+#: addons/block_code/blocks/math/tan.tres
+#: addons/block_code/blocks/math/vector_from_angle.tres
+#: addons/block_code/blocks/math/vector_multiply.tres
+#: addons/block_code/blocks/variables/vector2.tres
+#: addons/block_code/blocks/math/vector2_xy.tres
+#: addons/block_code/blocks/math/vector3_xyz.tres
+#: addons/block_code/blocks/math/vector3_multiply.tres
+#: addons/block_code/blocks/variables/vector3.tres
+msgid "Math"
+msgstr "数学"
+
+#: addons/block_code/blocks/math/add.tres
+msgid "{a: FLOAT} + {b: FLOAT}"
+msgstr "{a: FLOAT} +{b: FLOAT}"
+
+#: addons/block_code/blocks/math/cos.tres
+msgid "Calculate the cosine of [i]angle[/i]"
+msgstr "计算[i]的角度[/i]的余弦值"
+
+#: addons/block_code/blocks/math/cos.tres
+msgid "cos {angle: FLOAT}"
+msgstr "计算{angle: FLOAT}的余弦"
+
+#: addons/block_code/blocks/math/divide.tres
+msgid "{a: FLOAT} / {b: FLOAT}"
+msgstr "{a: FLOAT} / {b: FLOAT}"
+
+#: addons/block_code/blocks/math/multiply.tres
+msgid "{a: FLOAT} * {b: FLOAT}"
+msgstr "{a: FLOAT} * {b: FLOAT}"
+
+#: addons/block_code/blocks/math/pow.tres
+msgid "{base: FLOAT} ^ {exp: FLOAT}"
+msgstr "{base: FLOAT} ^ {exp: FLOAT}"
+
+#: addons/block_code/blocks/math/randf_range.tres
+msgid ""
+"Generate a random floating point number between [i]from[/i] and [i]to[/i] "
+"inclusively"
+msgstr "在 [i]起始值[/i] 到 [i]结束值[/i] 之间（含首尾）生成一个随机浮点数"
+
+#: addons/block_code/blocks/math/randf_range.tres
+msgid "random floating point number between {from: FLOAT} and {to: FLOAT}"
+msgstr "介于 {from: FLOAT} 和 {to: FLOAT} 之间的随机浮点数"
+
+#: addons/block_code/blocks/math/randi_range.tres
+msgid ""
+"Generate a random signed 32-bits integer number between [i]from[/i] and "
+"[i]to[/i] inclusively. [i]from[/i] and [i]to[/i] can be a negative or "
+"positive number"
+msgstr ""
+"在 [i]起始值[/i] 到 [i]结束值[/i] 之间（含首尾）生成一个随机的有符号 32 位整数。"
+"[i]起始值[/i] 和 [i]结束值[/i] 可以是负数或正数"
+
+#: addons/block_code/blocks/math/randi_range.tres
+msgid "random integer number between {from: INT} and {to: INT}"
+msgstr "{from: INT} 与 {to: INT} 之间的随机整数"
+
+#: addons/block_code/blocks/math/sin.tres
+msgid "Calculate the sine of [i]angle[/i]"
+msgstr "计算[i]角度[/i]的正弦值"
+
+#: addons/block_code/blocks/math/sin.tres
+msgid "sin {angle: FLOAT}"
+msgstr "sin {angle: FLOAT}"
+
+#: addons/block_code/blocks/math/subtract.tres
+msgid "{a: FLOAT} - {b: FLOAT}"
+msgstr "{a: FLOAT} - {b: FLOAT}"
+
+#: addons/block_code/blocks/math/tan.tres
+msgid "Calculate the tangent of [i]angle[/i]"
+msgstr "计算[i]角度[/i]的正切值"
+
+#: addons/block_code/blocks/math/tan.tres
+msgid "tan {angle: FLOAT}"
+msgstr "tan {angle: FLOAT}"
+
+#: addons/block_code/blocks/math/vector_from_angle.tres
+msgid "Creates a unit Vector2 rotated to the given angle in radians."
+msgstr "创建一个按指定角度（弧度）旋转的二维单位向量"
+
+#: addons/block_code/blocks/math/vector_from_angle.tres
+msgid "vector from {angle: FLOAT}"
+msgstr "来自{angle: FLOAT}的向量"
+
+#: addons/block_code/blocks/math/vector_multiply.tres
+msgid ""
+"Multiplies a vector with a number. Use this, for example, to get a point "
+"some distance away along an angle."
+msgstr ""
+"将一个向量与一个数相乘。例如，可以使用此操作获取沿某个角度一定距离处的点。"
+
+#: addons/block_code/blocks/math/vector_multiply.tres
+msgid "multiply {vector: VECTOR2} by {number: FLOAT}"
+msgstr "将向量{vector: VECTOR2}乘以常数{number: FLOAT}"
+
+#: addons/block_code/blocks/physics/characterbody2d_move_and_slide.tres
+msgid "move and slide"
+msgstr "移动并滑动"
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_play.tres
+#: addons/block_code/blocks/sounds/audiostreamplayer_stop.tres
+#: addons/block_code/blocks/sounds/load_sound.tres
+#: addons/block_code/blocks/sounds/pause_continue_sound.tres
+#: addons/block_code/blocks/sounds/play_sound.tres
+#: addons/block_code/blocks/sounds/stop_sound.tres
+msgid "Sounds"
+msgstr "音效"
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_play.tres
+msgid "Play the audio stream"
+msgstr "播放音频流"
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_play.tres
+msgid "play"
+msgstr "播放"
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_stop.tres
+#: addons/block_code/blocks/sounds/stop_sound.tres
+msgid "Stop the audio stream"
+msgstr "停止音频流"
+
+#: addons/block_code/blocks/sounds/load_sound.tres
+msgid "Load a resource file as the audio stream"
+msgstr "将资源文件加载为音频流"
+
+#: addons/block_code/blocks/sounds/load_sound.tres
+msgid "load file {file_path: STRING} as sound {name: STRING}"
+msgstr "将文件{file_path: STRING}作为音效{name: STRING}加载"
+
+#: addons/block_code/blocks/sounds/pause_continue_sound.tres
+msgid "Pause/Continue the audio stream"
+msgstr "暂停/继续音频流"
+
+#: addons/block_code/blocks/sounds/pause_continue_sound.tres
+msgid "{pause: NIL} the sound {name: STRING}"
+msgstr "{pause: NIL}音效{name: STRING}"
+
+#: addons/block_code/blocks/sounds/play_sound.tres
+msgid "Play the audio stream with volume and pitch"
+msgstr "使用指定音量和音高播放音频流"
+
+#: addons/block_code/blocks/sounds/play_sound.tres
+msgid ""
+"play the sound {name: STRING} | with volume {db: FLOAT} dB and pitch scale "
+"{pitch: FLOAT}"
+msgstr "播放音效 {name: STRING} | 音量为 {db: FLOAT} 分贝,音高比例为 {pitch: FLOAT}"
+
+#: addons/block_code/blocks/sounds/stop_sound.tres
+msgid "stop the sound {name: STRING}"
+msgstr "停止音效{name: STRING}"
+
+#: addons/block_code/blocks/spawn/cpuparticles2d_finished.tres
+msgid "Lifecycle | Spawn"
+msgstr "生命周期|生成"
+
+#: addons/block_code/blocks/spawn/cpuparticles2d_finished.tres
+msgid "Emitted when all active particles have finished processing."
+msgstr "当所有活动粒子都完成处理后发出。"
+
+#: addons/block_code/blocks/spawn/cpuparticles2d_finished.tres
+msgid "when particles are finished"
+msgstr "当粒子完成时"
+
+#: addons/block_code/blocks/transform/rigidbody2d_physics_position.tres
+msgid "Transform | Position"
+msgstr "变换|位置"
+
+#: addons/block_code/blocks/transform/rigidbody2d_physics_position.tres
+msgid "set physics position {position: VECTOR2}"
+msgstr "设置物理位置{position: VECTOR2}"
+
+#: addons/block_code/blocks/ui/label_set_text.tres
+msgid "UI"
+msgstr "界面"
+
+#: addons/block_code/blocks/ui/label_set_text.tres
+msgid "Set the text for the label."
+msgstr "设置标签的文本。"
+
+#: addons/block_code/blocks/ui/label_set_text.tres
+msgid "set text to {text: STRING}"
+msgstr "设置文本为{text: STRING}"
+
+#: addons/block_code/blocks/variables/vector2.tres
+msgid "vector2 x: {x: FLOAT} y: {y: FLOAT}"
+msgstr "二維向量 x: {x: FLOAT} y: {y: FLOAT}"
+
+#: addons/block_code/code_generation/block_definition.gd
+msgid "Set the %s property"
+msgstr "设置 %s 属性"
+
+#: addons/block_code/code_generation/block_definition.gd
+msgid "set %%s to {value: %s}"
+msgstr "将 %%s 设置为 {value: %s}"
+
+#: addons/block_code/code_generation/block_definition.gd
+msgid "Change the %s property"
+msgstr "更改 %s 属性"
+
+#: addons/block_code/code_generation/block_definition.gd
+msgid "change %%s by {value: %s}"
+msgstr "将 %%s 改变 {value: %s}"
+
+#: addons/block_code/code_generation/block_definition.gd
+msgid "The %s property"
+msgstr "%s 属性"
+
+#: addons/block_code/code_generation/block_definition.gd
+msgid "Set the %s variable"
+msgstr "设置 %s 变量"
+
+#: addons/block_code/code_generation/block_definition.gd
+msgid "set %s to {value: %s}"
+msgstr "将 %s 设置为 {value: %s}"
+
+#: addons/block_code/code_generation/block_definition.gd
+msgid "The %s variable"
+msgstr "%s 变量"
+
+#: addons/block_code/inspector_plugin/block_script_inspector.gd
+msgid "Open Block Script"
+msgstr "打开块脚本"
+
+#: addons/block_code/simple_nodes/simple_character/simple_character.gd
+msgid "move with {player: NIL} buttons as {kind: NIL}"
+msgstr "使用{player: NIL}按键以{kind: NIL}方式移动"
+
+#: addons/block_code/simple_nodes/simple_character/simple_character.gd
+msgid ""
+"Move the character using the “Player 1” or “Player 2” controls as configured in Godot.\n"
+"\n"
+"“Top-down” enables the character to move in both x (horizontal) and y (vertical) dimensions, as if the camera is above the character, looking down. No gravity is added.\n"
+"\n"
+"“Platformer” enables the character to move as if the camera is looking from the side, like a side-scroller. Gravity is applied on the y (vertical) axis, making the character fall down until they collide with something.\n"
+"\n"
+"“Spaceship” uses the left/right controls to rotate the character and up/down controls to go forward or backward in the direction they are pointing."
+msgstr ""
+"使用 Godot 中配置的“玩家 1”或“玩家 2”控制方式移动角色。\n"
+"\n"
+"“俯视”模式允许角色在 x（水平）和 y（垂直）两个方向上移动,如同摄像机位于角色上方俯视一般。该模式不会添加重力。\n"
+"\n"
+"“平台跳跃”模式使角色如同侧视角的横版过关游戏那样移动。重力作用于 y（垂直）轴,使角色下落,直到与某物发生碰撞。\n"
+"\n"
+"“飞船”模式使用左/右控制旋转角色,并使用上/下控制使其朝所指方向前进或后退。"
+
+#: addons/block_code/simple_nodes/simple_ending/simple_ending.gd
+msgid "game over {result: STRING}"
+msgstr "游戏结束 {result: STRING}"
+
+#: addons/block_code/simple_nodes/simple_ending/simple_ending.gd
+msgid "Show the game over label with the win or lose message."
+msgstr "显示包含胜利或失败消息的“游戏结束”标签。"
+
+#: addons/block_code/simple_nodes/simple_ending/simple_ending.gd
+msgid "reset game over"
+msgstr "重置游戏结束"
+
+#: addons/block_code/simple_nodes/simple_ending/simple_ending.gd
+msgid "Reset the game over label."
+msgstr "重置“游戏结束”标签。"
+
+#: addons/block_code/simple_nodes/simple_scoring/simple_scoring.gd
+msgid "0"
+msgstr "0"
+
+#: addons/block_code/simple_nodes/simple_scoring/simple_scoring.gd
+msgid "set score to {score: INT}"
+msgstr "设置分数为{score: INT}"
+
+#: addons/block_code/simple_nodes/simple_scoring/simple_scoring.gd
+msgid "change score by {score: INT}"
+msgstr "改变分数{score: INT}"
+
+#: addons/block_code/simple_spawner/simple_spawner.gd
+msgid "spawn once"
+msgstr "生成一次"
+
+#: addons/block_code/simple_spawner/simple_spawner.gd
+msgid "start spawning"
+msgstr "开始生成"
+
+#: addons/block_code/simple_spawner/simple_spawner.gd
+msgid "stop spawning"
+msgstr "停止生成"
+
+#: addons/block_code/simple_spawner/simple_spawner.gd
+msgid "is spawning"
+msgstr "正在生成"
+
+#: addons/block_code/simple_spawner/simple_spawner.gd
+msgid "set spawn period to {new_period: FLOAT}"
+msgstr "设置生成周期为{new_period: FLOAT}"
+
+#: addons/block_code/simple_spawner/simple_spawner.gd
+msgid "spawn period"
+msgstr "生成周期"
+
+#: addons/block_code/ui/main_panel.tscn
+msgid "Advanced"
+msgstr "高级"
+
+#: addons/block_code/ui/main_panel.tscn
+msgid "Show Generated Script"
+msgstr "显示生成的脚本"
+
+#: addons/block_code/ui/main_panel.tscn
+msgid "Delete Block Code"
+msgstr "删除块代码"
+
+#: addons/block_code/ui/main_panel.tscn
+msgid "Toggle Block Picker (Ctrl+BackSlash)"
+msgstr "切换块选择器 (Ctrl+反斜杠)"
+
+#: addons/block_code/ui/block_canvas/block_canvas.tscn
+msgid "1.0x"
+msgstr "1.0倍"
+
+#: addons/block_code/ui/block_canvas/block_canvas.tscn
+msgid "Select a node to create and edit block code."
+msgstr "选择一个节点以创建并编辑块代码。"
+
+#: addons/block_code/ui/block_canvas/block_canvas.tscn
+msgid ""
+"Use block coding to create custom behavior and game mechanics for "
+"\"{node}\"."
+msgstr "使用块编程为\"{node}\"创建自定义行为和游戏机制。"
+
+#: addons/block_code/ui/block_canvas/block_canvas.tscn
+msgid "Add Block Code"
+msgstr "添加块代码"
+
+#: addons/block_code/ui/block_canvas/block_canvas.tscn
+msgid "\"{node}\" uses block coding."
+msgstr "\"{node}\"正在使用块编程。"
+
+#: addons/block_code/ui/block_canvas/block_canvas.tscn
+msgid "Open in Editor"
+msgstr "在编辑器中打开"
+
+#: addons/block_code/ui/block_canvas/block_canvas.tscn
+msgid "Override Block Code"
+msgstr "覆盖块代码"
+
+#: addons/block_code/ui/blocks/block/block.gd
+msgid "Type:"
+msgstr "类型:"
+
+#: addons/block_code/ui/blocks/utilities/drag_drop_area/drag_drop_area.gd
+msgid "Duplicate"
+msgstr "复制"
+
+#: addons/block_code/ui/blocks/utilities/drag_drop_area/drag_drop_area.gd
+msgid "Delete"
+msgstr "删除"
+
+#: addons/block_code/ui/blocks/utilities/parameter_input/parameter_input.tscn
+msgid "Parameter"
+msgstr "参数"
+
+#: addons/block_code/ui/picker/categories/block_category_button.tscn
+msgid "Example"
+msgstr "例子"
+
+#: addons/block_code/ui/picker/categories/variable_category/create_variable_button.tscn
+#: addons/block_code/ui/picker/categories/variable_category/create_variable_dialog.tscn
+msgid "Create New Variable"
+msgstr "创建新变量"
+
+#: addons/block_code/ui/picker/categories/variable_category/create_variable_dialog.tscn
+msgid "Create"
+msgstr "新建"
+
+#: addons/block_code/ui/picker/categories/variable_category/create_variable_dialog.tscn
+msgid "Name "
+msgstr "名称"
+
+#: addons/block_code/ui/picker/categories/variable_category/create_variable_dialog.tscn
+msgid "Type "
+msgstr "类型"
+
+#: addons/block_code/ui/script_window/script_window.tscn
+msgid "Block Code Generated GDScript"
+msgstr "通过Block Code生成GDScript"
+
+#: addons/block_code/ui/script_window/script_window.tscn
+msgid "Copy"
+msgstr "复制"
+
+#: addons/block_code/blocks/input/mouse_position.tres
+msgid "The coordinates of the mouse position."
+msgstr "鼠标位置的坐标。"
+
+#: addons/block_code/blocks/input/mouse_position.tres
+msgid "mouse position"
+msgstr "鼠标位置"
+
+#: addons/block_code/blocks/math/vector2_xy.tres
+msgid "Gives the x or y of a [b]Vector2[/b]"
+msgstr "获取[b]二维向量[/b]的 x 或 y 值"
+
+#: addons/block_code/blocks/math/vector2_xy.tres
+msgid "{xy: NIL} of {vector2: VECTOR2}"
+msgstr "二维向量 {vector2: VECTOR2} 的 {xy: NIL}"
+
+#: addons/block_code/blocks/math/vector3_xyz.tres
+msgid "Gives the x, y, or z of a [b]Vector3[/b]"
+msgstr "获取[b]三维向量[/b]的 x、y 或 z 值"
+
+#: addons/block_code/blocks/math/vector3_xyz.tres
+msgid "{xyz: NIL} of {vector3: VECTOR3}"
+msgstr "三维向量 {vector3: VECTOR3} 的 {xyz: NIL}"
+
+#: addons/block_code/blocks/math/vector3_multiply.tres
+msgid ""
+"Multiplies a Vector3 with a number. Use this, for example, to get a point "
+"some distance away along an angle."
+msgstr ""
+"将一个三维向量与一个数相乘。例如，可以使用此操作获取沿某个角度一定距离处的点。"
+
+#: addons/block_code/blocks/math/vector3_multiply.tres
+msgid "multiply {vector: VECTOR3} by {number: FLOAT}"
+msgstr "将向量 {vector: VECTOR3} 乘以常数 {number: FLOAT}"
+
+#: addons/block_code/blocks/communication/switch_scene.tres
+msgid ""
+"Stop playing the current scene, and switch to a different one. You might use"
+" this to switch to a new level."
+msgstr "停止播放当前场景,并切换到另一个场景。你可以使用此功能切换到新关卡。"
+
+#: addons/block_code/blocks/communication/switch_scene.tres
+msgid "switch the scene to {file_path: STRING}"
+msgstr "将场景切换为{file_path: STRING}"
+
+#: addons/block_code/blocks/variables/vector3.tres
+msgid "vector3 x: {x: FLOAT} y: {y: FLOAT}: z: {z: FLOAT}"
+msgstr "三维向量 x: {x: FLOAT} y: {y: FLOAT}: z: {z: FLOAT}"
+
+#: addons/block_code/blocks/lifecycle/physics_process.tres
+msgid "Attached blocks will be executed before each physics step"
+msgstr "附加的块将在每个物理步进之前执行"
+
+#: addons/block_code/blocks/lifecycle/physics_process.tres
+msgid "every physics step"
+msgstr "每个物理步进"
+
+#: addons/block_code/block_code_plugin.gd
+msgid "Block Code"
+msgstr "块代码"
+
+#: addons/block_code/ui/main_panel.gd
+msgid "Delete block code (\"{node}\") for \"{parent}\"?"
+msgstr "删除“{parent}”的块代码（“{node}”）？"
+
+#: addons/block_code/ui/blocks/block/block.gd
+msgid "Delete %d blocks?"
+msgstr "删除 %d 个块？"
+
+#: addons/block_code/ui/blocks/block/block.gd
+msgid "Delete block?"
+msgstr "删除块？"
+
+#: addons/block_code/code_generation/blocks_catalog.gd
+#: addons/block_code/ui/constants.gd
+msgid "Transform | Rotation"
+msgstr "变换|旋转"
+
+#: addons/block_code/code_generation/blocks_catalog.gd
+#: addons/block_code/ui/constants.gd
+msgid "Transform | Scale"
+msgstr "变换|缩放"
+
+#: addons/block_code/code_generation/blocks_catalog.gd
+#: addons/block_code/ui/constants.gd
+msgid "Graphics | Modulate"
+msgstr "图形|调制"
+
+#: addons/block_code/code_generation/blocks_catalog.gd
+#: addons/block_code/ui/constants.gd
+msgid "Graphics | Visibility"
+msgstr "图形|可见性"
+
+#: addons/block_code/code_generation/blocks_catalog.gd
+#: addons/block_code/ui/constants.gd
+msgid "Physics | Mass"
+msgstr "物理|质量"
+
+#: addons/block_code/simple_nodes/simple_scoring.gd
+#: addons/block_code/ui/constants.gd
+msgid "Info | Score"
+msgstr "信息|分数"
+
+#: addons/block_code/code_generation/block_definition.gd
+#: addons/block_code/code_generation/blocks_catalog.gd
+#: addons/block_code/ui/constants.gd
+msgid "Variables"
+msgstr "变量"
+
+#: addons/block_code/ui/picker/categories/variable_category/delete_variables_button.tscn
+#: addons/block_code/ui/picker/categories/variable_category/delete_variables_dialog.tscn
+msgid "Delete Variables"
+msgstr "删除变量"
+
+#: addons/block_code/blocks/loops/wait_seconds.tres
+msgid "Wait for the given number of seconds before continuing."
+msgstr "等待指定秒数后继续执行。"
+
+#: addons/block_code/blocks/loops/wait_seconds.tres
+msgid "wait {seconds: FLOAT} seconds"
+msgstr "等待 {seconds: FLOAT} 秒"
+
+#: addons/block_code/blocks/communication/reload_current_scene.tres
+msgid "Restart the current scene."
+msgstr "重新开始当前场景。"
+
+#: addons/block_code/blocks/communication/reload_current_scene.tres
+msgid "restart current scene"
+msgstr "重新开始当前场景"
+
+#: addons/block_code/blocks/communication/current_scene.tres
+msgid "The currently running scene."
+msgstr "当前正在运行的场景。"
+
+#: addons/block_code/blocks/communication/current_scene.tres
+msgid "current scene"
+msgstr "当前场景"
+
+#: addons/block_code/blocks/communication/reload_current_scene.tres
+#: addons/block_code/blocks/communication/current_scene.tres
+#: addons/block_code/ui/constants.gd
+msgid "Communication | Scenes"
+msgstr "通信|场景"
+
+#: addons/block_code/blocks/spawn/instantiate_scene.tres
+msgid "Create a new node instance from a scene file."
+msgstr "从场景文件创建新的节点实例。"
+
+#: addons/block_code/blocks/spawn/instantiate_scene.tres
+msgid "new instance from scene {file_path: STRING}"
+msgstr "从场景 {file_path: STRING} 创建新实例"
+
+#: addons/block_code/blocks/communication/add_child.tres
+msgid "Add a node as a child of this node."
+msgstr "将节点添加为此节点的子节点。"
+
+#: addons/block_code/blocks/communication/add_child.tres
+msgid "add {child: OBJECT} as child"
+msgstr "添加 {child: OBJECT} 为子节点"
+
+#: addons/block_code/blocks/communication/add_child_to_node.tres
+msgid "Add a node as a child of another node."
+msgstr "将节点添加为另一个节点的子节点。"
+
+#: addons/block_code/blocks/communication/add_child_to_node.tres
+msgid "add {child: OBJECT} as child of {parent: OBJECT}"
+msgstr "添加 {child: OBJECT} 为 {parent: OBJECT} 的子节点"
+
+#: addons/block_code/blocks/graphics/show_node.tres
+msgid "Show a CanvasItem node."
+msgstr "显示 CanvasItem 节点。"
+
+#: addons/block_code/blocks/graphics/show_node.tres
+msgid "show {node: OBJECT}"
+msgstr "显示 {node: OBJECT}"
+
+#: addons/block_code/blocks/graphics/hide_node.tres
+msgid "Hide a CanvasItem node."
+msgstr "隐藏 CanvasItem 节点。"
+
+#: addons/block_code/blocks/graphics/hide_node.tres
+msgid "hide {node: OBJECT}"
+msgstr "隐藏 {node: OBJECT}"
+
+#: addons/block_code/blocks/transform/set_node_position.tres
+msgid "Set the position of a Node2D or Control node."
+msgstr "设置 Node2D 或 Control 节点的位置。"
+
+#: addons/block_code/blocks/transform/set_node_position.tres
+msgid "set {node: OBJECT} position to {position: VECTOR2}"
+msgstr "将 {node: OBJECT} 的位置设置为 {position: VECTOR2}"
+
+#: addons/block_code/ui/picker/picker.tscn
+msgid "Search blocks"
+msgstr "搜索积木"
+
+#: addons/block_code/blocks/communication/get_tree.tres
+msgid "Get the current scene tree."
+msgstr "获取当前场景树。"
+
+#: addons/block_code/blocks/communication/get_tree.tres
+msgid "scene tree"
+msgstr "场景树"
+
+#: addons/block_code/blocks/communication/quit_game.tres
+msgid "Quit the running game."
+msgstr "退出正在运行的游戏。"
+
+#: addons/block_code/blocks/communication/quit_game.tres
+msgid "quit game"
+msgstr "退出游戏"
+
+#: addons/block_code/blocks/communication/set_game_paused.tres
+msgid "Pause or unpause the game."
+msgstr "暂停或继续游戏。"
+
+#: addons/block_code/blocks/communication/set_game_paused.tres
+msgid "set game paused to {paused: BOOL}"
+msgstr "将游戏暂停设置为 {paused: BOOL}"
+
+#: addons/block_code/blocks/communication/get_parent.tres
+msgid "Get this node's parent."
+msgstr "获取此节点的父节点。"
+
+#: addons/block_code/blocks/communication/get_parent.tres
+msgid "parent"
+msgstr "父节点"
+
+#: addons/block_code/blocks/communication/get_node_parent.tres
+msgid "Get the parent of a node."
+msgstr "获取某个节点的父节点。"
+
+#: addons/block_code/blocks/communication/get_node_parent.tres
+msgid "parent of {node: OBJECT}"
+msgstr "{node: OBJECT} 的父节点"
+
+#: addons/block_code/blocks/communication/get_child.tres
+msgid "Get a child node by index."
+msgstr "按索引获取子节点。"
+
+#: addons/block_code/blocks/communication/get_child.tres
+msgid "child {index: INT} of {node: OBJECT}"
+msgstr "{node: OBJECT} 的第 {index: INT} 个子节点"
+
+#: addons/block_code/blocks/communication/get_child_count.tres
+msgid "Get the number of children on a node."
+msgstr "获取某个节点的子节点数量。"
+
+#: addons/block_code/blocks/communication/get_child_count.tres
+msgid "child count of {node: OBJECT}"
+msgstr "{node: OBJECT} 的子节点数量"
+
+#: addons/block_code/blocks/communication/find_child.tres
+msgid "Find a child node by name."
+msgstr "按名称查找子节点。"
+
+#: addons/block_code/blocks/communication/find_child.tres
+msgid "find child named {name: STRING} in {node: OBJECT}"
+msgstr "在 {node: OBJECT} 中查找名为 {name: STRING} 的子节点"
+
+#: addons/block_code/blocks/communication/node_name.tres
+msgid "Get a node's name."
+msgstr "获取节点名称。"
+
+#: addons/block_code/blocks/communication/node_name.tres
+msgid "name of {node: OBJECT}"
+msgstr "{node: OBJECT} 的名称"
+
+#: addons/block_code/blocks/communication/set_node_name.tres
+msgid "Set a node's name."
+msgstr "设置节点名称。"
+
+#: addons/block_code/blocks/communication/set_node_name.tres
+msgid "set name of {node: OBJECT} to {name: STRING}"
+msgstr "将 {node: OBJECT} 的名称设置为 {name: STRING}"
+
+#: addons/block_code/blocks/communication/remove_child.tres
+msgid "Remove a child from this node without deleting it."
+msgstr "从此节点移除子节点，但不删除它。"
+
+#: addons/block_code/blocks/communication/remove_child.tres
+msgid "remove child {child: OBJECT}"
+msgstr "移除子节点 {child: OBJECT}"
+
+#: addons/block_code/blocks/communication/remove_child_from_node.tres
+msgid "Remove a child from a node without deleting it."
+msgstr "从某个节点移除子节点，但不删除它。"
+
+#: addons/block_code/blocks/communication/remove_child_from_node.tres
+msgid "remove {child: OBJECT} from {parent: OBJECT}"
+msgstr "从 {parent: OBJECT} 移除 {child: OBJECT}"
+
+#: addons/block_code/blocks/lifecycle/set_process_enabled.tres
+msgid "Enable or disable process callbacks for this node."
+msgstr "启用或禁用此节点的 process 回调。"
+
+#: addons/block_code/blocks/lifecycle/set_process_enabled.tres
+msgid "set process enabled to {enabled: BOOL}"
+msgstr "将 process 启用设置为 {enabled: BOOL}"
+
+#: addons/block_code/blocks/lifecycle/set_physics_process_enabled.tres
+msgid "Enable or disable physics process callbacks for this node."
+msgstr "启用或禁用此节点的 physics process 回调。"
+
+#: addons/block_code/blocks/lifecycle/set_physics_process_enabled.tres
+msgid "set physics process enabled to {enabled: BOOL}"
+msgstr "将 physics process 启用设置为 {enabled: BOOL}"
+
+#: addons/block_code/blocks/input/is_mouse_button_pressed.tres
+msgid "True if a mouse button is currently pressed."
+msgstr "如果鼠标按钮当前按下则为真。"
+
+#: addons/block_code/blocks/input/is_mouse_button_pressed.tres
+msgid "mouse button {button_index: INT} is pressed"
+msgstr "鼠标按钮 {button_index: INT} 已按下"
+
+#: addons/block_code/blocks/input/input_axis.tres
+msgid "Get a value from -1 to 1 using two input actions."
+msgstr "使用两个输入动作获取 -1 到 1 的值。"
+
+#: addons/block_code/blocks/input/input_axis.tres
+msgid "input axis negative {negative_action: STRING_NAME} positive {positive_action: STRING_NAME}"
+msgstr "输入轴 负方向 {negative_action: STRING_NAME} 正方向 {positive_action: STRING_NAME}"
+
+#: addons/block_code/blocks/input/action_strength.tres
+msgid "Get the strength of an input action."
+msgstr "获取输入动作的强度。"
+
+#: addons/block_code/blocks/input/action_strength.tres
+msgid "strength of action {action_name: STRING_NAME}"
+msgstr "动作 {action_name: STRING_NAME} 的强度"
+
+#: addons/block_code/blocks/ui/button_pressed.tres
+msgid "True if the button is pressed."
+msgstr "如果按钮已按下则为真。"
+
+#: addons/block_code/blocks/ui/button_pressed.tres
+msgid "button is pressed"
+msgstr "按钮已按下"
+
+#: addons/block_code/blocks/ui/button_set_disabled.tres
+msgid "Enable or disable the button."
+msgstr "启用或禁用按钮。"
+
+#: addons/block_code/blocks/ui/button_set_disabled.tres
+msgid "set disabled to {disabled: BOOL}"
+msgstr "将禁用设置为 {disabled: BOOL}"
+
+#: addons/block_code/blocks/ui/line_edit_text.tres
+msgid "Get the text from the line edit."
+msgstr "获取单行输入框的文本。"
+
+#: addons/block_code/blocks/ui/control_grab_focus.tres
+msgid "Give keyboard focus to this control."
+msgstr "让此控件获得键盘焦点。"
+
+#: addons/block_code/blocks/ui/control_grab_focus.tres
+msgid "grab focus"
+msgstr "获取焦点"
+
+#: addons/block_code/blocks/ui/progress_bar_set_value.tres
+msgid "Set the value for a progress bar, slider, or other range control."
+msgstr "设置进度条、滑块或其他范围控件的值。"
+
+#: addons/block_code/blocks/ui/progress_bar_set_value.tres
+msgid "set value to {value: FLOAT}"
+msgstr "将值设置为 {value: FLOAT}"
+
+#: addons/block_code/blocks/math/abs.tres
+msgid "absolute value of {value: FLOAT}"
+msgstr "{value: FLOAT} 的绝对值"
+
+#: addons/block_code/blocks/math/clamp.tres
+msgid "clamp {value: FLOAT} between {min: FLOAT} and {max: FLOAT}"
+msgstr "将 {value: FLOAT} 限制在 {min: FLOAT} 和 {max: FLOAT} 之间"
+
+#: addons/block_code/blocks/math/min.tres
+msgid "minimum of {a: FLOAT} and {b: FLOAT}"
+msgstr "{a: FLOAT} 和 {b: FLOAT} 中较小的值"
+
+#: addons/block_code/blocks/math/max.tres
+msgid "maximum of {a: FLOAT} and {b: FLOAT}"
+msgstr "{a: FLOAT} 和 {b: FLOAT} 中较大的值"
+
+#: addons/block_code/blocks/math/floor.tres
+msgid "floor of {value: FLOAT}"
+msgstr "{value: FLOAT} 向下取整"
+
+#: addons/block_code/blocks/math/ceil.tres
+msgid "ceil of {value: FLOAT}"
+msgstr "{value: FLOAT} 向上取整"
+
+#: addons/block_code/blocks/math/round.tres
+msgid "round {value: FLOAT}"
+msgstr "四舍五入 {value: FLOAT}"
+
+#: addons/block_code/blocks/math/lerp.tres
+msgid "lerp from {from: FLOAT} to {to: FLOAT} by {weight: FLOAT}"
+msgstr "从 {from: FLOAT} 到 {to: FLOAT} 按 {weight: FLOAT} 插值"
+
+#: addons/block_code/blocks/math/move_toward.tres
+msgid "move {from: FLOAT} toward {to: FLOAT} by {delta: FLOAT}"
+msgstr "将 {from: FLOAT} 向 {to: FLOAT} 移动 {delta: FLOAT}"
+
+#: addons/block_code/blocks/math/vector2_length.tres
+msgid "length of {vector: VECTOR2}"
+msgstr "{vector: VECTOR2} 的长度"
+
+#: addons/block_code/blocks/math/vector2_normalized.tres
+msgid "normalized {vector: VECTOR2}"
+msgstr "归一化 {vector: VECTOR2}"
+
+#: addons/block_code/blocks/math/vector2_distance_to.tres
+msgid "distance from {from: VECTOR2} to {to: VECTOR2}"
+msgstr "从 {from: VECTOR2} 到 {to: VECTOR2} 的距离"
+
+#: addons/block_code/blocks/math/vector2_direction_to.tres
+msgid "direction from {from: VECTOR2} to {to: VECTOR2}"
+msgstr "从 {from: VECTOR2} 到 {to: VECTOR2} 的方向"
+
+#: addons/block_code/blocks/math/vector2_angle.tres
+msgid "angle of {vector: VECTOR2}"
+msgstr "{vector: VECTOR2} 的角度"
+
+#: addons/block_code/blocks/transform/change_node_position.tres
+msgid "change {node: OBJECT} position by {amount: VECTOR2}"
+msgstr "将 {node: OBJECT} 的位置改变 {amount: VECTOR2}"
+
+#: addons/block_code/blocks/transform/set_node_global_position.tres
+msgid "set {node: OBJECT} global position to {position: VECTOR2}"
+msgstr "将 {node: OBJECT} 的全局位置设置为 {position: VECTOR2}"
+
+#: addons/block_code/blocks/transform/node_position.tres
+msgid "position of {node: OBJECT}"
+msgstr "{node: OBJECT} 的位置"
+
+#: addons/block_code/blocks/transform/node_global_position.tres
+msgid "global position of {node: OBJECT}"
+msgstr "{node: OBJECT} 的全局位置"
+
+#: addons/block_code/blocks/transform/set_node_rotation_degrees.tres
+msgid "set {node: OBJECT} rotation degrees to {degrees: FLOAT}"
+msgstr "将 {node: OBJECT} 的旋转角度设置为 {degrees: FLOAT}"
+
+#: addons/block_code/blocks/transform/change_node_rotation_degrees.tres
+msgid "change {node: OBJECT} rotation degrees by {degrees: FLOAT}"
+msgstr "将 {node: OBJECT} 的旋转角度改变 {degrees: FLOAT}"
+
+#: addons/block_code/blocks/transform/node_rotation_degrees.tres
+msgid "rotation degrees of {node: OBJECT}"
+msgstr "{node: OBJECT} 的旋转角度"
+
+#: addons/block_code/blocks/transform/node_look_at.tres
+msgid "make {node: OBJECT} look at {position: VECTOR2}"
+msgstr "让 {node: OBJECT} 朝向 {position: VECTOR2}"
+
+#: addons/block_code/blocks/transform/set_node_scale.tres
+msgid "set {node: OBJECT} scale to {scale: VECTOR2}"
+msgstr "将 {node: OBJECT} 的缩放设置为 {scale: VECTOR2}"
+
+#: addons/block_code/blocks/transform/node_scale.tres
+msgid "scale of {node: OBJECT}"
+msgstr "{node: OBJECT} 的缩放"
+
+#: addons/block_code/blocks/graphics/set_node_visible.tres
+msgid "set {node: OBJECT} visible to {visible: BOOL}"
+msgstr "将 {node: OBJECT} 的可见性设置为 {visible: BOOL}"
+
+#: addons/block_code/blocks/graphics/node_is_visible.tres
+msgid "{node: OBJECT} is visible"
+msgstr "{node: OBJECT} 可见"
+
+#: addons/block_code/blocks/graphics/set_node_modulate.tres
+msgid "set {node: OBJECT} modulate to {color: COLOR}"
+msgstr "将 {node: OBJECT} 的调制颜色设置为 {color: COLOR}"
+
+#: addons/block_code/blocks/sounds/audio_set_volume_db.tres
+msgid "set volume db to {volume_db: FLOAT}"
+msgstr "将音量分贝设置为 {volume_db: FLOAT}"
+
+#: addons/block_code/blocks/sounds/audio_set_pitch_scale.tres
+msgid "set pitch scale to {pitch_scale: FLOAT}"
+msgstr "将音高缩放设置为 {pitch_scale: FLOAT}"

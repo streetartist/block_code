@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_node_global_position"]
+
+[resource]
+script = ExtResource("1_node_global_position")
+name = &"node_global_position"
+description = "Get the global position of a Node2D or Control node."
+category = "Transform | Position"
+type = 3
+variant_type = 5
+display_template = "global position of {node: OBJECT}"
+code_template = "{node}.global_position"
+defaults = {}
+

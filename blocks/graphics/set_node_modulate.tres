@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_set_node_modulate"]
+
+[resource]
+script = ExtResource("1_set_node_modulate")
+name = &"set_node_modulate"
+description = "Set the modulate color of a CanvasItem node."
+category = "Graphics | Modulate"
+type = 2
+variant_type = 0
+display_template = "set {node: OBJECT} modulate to {color: COLOR}"
+code_template = "{node}.modulate = {color}"
+defaults = {
+"color": Color(1, 1, 1, 1)
+}
+

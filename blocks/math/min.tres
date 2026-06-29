@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_min"]
+
+[resource]
+script = ExtResource("1_min")
+name = &"min"
+description = "Get the smaller of two numbers."
+category = "Math"
+type = 3
+variant_type = 3
+display_template = "minimum of {a: FLOAT} and {b: FLOAT}"
+code_template = "minf({a}, {b})"
+defaults = {
+"a": 0.0,
+"b": 1.0
+}
+

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_node_look_at"]
+
+[resource]
+script = ExtResource("1_node_look_at")
+name = &"node_look_at"
+description = "Make a Node2D look at a position."
+category = "Transform | Rotation"
+type = 2
+variant_type = 0
+display_template = "make {node: OBJECT} look at {position: VECTOR2}"
+code_template = "{node}.look_at({position})"
+defaults = {
+"position": Vector2(100, 100)
+}
+

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_ceil"]
+
+[resource]
+script = ExtResource("1_ceil")
+name = &"ceil"
+description = "Round a number up."
+category = "Math"
+type = 3
+variant_type = 3
+display_template = "ceil of {value: FLOAT}"
+code_template = "ceilf({value})"
+defaults = {
+"value": 1.5
+}
+

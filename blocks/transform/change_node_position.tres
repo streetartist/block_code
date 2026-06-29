@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_change_node_position"]
+
+[resource]
+script = ExtResource("1_change_node_position")
+name = &"change_node_position"
+description = "Move a Node2D or Control node by an amount."
+category = "Transform | Position"
+type = 2
+variant_type = 0
+display_template = "change {node: OBJECT} position by {amount: VECTOR2}"
+code_template = "{node}.position += {amount}"
+defaults = {
+"amount": Vector2(1, 1)
+}
+

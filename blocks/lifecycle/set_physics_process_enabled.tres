@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_set_physics_process_enabled"]
+
+[resource]
+script = ExtResource("1_set_physics_process_enabled")
+name = &"set_physics_process_enabled"
+target_node_class = "Node"
+description = "Enable or disable physics process callbacks for this node."
+category = "Lifecycle"
+type = 2
+variant_type = 0
+display_template = "set physics process enabled to {enabled: BOOL}"
+code_template = "set_physics_process({enabled})"
+defaults = {
+"enabled": true
+}
+

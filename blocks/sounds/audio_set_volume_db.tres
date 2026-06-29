@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_audio_set_volume_db"]
+
+[resource]
+script = ExtResource("1_audio_set_volume_db")
+name = &"audio_set_volume_db"
+target_node_class = "AudioStreamPlayer"
+description = "Set this audio player's volume in decibels."
+category = "Sounds"
+type = 2
+variant_type = 0
+display_template = "set volume db to {volume_db: FLOAT}"
+code_template = "volume_db = {volume_db}"
+defaults = {
+"volume_db": 0.0
+}
+

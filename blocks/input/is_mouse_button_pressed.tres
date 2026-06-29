@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_is_mouse_button_pressed"]
+
+[resource]
+script = ExtResource("1_is_mouse_button_pressed")
+name = &"is_mouse_button_pressed"
+description = "True if a mouse button is currently pressed."
+category = "Input"
+type = 3
+variant_type = 1
+display_template = "mouse button {button_index: INT} is pressed"
+code_template = "Input.is_mouse_button_pressed({button_index})"
+defaults = {
+"button_index": 1
+}
+

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_get_child_count"]
+
+[resource]
+script = ExtResource("1_get_child_count")
+name = &"get_child_count"
+description = "Get the number of children on a node."
+category = "Communication | Nodes"
+type = 3
+variant_type = 2
+display_template = "child count of {node: OBJECT}"
+code_template = "{node}.get_child_count()"
+defaults = {}
+

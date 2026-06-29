@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_lerp"]
+
+[resource]
+script = ExtResource("1_lerp")
+name = &"lerp"
+description = "Linearly interpolate between two numbers."
+category = "Math"
+type = 3
+variant_type = 3
+display_template = "lerp from {from: FLOAT} to {to: FLOAT} by {weight: FLOAT}"
+code_template = "lerpf({from}, {to}, {weight})"
+defaults = {
+"from": 0.0,
+"to": 1.0,
+"weight": 0.5
+}
+

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_line_edit_text"]
+
+[resource]
+script = ExtResource("1_line_edit_text")
+name = &"line_edit_text"
+target_node_class = "LineEdit"
+description = "Get the text from the line edit."
+category = "UI"
+type = 3
+variant_type = 4
+display_template = "text"
+code_template = "text"
+defaults = {}
+

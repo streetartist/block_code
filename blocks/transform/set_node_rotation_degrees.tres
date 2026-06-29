@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_set_node_rotation_degrees"]
+
+[resource]
+script = ExtResource("1_set_node_rotation_degrees")
+name = &"set_node_rotation_degrees"
+description = "Set the rotation of a Node2D in degrees."
+category = "Transform | Rotation"
+type = 2
+variant_type = 0
+display_template = "set {node: OBJECT} rotation degrees to {degrees: FLOAT}"
+code_template = "{node}.rotation_degrees = {degrees}"
+defaults = {
+"degrees": 45.0
+}
+
