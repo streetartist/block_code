@@ -46,6 +46,61 @@
 - 音效播放
 - 基础数学与逻辑积木
 
+## 自定义积木
+
+点击编辑器面板顶部的 `积木市场` 可以管理自定义积木。这个入口包含三个页面：
+
+- `市场`：从服务器浏览积木，查看 JSON 配置预览，可以保存一份到本地后再修改
+- `编辑器`：创建或修改自己的积木，可以保存到本地仓库，也可以上传到服务器
+- `设置`：配置服务器地址，默认是 `https://block.streetartist.top`，并可完成注册和登录
+
+保存到本地后，积木定义会写入项目根目录的 `res://block_code_user_blocks/`，这个目录可以直接提交到你自己的 Git 仓库。上传到服务器的积木会绑定到当前登录用户。
+
+创建一个积木时主要填写：
+
+- `Block name`：唯一标识，只能使用字母、数字和下划线，例如 `set_velocity_x`
+- `Category`：面板中的分类，例如 `Custom | Movement`
+- `Target node class`：可选，填写 `Node2D`、`CharacterBody2D` 等会让积木只在对应节点上出现；留空表示所有节点可用
+- `Block type`：`Entry` 是入口，`Statement` 是普通语句，`Value` 会输出一个值，`Control` 可以包含子积木
+- `Display template`：积木长什么样，以及用户需要输入什么
+- `Generated GDScript template`：这个积木最终生成什么 GDScript
+- `Defaults JSON`：输入项的默认值
+
+模板语法示例：
+
+```text
+Display template:
+set velocity x to {speed: FLOAT}
+
+Generated GDScript template:
+velocity.x = {speed}
+
+Defaults JSON:
+{
+  "speed": 120.0
+}
+```
+
+`{speed: FLOAT}` 会在积木上生成一个可编辑输入槽。代码模板里的 `{speed}` 会转成安全的 GDScript 值；如果你确实需要未加引号的原始文本，可以用 `{{speed}}`。支持的类型包括 `BOOL`、`INT`、`FLOAT`、`STRING`、`STRING_NAME`、`VECTOR2`、`VECTOR3`、`COLOR`、`NODE_PATH`、`OBJECT` 和 `NIL`。
+
+## 自定义积木服务器
+
+插件自带一个单文件 Python 服务端：
+
+```powershell
+python addons/block_code/block_code_server.py --host 127.0.0.1 --port 8787
+```
+
+服务端接口：
+
+- `POST /api/auth/register`：注册用户并返回 token
+- `POST /api/auth/login`：登录并返回 token
+- `GET /api/blocks`：列出所有积木
+- `POST /api/blocks`：上传一个积木 JSON，需要登录，积木会绑定到当前用户
+- `GET /api/blocks/<name>`：读取单个积木
+- `GET /api/me/blocks`：列出当前用户上传的积木
+- `DELETE /api/blocks/<name>`：删除单个积木，需要是该积木的上传者
+
 ## 本地化
 
 块代码使用 Godot 的 gettext 翻译系统。
@@ -69,4 +124,3 @@
 ## 致谢
 
 这个项目建立在原始 [Godot Block Coding](https://github.com/endlessm/godot-block-coding) 项目的思路和代码基础之上，由 Endless 团队开创。原项目仍然是积木编程概念的主要上游参考。
-

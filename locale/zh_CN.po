@@ -1441,3 +1441,204 @@ msgstr "将音量分贝设置为 {volume_db: FLOAT}"
 #: addons/block_code/blocks/sounds/audio_set_pitch_scale.tres
 msgid "set pitch scale to {pitch_scale: FLOAT}"
 msgstr "将音高缩放设置为 {pitch_scale: FLOAT}"
+
+#: addons/block_code/ui/main_panel.gd
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Block Market"
+msgstr "积木市场"
+
+#: addons/block_code/ui/main_panel.gd
+msgid "Browse, create, save, and upload custom blocks"
+msgstr "浏览、创建、保存和上传自定义积木"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Market"
+msgstr "市场"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Editor"
+msgstr "编辑器"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Settings"
+msgstr "设置"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Refresh"
+msgstr "刷新"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Save Local Copy"
+msgstr "保存本地副本"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Save to Local Repository"
+msgstr "保存到本地仓库"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Upload"
+msgstr "上传"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Block name"
+msgstr "积木名称"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Category"
+msgstr "分类"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Target node class"
+msgstr "目标节点类"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Block type"
+msgstr "积木类型"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Value return type"
+msgstr "值返回类型"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Signal name for entry blocks"
+msgstr "入口积木的信号名"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Description"
+msgstr "说明"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Display template"
+msgstr "显示模板"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Generated GDScript template"
+msgstr "生成的 GDScript 模板"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Defaults JSON"
+msgstr "默认值 JSON"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Server URL"
+msgstr "服务器地址"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Username"
+msgstr "用户名"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Password"
+msgstr "密码"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Created by register or login"
+msgstr "注册或登录后生成"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Access token"
+msgstr "访问令牌"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Save Settings"
+msgstr "保存设置"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Register"
+msgstr "注册"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Login"
+msgstr "登录"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Failed to save settings: %s"
+msgstr "保存设置失败：%s"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Settings saved."
+msgstr "设置已保存。"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Loading market blocks..."
+msgstr "正在加载市场积木..."
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Registering..."
+msgstr "正在注册..."
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Logging in..."
+msgstr "正在登录..."
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Uploading block..."
+msgstr "正在上传积木..."
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Select a market block first."
+msgstr "请先选择一个市场积木。"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Market block loaded into the editor."
+msgstr "市场积木已载入编辑器。"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Save failed: %s"
+msgstr "保存失败：%s"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Saved to %s."
+msgstr "已保存到 %s。"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Login before uploading."
+msgstr "请先登录再上传。"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Server request failed: %s"
+msgstr "服务器请求失败：%s"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Server returned HTTP %s: %s"
+msgstr "服务器返回 HTTP %s：%s"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Server response JSON is invalid: %s"
+msgstr "服务器响应 JSON 无效：%s"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Uploaded."
+msgstr "已上传。"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Server response must contain a blocks array."
+msgstr "服务器响应必须包含 blocks 数组。"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Loaded %d market block(s)."
+msgstr "已加载 %d 个市场积木。"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Server did not return a token."
+msgstr "服务器没有返回令牌。"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Logged in as %s."
+msgstr "已登录为 %s。"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Example loaded."
+msgstr "示例已载入。"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Defaults JSON is invalid: %s"
+msgstr "默认值 JSON 无效：%s"
+
+#: addons/block_code/custom_blocks/custom_block_dialog.gd
+msgid "Defaults JSON must be an object."
+msgstr "默认值 JSON 必须是一个对象。"
+
+#: addons/block_code/ui/picker/categories/block_category_button.gd
+msgid "Custom"
+msgstr "自定义"

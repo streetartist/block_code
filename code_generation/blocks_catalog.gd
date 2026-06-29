@@ -1,6 +1,7 @@
 extends Object
 
 const BlockDefinition = preload("res://addons/block_code/code_generation/block_definition.gd")
+const CustomBlockStore = preload("res://addons/block_code/custom_blocks/custom_block_store.gd")
 const Types = preload("res://addons/block_code/types/types.gd")
 const Util = preload("res://addons/block_code/code_generation/util.gd")
 const VariableDefinition = preload("res://addons/block_code/code_generation/variable_definition.gd")
@@ -112,14 +113,22 @@ const _SETTINGS_FOR_CLASS_PROPERTY = {
 static var _catalog: Dictionary
 
 
-static func _setup_definitions_from_files():
-	var definition_files = Util.get_files_in_dir_recursive(_BLOCKS_PATH, "*.tres")
+static func _setup_definitions_from_files(path: String = _BLOCKS_PATH):
+	var definition_files = Util.get_files_in_dir_recursive(path, "*.tres")
 	for file in definition_files:
 		var block_definition: BlockDefinition = load(file)
+		if block_definition == null:
+			push_warning("Skipping invalid block definition: %s" % file)
+			continue
 		_catalog[block_definition.name] = block_definition
 		var target = block_definition.target_node_class
 		if not target:
 			continue
+
+
+static func _setup_custom_definitions():
+	for block_definition in CustomBlockStore.load_definitions():
+		_catalog[block_definition.name] = block_definition
 
 
 static func _add_property_definitions(_class_name: String, property_list: Array[Dictionary], property_settings: Dictionary):
@@ -158,9 +167,14 @@ static func setup():
 	if _catalog:
 		return
 
+	reload()
+
+
+static func reload():
 	_catalog = {}
 	_setup_definitions_from_files()
 	_setup_properties_for_class()
+	_setup_custom_definitions()
 
 
 static func get_block(block_name: StringName):

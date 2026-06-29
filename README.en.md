@@ -41,6 +41,61 @@ Common workflows you may expect to find:
 - Sound playback
 - Basic math and logic blocks
 
+## Custom Blocks
+
+Use the `Block Market` button in the editor panel to manage custom blocks. The window has three tabs:
+
+- `Market`: browse server blocks, preview their JSON configuration, and save a local copy for editing
+- `Editor`: create or edit a block, then save it to the local repository or upload it to the server
+- `Settings`: configure the server URL, which defaults to `https://block.streetartist.top`, and register or log in
+
+Saved blocks are written to `res://block_code_user_blocks/` at the project root, so they can be committed to your own Git repository. Uploaded blocks are bound to the currently logged-in user.
+
+The main fields are:
+
+- `Block name`: a unique identifier using letters, numbers, and underscores, for example `set_velocity_x`
+- `Category`: the picker category, for example `Custom | Movement`
+- `Target node class`: optional; use `Node2D`, `CharacterBody2D`, and similar class names to show the block only for matching nodes, or leave it empty for all nodes
+- `Block type`: `Entry`, `Statement`, `Value`, or `Control`
+- `Display template`: the visible block text and the inputs users fill in
+- `Generated GDScript template`: the GDScript produced by the block
+- `Defaults JSON`: default values for the inputs
+
+Template example:
+
+```text
+Display template:
+set velocity x to {speed: FLOAT}
+
+Generated GDScript template:
+velocity.x = {speed}
+
+Defaults JSON:
+{
+  "speed": 120.0
+}
+```
+
+`{speed: FLOAT}` creates an editable input slot on the block. `{speed}` in the code template becomes an escaped GDScript value. Use `{{speed}}` only when raw text is needed. Supported input types are `BOOL`, `INT`, `FLOAT`, `STRING`, `STRING_NAME`, `VECTOR2`, `VECTOR3`, `COLOR`, `NODE_PATH`, `OBJECT`, and `NIL`.
+
+## Custom Block Server
+
+The plugin includes a single-file Python server:
+
+```powershell
+python addons/block_code/block_code_server.py --host 127.0.0.1 --port 8787
+```
+
+Server endpoints:
+
+- `POST /api/auth/register`: register a user and return a token
+- `POST /api/auth/login`: log in and return a token
+- `GET /api/blocks`: list blocks
+- `POST /api/blocks`: upload one block JSON object; requires login and binds the block to the current user
+- `GET /api/blocks/<name>`: fetch one block
+- `GET /api/me/blocks`: list blocks uploaded by the current user
+- `DELETE /api/blocks/<name>`: delete one block; requires the block owner
+
 ## Localization
 
 Block Code uses Godot's gettext-based translation system.

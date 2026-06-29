@@ -6,6 +6,7 @@ signal script_window_requested(script: String)
 const BlockCanvas = preload("res://addons/block_code/ui/block_canvas/block_canvas.gd")
 const BlockCodePlugin = preload("res://addons/block_code/block_code_plugin.gd")
 const BlocksCatalog = preload("res://addons/block_code/code_generation/blocks_catalog.gd")
+const CustomBlockDialog = preload("res://addons/block_code/custom_blocks/custom_block_dialog.gd")
 const DragManager = preload("res://addons/block_code/drag_manager/drag_manager.gd")
 const Picker = preload("res://addons/block_code/ui/picker/picker.gd")
 const TitleBar = preload("res://addons/block_code/ui/title_bar/title_bar.gd")
@@ -31,6 +32,8 @@ const Constants = preload("res://addons/block_code/ui/constants.gd")
 
 var _block_code_nodes: Array
 var _collapsed: bool = false
+var _custom_block_button: Button
+var _custom_block_dialog: CustomBlockDialog
 
 var undo_redo: EditorUndoRedoManager:
 	set(value):
@@ -59,6 +62,8 @@ func _ready():
 		_delete_node_button.icon = _icon_delete
 	if not _collapse_button.icon:
 		_collapse_button.icon = _icon_collapse
+
+	_setup_custom_block_tools()
 
 
 func _on_undo_redo_version_changed():
@@ -89,6 +94,39 @@ func _on_delete_node_button_pressed():
 
 func _on_advanced_checkbox_toggled(is_advanced: bool):
 	_picker.set_advanced(is_advanced)
+	_picker.reload_blocks()
+
+
+func _setup_custom_block_tools():
+	var toolbar := _title_bar.get_parent()
+	if toolbar == null:
+		return
+
+	_custom_block_button = Button.new()
+	_custom_block_button.text = tr("Block Market")
+	_custom_block_button.tooltip_text = tr("Browse, create, save, and upload custom blocks")
+	_custom_block_button.pressed.connect(_on_custom_block_button_pressed)
+	toolbar.add_child(_custom_block_button)
+
+	var advanced_checkbox := toolbar.get_node_or_null("AdvancedCheckBox")
+	var insert_index := _title_bar.get_index() + 1
+	if advanced_checkbox:
+		insert_index = advanced_checkbox.get_index() + 1
+	toolbar.move_child(_custom_block_button, insert_index)
+
+	_custom_block_dialog = CustomBlockDialog.new()
+	_custom_block_dialog.catalog_changed.connect(_on_custom_block_catalog_changed)
+	add_child(_custom_block_dialog)
+
+
+func _on_custom_block_button_pressed():
+	_custom_block_dialog.popup_centered_ratio(0.8)
+
+
+func _on_custom_block_catalog_changed():
+	BlocksCatalog.reload()
+	if _context.block_script:
+		_context.block_script.initialize()
 	_picker.reload_blocks()
 
 

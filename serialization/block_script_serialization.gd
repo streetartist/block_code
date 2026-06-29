@@ -207,7 +207,26 @@ func _update_block_definitions():
 	_available_blocks.append_array(_get_variable_block_definitions())
 
 	var custom_categories: Array[BlockCategory] = _get_custom_categories()
+	custom_categories.append_array(_get_implicit_custom_categories(custom_categories))
 	_categories = CategoryFactory.get_all_categories(custom_categories)
+
+
+func _get_implicit_custom_categories(existing_categories: Array[BlockCategory]) -> Array[BlockCategory]:
+	var result: Array[BlockCategory] = []
+	var known_categories := {}
+	for category in existing_categories:
+		known_categories[category.name] = true
+
+	var order := 1000
+	for block_definition in _available_blocks:
+		var category_name := block_definition.category.strip_edges()
+		if category_name.is_empty() or known_categories.has(category_name):
+			continue
+		known_categories[category_name] = true
+		result.append(BlockCategory.new(category_name, Color("607d8b"), order))
+		order += 10
+
+	return result
 
 
 func _get_custom_categories() -> Array[BlockCategory]:
