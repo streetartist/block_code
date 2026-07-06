@@ -93,6 +93,36 @@ static func save_definition(block_definition: BlockDefinition) -> Dictionary:
 	return {"error": save_error, "path": path, "errors": []}
 
 
+static func can_delete_definition(block_definition: BlockDefinition) -> bool:
+	return not get_deletable_definition_path(block_definition).is_empty()
+
+
+static func delete_definition(block_definition: BlockDefinition) -> Dictionary:
+	var path := get_deletable_definition_path(block_definition)
+	if path.is_empty():
+		return {"error": ERR_INVALID_PARAMETER, "path": "", "errors": ["This custom block cannot be deleted."]}
+	if not FileAccess.file_exists(path):
+		return {"error": ERR_FILE_NOT_FOUND, "path": path, "errors": ["Cannot find %s." % path]}
+
+	var error := DirAccess.remove_absolute(ProjectSettings.globalize_path(path))
+	if error != OK:
+		return {"error": error, "path": path, "errors": ["Cannot delete %s." % path]}
+
+	return {"error": OK, "path": path, "errors": []}
+
+
+static func get_deletable_definition_path(block_definition: BlockDefinition) -> String:
+	if block_definition == null:
+		return ""
+
+	var path := block_definition.resource_path
+	if path.get_extension().to_lower() != "tres":
+		return ""
+	if path == USER_BLOCKS_DIR or not path.begins_with(USER_BLOCKS_DIR + "/"):
+		return ""
+	return path
+
+
 static func load_definitions() -> Array[BlockDefinition]:
 	var result: Array[BlockDefinition] = []
 	for directory in [USER_BLOCKS_DIR, ADDON_USER_BLOCKS_DIR]:

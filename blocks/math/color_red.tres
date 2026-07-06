@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_color_red"]
+
+[resource]
+script = ExtResource("1_color_red")
+name = &"color_red"
+description = "Red component of a Color."
+category = "Graphics | Modulate"
+type = 3
+variant_type = 3
+display_template = "red of {color: COLOR}"
+code_template = "{color}.r"

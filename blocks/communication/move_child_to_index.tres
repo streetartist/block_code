@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_move_child_to_index"]
+
+[resource]
+script = ExtResource("1_move_child_to_index")
+name = &"move_child_to_index"
+description = "Move a child node to a new sibling index."
+category = "Communication | Nodes"
+type = 2
+variant_type = 0
+display_template = "move child {child: OBJECT} of {parent: OBJECT} to index {index: INT}"
+code_template = "{parent}.move_child({child}, {index})"
+defaults = {
+"index": 0
+}

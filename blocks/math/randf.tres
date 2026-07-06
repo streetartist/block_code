@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_randf"]
+
+[resource]
+script = ExtResource("1_randf")
+name = &"randf"
+description = "Generate a random floating point number from 0 to 1."
+category = "Math"
+type = 3
+variant_type = 3
+display_template = "random floating point number from 0 to 1"
+code_template = "randf()"
+defaults = {}

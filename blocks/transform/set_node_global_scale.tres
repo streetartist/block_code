@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_set_node_global_scale"]
+
+[resource]
+script = ExtResource("1_set_node_global_scale")
+name = &"set_node_global_scale"
+description = "Set a Node2D global scale."
+category = "Transform | Scale"
+type = 2
+variant_type = 0
+display_template = "set {node: OBJECT} global scale to {scale: VECTOR2}"
+code_template = "{node}.global_scale = {scale}"
+defaults = {
+"scale": Vector2(1, 1)
+}

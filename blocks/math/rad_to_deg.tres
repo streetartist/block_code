@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_rad_to_deg"]
+
+[resource]
+script = ExtResource("1_rad_to_deg")
+name = &"rad_to_deg"
+description = "Convert radians to degrees."
+category = "Math"
+type = 3
+variant_type = 3
+display_template = "{radians: FLOAT} radians to degrees"
+code_template = "rad_to_deg({radians})"
+defaults = {
+"radians": 3.14159
+}

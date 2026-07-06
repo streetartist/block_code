@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_asin_degrees"]
+
+[resource]
+script = ExtResource("1_asin_degrees")
+name = &"asin_degrees"
+description = "Arcsine in degrees."
+category = "Math"
+type = 3
+variant_type = 3
+display_template = "asin degrees of {value: FLOAT}"
+code_template = "rad_to_deg(asin(clampf({value}, -1.0, 1.0)))"
+defaults = {
+"value": 0.0
+}

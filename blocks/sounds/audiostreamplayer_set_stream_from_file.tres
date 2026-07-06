@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_audiostreamplayer_set_stream_from_file"]
+
+[resource]
+script = ExtResource("1_audiostreamplayer_set_stream_from_file")
+name = &"audiostreamplayer_set_stream_from_file"
+target_node_class = "AudioStreamPlayer"
+description = "Set the audio stream from a resource path."
+category = "Sounds"
+type = 2
+variant_type = 0
+display_template = "set stream from file {file_path: STRING}"
+code_template = "stream = load({file_path})"
+defaults = {
+"file_path": "res://"
+}

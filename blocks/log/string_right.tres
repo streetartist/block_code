@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_string_right"]
+
+[resource]
+script = ExtResource("1_string_right")
+name = &"string_right"
+description = "Right part of a string."
+category = "Log"
+type = 3
+variant_type = 4
+display_template = "right {length: INT} characters of {text: STRING}"
+code_template = "{text}.right({length})"
+defaults = {
+"length": 1,
+"text": ""
+}

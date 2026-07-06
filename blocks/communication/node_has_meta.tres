@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_node_has_meta"]
+
+[resource]
+script = ExtResource("1_node_has_meta")
+name = &"node_has_meta"
+description = "True if a node has metadata with the given key."
+category = "Communication | Nodes"
+type = 3
+variant_type = 1
+display_template = "{node: OBJECT} has metadata {key: STRING}"
+code_template = "{node}.has_meta({key})"
+defaults = {
+"key": "key"
+}

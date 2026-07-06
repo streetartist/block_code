@@ -1642,3 +1642,2310 @@ msgstr "默认值 JSON 必须是一个对象。"
 #: addons/block_code/ui/picker/categories/block_category_button.gd
 msgid "Custom"
 msgstr "自定义"
+
+#: addons/block_code/blocks/communication/call_deferred_node.tres
+msgid "Call a method on a node later, when it is safe."
+msgstr "稍后在安全时机调用节点上的方法。"
+
+#: addons/block_code/blocks/communication/call_deferred_node.tres
+msgid "call deferred method {method_name: STRING} on {node: OBJECT}"
+msgstr "延迟调用 {node: OBJECT} 的方法 {method_name: STRING}"
+
+#: addons/block_code/blocks/communication/create_tween.tres
+msgid "Create a tween from this node."
+msgstr "从此节点创建 Tween。"
+
+#: addons/block_code/blocks/communication/create_tween.tres
+msgid "new tween"
+msgstr "新建 Tween"
+
+#: addons/block_code/blocks/communication/duplicate_node.tres
+msgid "Create a duplicate of a node."
+msgstr "创建节点的副本。"
+
+#: addons/block_code/blocks/communication/duplicate_node.tres
+msgid "duplicate of {node: OBJECT}"
+msgstr "{node: OBJECT} 的副本"
+
+#: addons/block_code/blocks/communication/emit_signal_node.tres
+msgid "Emit a signal from a node without arguments."
+msgstr "从节点发出不带参数的信号。"
+
+#: addons/block_code/blocks/communication/emit_signal_node.tres
+msgid "emit signal {signal_name: STRING} from {node: OBJECT}"
+msgstr "从 {node: OBJECT} 发出信号 {signal_name: STRING}"
+
+#: addons/block_code/blocks/communication/get_node_or_null.tres
+msgid "Get a node by path, or null if it is missing."
+msgstr "按路径获取节点；如果不存在则返回 null。"
+
+#: addons/block_code/blocks/communication/get_node_or_null.tres
+msgid "node or null at path {path: STRING}"
+msgstr "路径 {path: STRING} 处的节点或 null"
+
+#: addons/block_code/blocks/communication/get_tree_root.tres
+msgid "Get the root viewport of the scene tree."
+msgstr "获取场景树的根视口。"
+
+#: addons/block_code/blocks/communication/get_tree_root.tres
+msgid "tree root"
+msgstr "场景树根"
+
+#: addons/block_code/blocks/communication/get_viewport.tres
+msgid "Get the current viewport."
+msgstr "获取当前视口。"
+
+#: addons/block_code/blocks/communication/get_viewport.tres
+msgid "viewport"
+msgstr "视口"
+
+#: addons/block_code/blocks/communication/has_node.tres
+msgid "True if this node has a node at the given path."
+msgstr "如果此节点在给定路径上有节点，则为 True。"
+
+#: addons/block_code/blocks/communication/has_node.tres
+msgid "has node at path {path: STRING}"
+msgstr "路径 {path: STRING} 处有节点"
+
+#: addons/block_code/blocks/communication/move_child_to_index.tres
+msgid "Move a child node to a new sibling index."
+msgstr "将子节点移动到新的同级索引。"
+
+#: addons/block_code/blocks/communication/move_child_to_index.tres
+msgid "move child {child: OBJECT} of {parent: OBJECT} to index {index: INT}"
+msgstr "将 {parent: OBJECT} 的子节点 {child: OBJECT} 移到索引 {index: INT}"
+
+#: addons/block_code/blocks/communication/node_find_parent.tres
+msgid "Find a parent node by name pattern."
+msgstr "按名称模式查找父节点。"
+
+#: addons/block_code/blocks/communication/node_find_parent.tres
+msgid "find parent named {pattern: STRING} from {node: OBJECT}"
+msgstr "从 {node: OBJECT} 查找名为 {pattern: STRING} 的父节点"
+
+#: addons/block_code/blocks/communication/node_get_meta.tres
+msgid "Get metadata from a node as text."
+msgstr "以文本形式获取节点的元数据。"
+
+#: addons/block_code/blocks/communication/node_get_meta.tres
+msgid "metadata {key: STRING} of {node: OBJECT}"
+msgstr "{node: OBJECT} 的元数据 {key: STRING}"
+
+#: addons/block_code/blocks/communication/node_get_node_or_null.tres
+msgid "Get a child node by path, or null if it is missing."
+msgstr "按路径获取子节点；如果不存在则返回 null。"
+
+#: addons/block_code/blocks/communication/node_get_node_or_null.tres
+msgid "node or null at path {path: STRING} in {node: OBJECT}"
+msgstr "{node: OBJECT} 中路径 {path: STRING} 处的节点或 null"
+
+#: addons/block_code/blocks/communication/node_has_meta.tres
+msgid "True if a node has metadata with the given key."
+msgstr "如果节点有指定键的元数据，则为 True。"
+
+#: addons/block_code/blocks/communication/node_has_meta.tres
+msgid "{node: OBJECT} has metadata {key: STRING}"
+msgstr "{node: OBJECT} 有元数据 {key: STRING}"
+
+#: addons/block_code/blocks/communication/node_has_node.tres
+msgid "True if a node has a child at the given path."
+msgstr "如果节点在指定路径上有子节点，则为 True。"
+
+#: addons/block_code/blocks/communication/node_has_node.tres
+msgid "{node: OBJECT} has node at path {path: STRING}"
+msgstr "{node: OBJECT} 在路径 {path: STRING} 处有节点"
+
+#: addons/block_code/blocks/communication/node_index.tres
+msgid "Get a node's index among its siblings."
+msgstr "获取节点在同级节点中的索引。"
+
+#: addons/block_code/blocks/communication/node_index.tres
+msgid "index of {node: OBJECT}"
+msgstr "{node: OBJECT} 的索引"
+
+#: addons/block_code/blocks/communication/node_is_ancestor_of.tres
+msgid "Whether one node is an ancestor of another."
+msgstr "判断一个节点是否是另一个节点的祖先。"
+
+#: addons/block_code/blocks/communication/node_is_ancestor_of.tres
+msgid "{ancestor: OBJECT} is ancestor of {node: OBJECT}"
+msgstr "{ancestor: OBJECT} 是 {node: OBJECT} 的祖先"
+
+#: addons/block_code/blocks/communication/node_is_inside_tree.tres
+msgid "Whether a node is inside the scene tree."
+msgstr "判断节点是否在场景树中。"
+
+#: addons/block_code/blocks/communication/node_is_inside_tree.tres
+msgid "{node: OBJECT} is inside tree"
+msgstr "{node: OBJECT} 在场景树中"
+
+#: addons/block_code/blocks/communication/node_is_ready.tres
+msgid "Whether a node has completed ready."
+msgstr "判断节点是否已完成 ready。"
+
+#: addons/block_code/blocks/communication/node_is_ready.tres
+msgid "{node: OBJECT} is ready"
+msgstr "{node: OBJECT} 已 ready"
+
+#: addons/block_code/blocks/communication/node_owner.tres
+msgid "Get the owner of a node."
+msgstr "获取节点的所有者。"
+
+#: addons/block_code/blocks/communication/node_owner.tres
+msgid "owner of {node: OBJECT}"
+msgstr "{node: OBJECT} 的所有者"
+
+#: addons/block_code/blocks/communication/node_path.tres
+msgid "Get a node's path as text."
+msgstr "以文本形式获取节点路径。"
+
+#: addons/block_code/blocks/communication/node_path.tres
+msgid "path of {node: OBJECT}"
+msgstr "{node: OBJECT} 的路径"
+
+#: addons/block_code/blocks/communication/node_path_to.tres
+msgid "Get the path from one node to another as text."
+msgstr "以文本形式获取从一个节点到另一个节点的路径。"
+
+#: addons/block_code/blocks/communication/node_path_to.tres
+msgid "path from {from_node: OBJECT} to {to_node: OBJECT}"
+msgstr "从 {from_node: OBJECT} 到 {to_node: OBJECT} 的路径"
+
+#: addons/block_code/blocks/communication/node_process_mode.tres
+msgid "Get a node's process mode as an integer."
+msgstr "以整数形式获取节点的处理模式。"
+
+#: addons/block_code/blocks/communication/node_process_mode.tres
+msgid "process mode of {node: OBJECT}"
+msgstr "{node: OBJECT} 的处理模式"
+
+#: addons/block_code/blocks/communication/node_remove_meta.tres
+msgid "Remove metadata from a node."
+msgstr "从节点移除元数据。"
+
+#: addons/block_code/blocks/communication/node_remove_meta.tres
+msgid "remove metadata {key: STRING} from {node: OBJECT}"
+msgstr "从 {node: OBJECT} 移除元数据 {key: STRING}"
+
+#: addons/block_code/blocks/communication/node_scene_file_path.tres
+msgid "Get the scene file path of a node."
+msgstr "获取节点的场景文件路径。"
+
+#: addons/block_code/blocks/communication/node_scene_file_path.tres
+msgid "scene file path of {node: OBJECT}"
+msgstr "{node: OBJECT} 的场景文件路径"
+
+#: addons/block_code/blocks/communication/node_set_meta.tres
+msgid "Set metadata on a node."
+msgstr "设置节点的元数据。"
+
+#: addons/block_code/blocks/communication/node_set_meta.tres
+msgid "set metadata {key: STRING} of {node: OBJECT} to {value: STRING}"
+msgstr "将 {node: OBJECT} 的元数据 {key: STRING} 设为 {value: STRING}"
+
+#: addons/block_code/blocks/communication/object_has_method.tres
+msgid "True if an object has a method with the given name."
+msgstr "如果对象有指定名称的方法，则为 True。"
+
+#: addons/block_code/blocks/communication/object_has_method.tres
+msgid "{object: OBJECT} has method {method_name: STRING}"
+msgstr "{object: OBJECT} 有方法 {method_name: STRING}"
+
+#: addons/block_code/blocks/communication/object_has_signal.tres
+msgid "True if an object has a signal with the given name."
+msgstr "如果对象有指定名称的信号，则为 True。"
+
+#: addons/block_code/blocks/communication/object_has_signal.tres
+msgid "{object: OBJECT} has signal {signal_name: STRING}"
+msgstr "{object: OBJECT} 有信号 {signal_name: STRING}"
+
+#: addons/block_code/blocks/communication/object_is_queued_for_deletion.tres
+msgid "True if an object has been queued for deletion."
+msgstr "如果对象已排队等待删除，则为 True。"
+
+#: addons/block_code/blocks/communication/object_is_queued_for_deletion.tres
+msgid "{object: OBJECT} is queued for deletion"
+msgstr "{object: OBJECT} 已排队等待删除"
+
+#: addons/block_code/blocks/communication/request_ready.tres
+msgid "Request that a node runs ready again the next time it enters the tree."
+msgstr "请求节点下次进入场景树时再次运行 ready。"
+
+#: addons/block_code/blocks/communication/request_ready.tres
+msgid "request ready for {node: OBJECT}"
+msgstr "为 {node: OBJECT} 请求 ready"
+
+#: addons/block_code/blocks/communication/set_node_process_mode.tres
+msgid "Set a node's process mode by integer enum value."
+msgstr "通过整数枚举值设置节点的处理模式。"
+
+#: addons/block_code/blocks/communication/set_node_process_mode.tres
+msgid "set process mode of {node: OBJECT} to {mode: INT}"
+msgstr "将 {node: OBJECT} 的处理模式设为 {mode: INT}"
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_animation.tres
+msgid "Current AnimatedSprite2D animation name."
+msgstr "当前 AnimatedSprite2D 动画名称。"
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_animation.tres
+msgid "sprite animation name"
+msgstr "精灵动画名称"
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_frame.tres
+msgid "Current AnimatedSprite2D frame."
+msgstr "当前 AnimatedSprite2D 帧。"
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_frame.tres
+msgid "sprite animation frame"
+msgstr "精灵动画帧"
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_is_playing.tres
+msgid "Whether AnimatedSprite2D is playing."
+msgstr "AnimatedSprite2D 是否正在播放。"
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_is_playing.tres
+msgid "sprite animation is playing"
+msgstr "精灵动画正在播放"
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_pause.tres
+msgid "Pause an AnimatedSprite2D animation."
+msgstr "暂停 AnimatedSprite2D 动画。"
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_pause.tres
+msgid "pause sprite animation"
+msgstr "暂停精灵动画"
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_play.tres
+msgid "Play an AnimatedSprite2D animation."
+msgstr "播放 AnimatedSprite2D 动画。"
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_play.tres
+msgid "play sprite animation {animation_name: STRING_NAME}"
+msgstr "播放精灵动画 {animation_name: STRING_NAME}"
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_set_animation.tres
+msgid "Set the AnimatedSprite2D animation."
+msgstr "设置 AnimatedSprite2D 动画。"
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_set_animation.tres
+msgid "set sprite animation to {animation_name: STRING_NAME}"
+msgstr "将精灵动画设为 {animation_name: STRING_NAME}"
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_set_frame.tres
+msgid "Set the AnimatedSprite2D frame."
+msgstr "设置 AnimatedSprite2D 帧。"
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_set_frame.tres
+msgid "set sprite animation frame to {frame: INT}"
+msgstr "将精灵动画帧设为 {frame: INT}"
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_stop.tres
+msgid "Stop an AnimatedSprite2D animation."
+msgstr "停止 AnimatedSprite2D 动画。"
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_stop.tres
+msgid "stop sprite animation"
+msgstr "停止精灵动画"
+
+#: addons/block_code/blocks/graphics/animationplayer_current_animation.tres
+msgid "Current AnimationPlayer animation name."
+msgstr "当前 AnimationPlayer 动画名称。"
+
+#: addons/block_code/blocks/graphics/animationplayer_current_animation.tres
+msgid "current animation"
+msgstr "当前动画"
+
+#: addons/block_code/blocks/graphics/animationplayer_seek.tres
+msgid "Seek the current animation."
+msgstr "跳转当前动画。"
+
+#: addons/block_code/blocks/graphics/animationplayer_seek.tres
+msgid "seek animation to {seconds: FLOAT} seconds"
+msgstr "将动画跳转到 {seconds: FLOAT} 秒"
+
+#: addons/block_code/blocks/graphics/animationplayer_set_speed_scale.tres
+msgid "Set AnimationPlayer speed scale."
+msgstr "设置 AnimationPlayer 速度缩放。"
+
+#: addons/block_code/blocks/graphics/animationplayer_set_speed_scale.tres
+msgid "set animation speed scale to {scale: FLOAT}"
+msgstr "将动画速度缩放设为 {scale: FLOAT}"
+
+#: addons/block_code/blocks/graphics/animationplayer_speed_scale.tres
+msgid "AnimationPlayer speed scale."
+msgstr "AnimationPlayer 速度缩放。"
+
+#: addons/block_code/blocks/graphics/animationplayer_speed_scale.tres
+msgid "animation speed scale"
+msgstr "动画速度缩放"
+
+#: addons/block_code/blocks/graphics/move_node_to_front.tres
+msgid "Move a CanvasItem node in front of its siblings."
+msgstr "将 CanvasItem 节点移到同级节点前面。"
+
+#: addons/block_code/blocks/graphics/move_node_to_front.tres
+msgid "move {node: OBJECT} to front"
+msgstr "将 {node: OBJECT} 移到最前"
+
+#: addons/block_code/blocks/graphics/node_is_visible.tres
+msgid "True if a CanvasItem node is visible."
+msgstr "如果 CanvasItem 节点可见，则为 True。"
+
+#: addons/block_code/blocks/graphics/node_modulate.tres
+msgid "Get a CanvasItem node's modulate color."
+msgstr "获取 CanvasItem 节点的调制颜色。"
+
+#: addons/block_code/blocks/graphics/node_modulate.tres
+msgid "modulate of {node: OBJECT}"
+msgstr "{node: OBJECT} 的调制颜色"
+
+#: addons/block_code/blocks/graphics/node_self_modulate.tres
+msgid "Get a CanvasItem node's self modulate color."
+msgstr "获取 CanvasItem 节点的自身调制颜色。"
+
+#: addons/block_code/blocks/graphics/node_self_modulate.tres
+msgid "self modulate of {node: OBJECT}"
+msgstr "{node: OBJECT} 的自身调制颜色"
+
+#: addons/block_code/blocks/graphics/node_visible_in_tree.tres
+msgid "Whether a CanvasItem node is visible in the tree."
+msgstr "CanvasItem 节点在树中是否可见。"
+
+#: addons/block_code/blocks/graphics/node_visible_in_tree.tres
+msgid "{node: OBJECT} is visible in tree"
+msgstr "{node: OBJECT} 在树中可见"
+
+#: addons/block_code/blocks/graphics/node_z_index.tres
+msgid "Get the z index of a CanvasItem node."
+msgstr "获取 CanvasItem 节点的 z 索引。"
+
+#: addons/block_code/blocks/graphics/node_z_index.tres
+msgid "z index of {node: OBJECT}"
+msgstr "{node: OBJECT} 的 z 索引"
+
+#: addons/block_code/blocks/graphics/set_node_modulate.tres
+msgid "Set the modulate color of a CanvasItem node."
+msgstr "设置 CanvasItem 节点的调制颜色。"
+
+#: addons/block_code/blocks/graphics/set_node_self_modulate.tres
+msgid "Set a CanvasItem node's self modulate color."
+msgstr "设置 CanvasItem 节点的自身调制颜色。"
+
+#: addons/block_code/blocks/graphics/set_node_self_modulate.tres
+msgid "set {node: OBJECT} self modulate to {color: COLOR}"
+msgstr "将 {node: OBJECT} 的自身调制颜色设为 {color: COLOR}"
+
+#: addons/block_code/blocks/graphics/set_node_visible.tres
+msgid "Set whether a CanvasItem node is visible."
+msgstr "设置 CanvasItem 节点是否可见。"
+
+#: addons/block_code/blocks/graphics/set_node_z_index.tres
+msgid "Set the z index of a CanvasItem node."
+msgstr "设置 CanvasItem 节点的 z 索引。"
+
+#: addons/block_code/blocks/graphics/set_node_z_index.tres
+msgid "set {node: OBJECT} z index to {z_index: INT}"
+msgstr "将 {node: OBJECT} 的 z 索引设为 {z_index: INT}"
+
+#: addons/block_code/blocks/graphics/sprite2d_flip_h.tres
+#: addons/block_code/blocks/graphics/sprite2d_flip_v.tres
+#: addons/block_code/blocks/graphics/sprite2d_frame.tres
+#: addons/block_code/blocks/graphics/sprite2d_set_flip_h.tres
+#: addons/block_code/blocks/graphics/sprite2d_set_flip_v.tres
+#: addons/block_code/blocks/graphics/sprite2d_set_frame.tres
+#: addons/block_code/blocks/graphics/sprite2d_set_texture_from_file.tres
+msgid "Graphics | Sprite2D"
+msgstr "图形|Sprite2D"
+
+#: addons/block_code/blocks/graphics/sprite2d_flip_h.tres
+msgid "Whether this Sprite2D is flipped horizontally."
+msgstr "此 Sprite2D 是否水平翻转。"
+
+#: addons/block_code/blocks/graphics/sprite2d_flip_h.tres
+msgid "sprite flip h"
+msgstr "精灵水平翻转"
+
+#: addons/block_code/blocks/graphics/sprite2d_flip_v.tres
+msgid "Whether this Sprite2D is flipped vertically."
+msgstr "此 Sprite2D 是否垂直翻转。"
+
+#: addons/block_code/blocks/graphics/sprite2d_flip_v.tres
+msgid "sprite flip v"
+msgstr "精灵垂直翻转"
+
+#: addons/block_code/blocks/graphics/sprite2d_frame.tres
+msgid "Current Sprite2D frame."
+msgstr "当前 Sprite2D 帧。"
+
+#: addons/block_code/blocks/graphics/sprite2d_frame.tres
+msgid "sprite frame"
+msgstr "精灵帧"
+
+#: addons/block_code/blocks/graphics/sprite2d_set_flip_h.tres
+msgid "Set whether this Sprite2D is flipped horizontally."
+msgstr "设置此 Sprite2D 是否水平翻转。"
+
+#: addons/block_code/blocks/graphics/sprite2d_set_flip_h.tres
+msgid "set sprite flip h to {flipped: BOOL}"
+msgstr "将精灵水平翻转设为 {flipped: BOOL}"
+
+#: addons/block_code/blocks/graphics/sprite2d_set_flip_v.tres
+msgid "Set whether this Sprite2D is flipped vertically."
+msgstr "设置此 Sprite2D 是否垂直翻转。"
+
+#: addons/block_code/blocks/graphics/sprite2d_set_flip_v.tres
+msgid "set sprite flip v to {flipped: BOOL}"
+msgstr "将精灵垂直翻转设为 {flipped: BOOL}"
+
+#: addons/block_code/blocks/graphics/sprite2d_set_frame.tres
+msgid "Set the Sprite2D frame."
+msgstr "设置 Sprite2D 帧。"
+
+#: addons/block_code/blocks/graphics/sprite2d_set_frame.tres
+msgid "set sprite frame to {frame: INT}"
+msgstr "将精灵帧设为 {frame: INT}"
+
+#: addons/block_code/blocks/graphics/sprite2d_set_texture_from_file.tres
+msgid "Set Sprite2D texture from a resource path."
+msgstr "从资源路径设置 Sprite2D 纹理。"
+
+#: addons/block_code/blocks/graphics/sprite2d_set_texture_from_file.tres
+msgid "set sprite texture from file {file_path: STRING}"
+msgstr "从文件 {file_path: STRING} 设置精灵纹理"
+
+#: addons/block_code/blocks/graphics/viewport_size.tres
+msgid "The size of the viewport."
+msgstr "视口的大小。"
+
+#: addons/block_code/blocks/graphics/viewport_size.tres
+msgid "viewport size"
+msgstr "视口大小"
+
+#: addons/block_code/blocks/input/action_just_pressed.tres
+msgid "Whether an input action was just pressed this frame."
+msgstr "输入动作是否在这一帧刚刚按下。"
+
+#: addons/block_code/blocks/input/action_just_pressed.tres
+msgid "action {action_name: STRING_NAME} was just pressed"
+msgstr "动作 {action_name: STRING_NAME} 刚刚按下"
+
+#: addons/block_code/blocks/input/action_just_released.tres
+msgid "Whether an input action was just released this frame."
+msgstr "输入动作是否在这一帧刚刚释放。"
+
+#: addons/block_code/blocks/input/action_just_released.tres
+msgid "action {action_name: STRING_NAME} was just released"
+msgstr "动作 {action_name: STRING_NAME} 刚刚释放"
+
+#: addons/block_code/blocks/input/action_pressed.tres
+msgid "Whether an input action is currently pressed."
+msgstr "输入动作当前是否按下。"
+
+#: addons/block_code/blocks/input/action_pressed.tres
+msgid "action {action_name: STRING_NAME} is pressed"
+msgstr "动作 {action_name: STRING_NAME} 已按下"
+
+#: addons/block_code/blocks/input/action_raw_strength.tres
+msgid "Get the raw strength of an input action, before deadzone processing."
+msgstr "获取输入动作在死区处理前的原始强度。"
+
+#: addons/block_code/blocks/input/action_raw_strength.tres
+msgid "raw strength of action {action_name: STRING_NAME}"
+msgstr "动作 {action_name: STRING_NAME} 的原始强度"
+
+#: addons/block_code/blocks/input/anything_pressed.tres
+msgid "True if any input is currently pressed."
+msgstr "如果当前有任意输入被按下，则为 True。"
+
+#: addons/block_code/blocks/input/anything_pressed.tres
+msgid "any input is pressed"
+msgstr "任意输入已按下"
+
+#: addons/block_code/blocks/input/input_vector.tres
+msgid "Get a 2D input vector from four input actions."
+msgstr "从四个输入动作获取二维输入向量。"
+
+#: addons/block_code/blocks/input/input_vector.tres
+msgid "input vector left {left: STRING_NAME} right {right: STRING_NAME} up {up: STRING_NAME} down {down: STRING_NAME}"
+msgstr "输入向量 左 {left: STRING_NAME} 右 {right: STRING_NAME} 上 {up: STRING_NAME} 下 {down: STRING_NAME}"
+
+#: addons/block_code/blocks/input/joy_axis.tres
+msgid "Get a joystick axis value."
+msgstr "获取摇杆轴的值。"
+
+#: addons/block_code/blocks/input/joy_axis.tres
+msgid "joypad {device: INT} axis {axis: INT}"
+msgstr "手柄 {device: INT} 轴 {axis: INT}"
+
+#: addons/block_code/blocks/input/joy_button_pressed.tres
+msgid "Whether a joypad button is pressed."
+msgstr "手柄按钮是否按下。"
+
+#: addons/block_code/blocks/input/joy_button_pressed.tres
+msgid "joypad {device: INT} button {button: INT} is pressed"
+msgstr "手柄 {device: INT} 按钮 {button: INT} 已按下"
+
+#: addons/block_code/blocks/input/joy_name.tres
+msgid "Get the name of a connected joypad."
+msgstr "获取已连接手柄的名称。"
+
+#: addons/block_code/blocks/input/joy_name.tres
+msgid "name of joypad {device: INT}"
+msgstr "手柄 {device: INT} 的名称"
+
+#: addons/block_code/blocks/input/joypad_count.tres
+msgid "Number of connected joypads."
+msgstr "已连接手柄数量。"
+
+#: addons/block_code/blocks/input/joypad_count.tres
+msgid "connected joypad count"
+msgstr "已连接手柄数量"
+
+#: addons/block_code/blocks/input/key_pressed.tres
+msgid "True if the given keyboard key is currently pressed."
+msgstr "如果指定键盘按键当前按下，则为 True。"
+
+#: addons/block_code/blocks/input/key_pressed.tres
+msgid "key {key: STRING} is pressed"
+msgstr "按键 {key: STRING} 已按下"
+
+#: addons/block_code/blocks/input/mouse_mode.tres
+msgid "Current mouse mode as an integer."
+msgstr "当前鼠标模式的整数值。"
+
+#: addons/block_code/blocks/input/mouse_mode.tres
+msgid "mouse mode"
+msgstr "鼠标模式"
+
+#: addons/block_code/blocks/input/mouse_velocity.tres
+msgid "Get the last mouse movement velocity."
+msgstr "获取上一次鼠标移动速度。"
+
+#: addons/block_code/blocks/input/mouse_velocity.tres
+msgid "mouse velocity"
+msgstr "鼠标速度"
+
+#: addons/block_code/blocks/input/set_mouse_mode_captured.tres
+msgid "Capture the mouse cursor."
+msgstr "捕获鼠标光标。"
+
+#: addons/block_code/blocks/input/set_mouse_mode_captured.tres
+msgid "set mouse mode captured"
+msgstr "将鼠标模式设为捕获"
+
+#: addons/block_code/blocks/input/set_mouse_mode_hidden.tres
+msgid "Hide the mouse cursor."
+msgstr "隐藏鼠标光标。"
+
+#: addons/block_code/blocks/input/set_mouse_mode_hidden.tres
+msgid "set mouse mode hidden"
+msgstr "将鼠标模式设为隐藏"
+
+#: addons/block_code/blocks/input/set_mouse_mode_visible.tres
+msgid "Show and release the mouse cursor."
+msgstr "显示并释放鼠标光标。"
+
+#: addons/block_code/blocks/input/set_mouse_mode_visible.tres
+msgid "set mouse mode visible"
+msgstr "将鼠标模式设为可见"
+
+#: addons/block_code/blocks/input/start_joy_vibration.tres
+msgid "Start joypad vibration."
+msgstr "启动手柄振动。"
+
+#: addons/block_code/blocks/input/start_joy_vibration.tres
+msgid "vibrate joypad {device: INT} weak {weak: FLOAT} strong {strong: FLOAT} for {duration: FLOAT} seconds"
+msgstr "振动手柄 {device: INT} 弱 {weak: FLOAT} 强 {strong: FLOAT} 持续 {duration: FLOAT} 秒"
+
+#: addons/block_code/blocks/input/stop_joy_vibration.tres
+msgid "Stop joypad vibration."
+msgstr "停止手柄振动。"
+
+#: addons/block_code/blocks/input/stop_joy_vibration.tres
+msgid "stop vibration on joypad {device: INT}"
+msgstr "停止手柄 {device: INT} 的振动"
+
+#: addons/block_code/blocks/input/warp_mouse.tres
+msgid "Move the mouse cursor to a viewport position."
+msgstr "将鼠标光标移动到视口位置。"
+
+#: addons/block_code/blocks/input/warp_mouse.tres
+msgid "warp mouse to {position: VECTOR2}"
+msgstr "将鼠标移动到 {position: VECTOR2}"
+
+#: addons/block_code/blocks/lifecycle/date_string.tres
+#: addons/block_code/blocks/lifecycle/datetime_string.tres
+#: addons/block_code/blocks/lifecycle/engine_time_scale.tres
+#: addons/block_code/blocks/lifecycle/game_is_paused.tres
+#: addons/block_code/blocks/lifecycle/randomize.tres
+#: addons/block_code/blocks/lifecycle/seed_random.tres
+#: addons/block_code/blocks/lifecycle/set_engine_time_scale.tres
+#: addons/block_code/blocks/lifecycle/ticks_msec.tres
+#: addons/block_code/blocks/lifecycle/ticks_usec.tres
+#: addons/block_code/blocks/lifecycle/time_string.tres
+#: addons/block_code/blocks/lifecycle/unix_time.tres
+msgid "Lifecycle | Game"
+msgstr "生命周期|游戏"
+
+#: addons/block_code/blocks/lifecycle/date_string.tres
+msgid "Current date from the system clock."
+msgstr "系统时钟的当前日期。"
+
+#: addons/block_code/blocks/lifecycle/date_string.tres
+msgid "current date"
+msgstr "当前日期"
+
+#: addons/block_code/blocks/lifecycle/datetime_string.tres
+msgid "Current date and time from the system clock."
+msgstr "系统时钟的当前日期和时间。"
+
+#: addons/block_code/blocks/lifecycle/datetime_string.tres
+msgid "current date and time"
+msgstr "当前日期和时间"
+
+#: addons/block_code/blocks/lifecycle/engine_time_scale.tres
+msgid "Get the engine time scale."
+msgstr "获取引擎时间缩放。"
+
+#: addons/block_code/blocks/lifecycle/engine_time_scale.tres
+msgid "engine time scale"
+msgstr "引擎时间缩放"
+
+#: addons/block_code/blocks/lifecycle/frames_per_second.tres
+msgid "Current rendered frames per second."
+msgstr "当前渲染帧率。"
+
+#: addons/block_code/blocks/lifecycle/frames_per_second.tres
+msgid "frames per second"
+msgstr "每秒帧数"
+
+#: addons/block_code/blocks/lifecycle/game_is_paused.tres
+msgid "True if the scene tree is paused."
+msgstr "如果场景树已暂停，则为 True。"
+
+#: addons/block_code/blocks/lifecycle/game_is_paused.tres
+msgid "game is paused"
+msgstr "游戏已暂停"
+
+#: addons/block_code/blocks/lifecycle/max_fps.tres
+msgid "Maximum frames per second setting."
+msgstr "最大每秒帧数设置。"
+
+#: addons/block_code/blocks/lifecycle/max_fps.tres
+msgid "max fps"
+msgstr "最大 FPS"
+
+#: addons/block_code/blocks/lifecycle/physics_delta_time.tres
+msgid "The last physics process delta time."
+msgstr "上一次物理处理的 delta 时间。"
+
+#: addons/block_code/blocks/lifecycle/physics_delta_time.tres
+msgid "physics delta time"
+msgstr "物理 delta 时间"
+
+#: addons/block_code/blocks/lifecycle/physics_frames.tres
+msgid "Number of physics frames since startup."
+msgstr "启动以来的物理帧数。"
+
+#: addons/block_code/blocks/lifecycle/physics_frames.tres
+msgid "physics frame count"
+msgstr "物理帧计数"
+
+#: addons/block_code/blocks/lifecycle/process_delta_time.tres
+msgid "The last process delta time."
+msgstr "上一次处理的 delta 时间。"
+
+#: addons/block_code/blocks/lifecycle/process_delta_time.tres
+msgid "process delta time"
+msgstr "处理 delta 时间"
+
+#: addons/block_code/blocks/lifecycle/process_frames.tres
+msgid "Number of rendered process frames since startup."
+msgstr "启动以来的渲染处理帧数。"
+
+#: addons/block_code/blocks/lifecycle/process_frames.tres
+msgid "process frame count"
+msgstr "处理帧计数"
+
+#: addons/block_code/blocks/lifecycle/randomize.tres
+msgid "Randomize the random number generator seed."
+msgstr "随机化随机数生成器种子。"
+
+#: addons/block_code/blocks/lifecycle/randomize.tres
+msgid "randomize"
+msgstr "随机化"
+
+#: addons/block_code/blocks/lifecycle/seed_random.tres
+msgid "Set the random number generator seed."
+msgstr "设置随机数生成器种子。"
+
+#: addons/block_code/blocks/lifecycle/seed_random.tres
+msgid "set random seed to {seed: INT}"
+msgstr "将随机种子设为 {seed: INT}"
+
+#: addons/block_code/blocks/lifecycle/set_engine_time_scale.tres
+msgid "Set the engine time scale."
+msgstr "设置引擎时间缩放。"
+
+#: addons/block_code/blocks/lifecycle/set_engine_time_scale.tres
+msgid "set engine time scale to {time_scale: FLOAT}"
+msgstr "将引擎时间缩放设为 {time_scale: FLOAT}"
+
+#: addons/block_code/blocks/lifecycle/set_max_fps.tres
+msgid "Set maximum frames per second. Use 0 for unlimited."
+msgstr "设置最大每秒帧数。使用 0 表示不限制。"
+
+#: addons/block_code/blocks/lifecycle/set_max_fps.tres
+msgid "set max fps to {fps: INT}"
+msgstr "将最大 FPS 设为 {fps: INT}"
+
+#: addons/block_code/blocks/lifecycle/ticks_msec.tres
+msgid "Milliseconds since the engine started."
+msgstr "引擎启动以来的毫秒数。"
+
+#: addons/block_code/blocks/lifecycle/ticks_msec.tres
+msgid "milliseconds since start"
+msgstr "启动以来的毫秒数"
+
+#: addons/block_code/blocks/lifecycle/ticks_usec.tres
+msgid "Microseconds since the engine started."
+msgstr "引擎启动以来的微秒数。"
+
+#: addons/block_code/blocks/lifecycle/ticks_usec.tres
+msgid "microseconds since start"
+msgstr "启动以来的微秒数"
+
+#: addons/block_code/blocks/lifecycle/time_string.tres
+msgid "Current time from the system clock."
+msgstr "系统时钟的当前时间。"
+
+#: addons/block_code/blocks/lifecycle/time_string.tres
+msgid "current time"
+msgstr "当前时间"
+
+#: addons/block_code/blocks/lifecycle/unix_time.tres
+msgid "Current Unix time from the system clock."
+msgstr "系统时钟的当前 Unix 时间。"
+
+#: addons/block_code/blocks/lifecycle/unix_time.tres
+msgid "current unix time"
+msgstr "当前 Unix 时间"
+
+#: addons/block_code/blocks/log/print_rich.tres
+msgid "Print rich text to the output console."
+msgstr "将富文本打印到输出控制台。"
+
+#: addons/block_code/blocks/log/print_rich.tres
+msgid "print rich {message: STRING}"
+msgstr "打印富文本 {message: STRING}"
+
+#: addons/block_code/blocks/log/printerr.tres
+msgid "Print a message to standard error."
+msgstr "将消息打印到标准错误。"
+
+#: addons/block_code/blocks/log/printerr.tres
+msgid "print error {message: STRING}"
+msgstr "打印错误 {message: STRING}"
+
+#: addons/block_code/blocks/log/push_error.tres
+msgid "Show an error in the debugger."
+msgstr "在调试器中显示错误。"
+
+#: addons/block_code/blocks/log/push_error.tres
+msgid "push error {message: STRING}"
+msgstr "推送错误 {message: STRING}"
+
+#: addons/block_code/blocks/log/push_warning.tres
+msgid "Show a warning in the debugger."
+msgstr "在调试器中显示警告。"
+
+#: addons/block_code/blocks/log/push_warning.tres
+msgid "push warning {message: STRING}"
+msgstr "推送警告 {message: STRING}"
+
+#: addons/block_code/blocks/log/string_begins_with.tres
+msgid "True if a string starts with another string."
+msgstr "如果字符串以另一个字符串开头，则为 True。"
+
+#: addons/block_code/blocks/log/string_begins_with.tres
+msgid "{text: STRING} begins with {prefix: STRING}"
+msgstr "{text: STRING} 以 {prefix: STRING} 开头"
+
+#: addons/block_code/blocks/log/string_capitalize.tres
+msgid "Capitalize a string."
+msgstr "将字符串转为首字母大写。"
+
+#: addons/block_code/blocks/log/string_capitalize.tres
+msgid "capitalize {text: STRING}"
+msgstr "将 {text: STRING} 首字母大写"
+
+#: addons/block_code/blocks/log/string_contains.tres
+msgid "True if a string contains another string."
+msgstr "如果字符串包含另一个字符串，则为 True。"
+
+#: addons/block_code/blocks/log/string_contains.tres
+msgid "{text: STRING} contains {piece: STRING}"
+msgstr "{text: STRING} 包含 {piece: STRING}"
+
+#: addons/block_code/blocks/log/string_count.tres
+msgid "Count occurrences of a substring."
+msgstr "计算子字符串出现次数。"
+
+#: addons/block_code/blocks/log/string_count.tres
+msgid "count {piece: STRING} in {text: STRING}"
+msgstr "统计 {piece: STRING} 在 {text: STRING} 中的次数"
+
+#: addons/block_code/blocks/log/string_ends_with.tres
+msgid "True if a string ends with another string."
+msgstr "如果字符串以另一个字符串结尾，则为 True。"
+
+#: addons/block_code/blocks/log/string_ends_with.tres
+msgid "{text: STRING} ends with {suffix: STRING}"
+msgstr "{text: STRING} 以 {suffix: STRING} 结尾"
+
+#: addons/block_code/blocks/log/string_erase.tres
+msgid "Erase characters from a string."
+msgstr "从字符串中删除字符。"
+
+#: addons/block_code/blocks/log/string_erase.tres
+msgid "erase {length: INT} characters from {text: STRING} at {position: INT}"
+msgstr "从 {text: STRING} 的 {position: INT} 处删除 {length: INT} 个字符"
+
+#: addons/block_code/blocks/log/string_find.tres
+msgid "Find the first index of text inside a string."
+msgstr "查找文本在字符串中的第一个索引。"
+
+#: addons/block_code/blocks/log/string_find.tres
+msgid "index of {piece: STRING} in {text: STRING}"
+msgstr "{piece: STRING} 在 {text: STRING} 中的索引"
+
+#: addons/block_code/blocks/log/string_insert.tres
+msgid "Insert text at an index."
+msgstr "在指定索引插入文本。"
+
+#: addons/block_code/blocks/log/string_insert.tres
+msgid "insert {piece: STRING} into {text: STRING} at {position: INT}"
+msgstr "在 {text: STRING} 的 {position: INT} 处插入 {piece: STRING}"
+
+#: addons/block_code/blocks/log/string_is_empty.tres
+msgid "True if a string is empty."
+msgstr "如果字符串为空，则为 True。"
+
+#: addons/block_code/blocks/log/string_is_empty.tres
+msgid "{text: STRING} is empty"
+msgstr "{text: STRING} 为空"
+
+#: addons/block_code/blocks/log/string_is_valid_float.tres
+msgid "Whether a string can be parsed as a float."
+msgstr "字符串是否可解析为浮点数。"
+
+#: addons/block_code/blocks/log/string_is_valid_float.tres
+msgid "{text: STRING} is valid float"
+msgstr "{text: STRING} 是有效浮点数"
+
+#: addons/block_code/blocks/log/string_is_valid_identifier.tres
+msgid "Whether a string is a valid identifier."
+msgstr "字符串是否是有效标识符。"
+
+#: addons/block_code/blocks/log/string_is_valid_identifier.tres
+msgid "{text: STRING} is valid identifier"
+msgstr "{text: STRING} 是有效标识符"
+
+#: addons/block_code/blocks/log/string_is_valid_int.tres
+msgid "Whether a string can be parsed as an integer."
+msgstr "字符串是否可解析为整数。"
+
+#: addons/block_code/blocks/log/string_is_valid_int.tres
+msgid "{text: STRING} is valid integer"
+msgstr "{text: STRING} 是有效整数"
+
+#: addons/block_code/blocks/log/string_left.tres
+msgid "Left part of a string."
+msgstr "字符串的左侧部分。"
+
+#: addons/block_code/blocks/log/string_left.tres
+msgid "left {length: INT} characters of {text: STRING}"
+msgstr "{text: STRING} 的左侧 {length: INT} 个字符"
+
+#: addons/block_code/blocks/log/string_length.tres
+msgid "Get the number of characters in a string."
+msgstr "获取字符串中的字符数。"
+
+#: addons/block_code/blocks/log/string_length.tres
+msgid "length of {text: STRING}"
+msgstr "{text: STRING} 的长度"
+
+#: addons/block_code/blocks/log/string_md5.tres
+msgid "MD5 hash of a string."
+msgstr "字符串的 MD5 哈希。"
+
+#: addons/block_code/blocks/log/string_md5.tres
+msgid "MD5 of {text: STRING}"
+msgstr "{text: STRING} 的 MD5"
+
+#: addons/block_code/blocks/log/string_repeat.tres
+msgid "Repeat a string multiple times."
+msgstr "重复字符串多次。"
+
+#: addons/block_code/blocks/log/string_repeat.tres
+msgid "repeat {text: STRING} {count: INT} times"
+msgstr "重复 {text: STRING} {count: INT} 次"
+
+#: addons/block_code/blocks/log/string_replace.tres
+msgid "Replace all occurrences of one string with another."
+msgstr "将一个字符串的所有出现替换为另一个字符串。"
+
+#: addons/block_code/blocks/log/string_replace.tres
+msgid "replace {from: STRING} with {to: STRING} in {text: STRING}"
+msgstr "将 {text: STRING} 中的 {from: STRING} 替换为 {to: STRING}"
+
+#: addons/block_code/blocks/log/string_right.tres
+msgid "Right part of a string."
+msgstr "字符串的右侧部分。"
+
+#: addons/block_code/blocks/log/string_right.tres
+msgid "right {length: INT} characters of {text: STRING}"
+msgstr "{text: STRING} 的右侧 {length: INT} 个字符"
+
+#: addons/block_code/blocks/log/string_sha256.tres
+msgid "SHA-256 hash of a string."
+msgstr "字符串的 SHA-256 哈希。"
+
+#: addons/block_code/blocks/log/string_sha256.tres
+msgid "SHA256 of {text: STRING}"
+msgstr "{text: STRING} 的 SHA256"
+
+#: addons/block_code/blocks/log/string_strip_edges.tres
+msgid "Remove whitespace from the start and end of a string."
+msgstr "移除字符串开头和结尾的空白。"
+
+#: addons/block_code/blocks/log/string_strip_edges.tres
+msgid "{text: STRING} without edge spaces"
+msgstr "{text: STRING} 去除首尾空格"
+
+#: addons/block_code/blocks/log/string_substr.tres
+msgid "Get part of a string."
+msgstr "获取字符串的一部分。"
+
+#: addons/block_code/blocks/log/string_substr.tres
+msgid "substring of {text: STRING} from {from: INT} length {length: INT}"
+msgstr "{text: STRING} 从 {from: INT} 开始长度 {length: INT} 的子串"
+
+#: addons/block_code/blocks/log/string_to_lower.tres
+msgid "Convert a string to lowercase."
+msgstr "将字符串转换为小写。"
+
+#: addons/block_code/blocks/log/string_to_lower.tres
+msgid "{text: STRING} to lowercase"
+msgstr "{text: STRING} 转为小写"
+
+#: addons/block_code/blocks/log/string_to_upper.tres
+msgid "Convert a string to uppercase."
+msgstr "将字符串转换为大写。"
+
+#: addons/block_code/blocks/log/string_to_upper.tres
+msgid "{text: STRING} to uppercase"
+msgstr "{text: STRING} 转为大写"
+
+#: addons/block_code/blocks/log/string_uri_decode.tres
+msgid "URI decode a string."
+msgstr "对字符串进行 URI 解码。"
+
+#: addons/block_code/blocks/log/string_uri_decode.tres
+msgid "URI decode {text: STRING}"
+msgstr "URI 解码 {text: STRING}"
+
+#: addons/block_code/blocks/log/string_uri_encode.tres
+msgid "URI encode a string."
+msgstr "对字符串进行 URI 编码。"
+
+#: addons/block_code/blocks/log/string_uri_encode.tres
+msgid "URI encode {text: STRING}"
+msgstr "URI 编码 {text: STRING}"
+
+#: addons/block_code/blocks/log/to_string.tres
+msgid "Converts [i]parameter[/i] to a [b]String[/b]"
+msgstr "将[i]参数[/i]转换为[b]String[/b]"
+
+#: addons/block_code/blocks/log/to_string.tres
+msgid "{parameter: NIL} to string"
+msgstr "{parameter: NIL} 转为字符串"
+
+#: addons/block_code/blocks/logic/assert_condition.tres
+msgid "Stop with an error in debug builds if the condition is false."
+msgstr "如果条件为 false，则在调试构建中报错并停止。"
+
+#: addons/block_code/blocks/logic/assert_condition.tres
+msgid "assert {condition: BOOL}"
+msgstr "断言 {condition: BOOL}"
+
+#: addons/block_code/blocks/logic/false_value.tres
+msgid "The boolean value false."
+msgstr "布尔值 false。"
+
+#: addons/block_code/blocks/logic/false_value.tres
+msgid "false"
+msgstr "false"
+
+#: addons/block_code/blocks/logic/number_between.tres
+msgid "True if a number is between the minimum and maximum values, inclusive."
+msgstr "如果数字在最小值和最大值之间（含边界），则为 True。"
+
+#: addons/block_code/blocks/logic/number_between.tres
+msgid "{value: FLOAT} is between {min: FLOAT} and {max: FLOAT}"
+msgstr "{value: FLOAT} 在 {min: FLOAT} 和 {max: FLOAT} 之间"
+
+#: addons/block_code/blocks/logic/number_not_between.tres
+msgid "Whether a number is outside a range."
+msgstr "数字是否在范围之外。"
+
+#: addons/block_code/blocks/logic/number_not_between.tres
+msgid "{value: FLOAT} is not between {min: FLOAT} and {max: FLOAT}"
+msgstr "{value: FLOAT} 不在 {min: FLOAT} 和 {max: FLOAT} 之间"
+
+#: addons/block_code/blocks/logic/object_is_valid.tres
+msgid "True if an object reference still points to a valid object."
+msgstr "如果对象引用仍指向有效对象，则为 True。"
+
+#: addons/block_code/blocks/logic/object_is_valid.tres
+msgid "{object: OBJECT} is valid"
+msgstr "{object: OBJECT} 有效"
+
+#: addons/block_code/blocks/logic/objects_same.tres
+msgid "True if two objects are the same instance."
+msgstr "如果两个对象是同一个实例，则为 True。"
+
+#: addons/block_code/blocks/logic/objects_same.tres
+msgid "{a: OBJECT} is same as {b: OBJECT}"
+msgstr "{a: OBJECT} 与 {b: OBJECT} 相同"
+
+#: addons/block_code/blocks/logic/string_equals.tres
+msgid "True if two strings are equal."
+msgstr "如果两个字符串相等，则为 True。"
+
+#: addons/block_code/blocks/logic/string_equals.tres
+msgid "{a: STRING} equals {b: STRING}"
+msgstr "{a: STRING} 等于 {b: STRING}"
+
+#: addons/block_code/blocks/logic/string_not_equals.tres
+msgid "Whether two strings are different."
+msgstr "两个字符串是否不同。"
+
+#: addons/block_code/blocks/logic/string_not_equals.tres
+msgid "{a: STRING} does not equal {b: STRING}"
+msgstr "{a: STRING} 不等于 {b: STRING}"
+
+#: addons/block_code/blocks/logic/true_value.tres
+msgid "The boolean value true."
+msgstr "布尔值 true。"
+
+#: addons/block_code/blocks/logic/true_value.tres
+msgid "true"
+msgstr "true"
+
+#: addons/block_code/blocks/logic/xor.tres
+msgid "Exclusive OR."
+msgstr "异或。"
+
+#: addons/block_code/blocks/logic/xor.tres
+msgid "{a: BOOL} xor {b: BOOL}"
+msgstr "{a: BOOL} 异或 {b: BOOL}"
+
+#: addons/block_code/blocks/math/abs.tres
+msgid "Get the absolute value of a number."
+msgstr "获取数字的绝对值。"
+
+#: addons/block_code/blocks/math/acos_degrees.tres
+msgid "Arccosine in degrees."
+msgstr "反余弦值（角度）。"
+
+#: addons/block_code/blocks/math/acos_degrees.tres
+msgid "acos degrees of {value: FLOAT}"
+msgstr "{value: FLOAT} 的 acos 角度"
+
+#: addons/block_code/blocks/math/asin_degrees.tres
+msgid "Arcsine in degrees."
+msgstr "反正弦值（角度）。"
+
+#: addons/block_code/blocks/math/asin_degrees.tres
+msgid "asin degrees of {value: FLOAT}"
+msgstr "{value: FLOAT} 的 asin 角度"
+
+#: addons/block_code/blocks/math/atan2_degrees.tres
+msgid "Angle from y and x in degrees."
+msgstr "由 y 和 x 得到的角度。"
+
+#: addons/block_code/blocks/math/atan2_degrees.tres
+msgid "angle degrees from y {y: FLOAT} and x {x: FLOAT}"
+msgstr "由 y {y: FLOAT} 和 x {x: FLOAT} 得到的角度"
+
+#: addons/block_code/blocks/math/atan_degrees.tres
+msgid "Arctangent in degrees."
+msgstr "反正切值（角度）。"
+
+#: addons/block_code/blocks/math/atan_degrees.tres
+msgid "atan degrees of {value: FLOAT}"
+msgstr "{value: FLOAT} 的 atan 角度"
+
+#: addons/block_code/blocks/math/ceil.tres
+msgid "Round a number up."
+msgstr "将数字向上取整。"
+
+#: addons/block_code/blocks/math/ceil_to_int.tres
+msgid "Ceil a number and return an integer."
+msgstr "向上取整一个数并返回整数。"
+
+#: addons/block_code/blocks/math/ceil_to_int.tres
+msgid "ceil {value: FLOAT} to integer"
+msgstr "将 {value: FLOAT} 向上取整为整数"
+
+#: addons/block_code/blocks/math/clamp.tres
+msgid "Clamp a number between a minimum and maximum."
+msgstr "将数字限制在最小值和最大值之间。"
+
+#: addons/block_code/blocks/math/clamp_int.tres
+msgid "Clamp an integer between a minimum and maximum."
+msgstr "将整数限制在最小值和最大值之间。"
+
+#: addons/block_code/blocks/math/clamp_int.tres
+msgid "clamp integer {value: INT} between {min: INT} and {max: INT}"
+msgstr "将整数 {value: INT} 限制在 {min: INT} 和 {max: INT} 之间"
+
+#: addons/block_code/blocks/math/color_alpha.tres
+msgid "Alpha component of a Color."
+msgstr "Color 的 Alpha 分量。"
+
+#: addons/block_code/blocks/math/color_alpha.tres
+msgid "alpha of {color: COLOR}"
+msgstr "{color: COLOR} 的 Alpha"
+
+#: addons/block_code/blocks/math/color_blue.tres
+msgid "Blue component of a Color."
+msgstr "Color 的蓝色分量。"
+
+#: addons/block_code/blocks/math/color_blue.tres
+msgid "blue of {color: COLOR}"
+msgstr "{color: COLOR} 的蓝色"
+
+#: addons/block_code/blocks/math/color_darkened.tres
+msgid "Get a darker version of a color."
+msgstr "获取颜色的更暗版本。"
+
+#: addons/block_code/blocks/math/color_darkened.tres
+msgid "{color: COLOR} darkened by {amount: FLOAT}"
+msgstr "{color: COLOR} 加深 {amount: FLOAT}"
+
+#: addons/block_code/blocks/math/color_from_hsv.tres
+msgid "Create a color from HSV and alpha values."
+msgstr "从 HSV 和 Alpha 值创建颜色。"
+
+#: addons/block_code/blocks/math/color_from_hsv.tres
+msgid "color hue {hue: FLOAT} saturation {saturation: FLOAT} value {value: FLOAT} alpha {alpha: FLOAT}"
+msgstr "颜色 色相 {hue: FLOAT} 饱和度 {saturation: FLOAT} 明度 {value: FLOAT} Alpha {alpha: FLOAT}"
+
+#: addons/block_code/blocks/math/color_green.tres
+msgid "Green component of a Color."
+msgstr "Color 的绿色分量。"
+
+#: addons/block_code/blocks/math/color_green.tres
+msgid "green of {color: COLOR}"
+msgstr "{color: COLOR} 的绿色"
+
+#: addons/block_code/blocks/math/color_lerp.tres
+msgid "Interpolate between two colors."
+msgstr "在两种颜色之间插值。"
+
+#: addons/block_code/blocks/math/color_lerp.tres
+msgid "lerp color from {from: COLOR} to {to: COLOR} by {weight: FLOAT}"
+msgstr "颜色从 {from: COLOR} 到 {to: COLOR} 按 {weight: FLOAT} 插值"
+
+#: addons/block_code/blocks/math/color_lightened.tres
+msgid "Get a lighter version of a color."
+msgstr "获取颜色的更亮版本。"
+
+#: addons/block_code/blocks/math/color_lightened.tres
+msgid "{color: COLOR} lightened by {amount: FLOAT}"
+msgstr "{color: COLOR} 变亮 {amount: FLOAT}"
+
+#: addons/block_code/blocks/math/color_red.tres
+msgid "Red component of a Color."
+msgstr "Color 的红色分量。"
+
+#: addons/block_code/blocks/math/color_red.tres
+msgid "red of {color: COLOR}"
+msgstr "{color: COLOR} 的红色"
+
+#: addons/block_code/blocks/math/color_rgb.tres
+msgid "Create a color from red, green, and blue values from 0 to 1."
+msgstr "从 0 到 1 的红、绿、蓝值创建颜色。"
+
+#: addons/block_code/blocks/math/color_rgb.tres
+msgid "color red {red: FLOAT} green {green: FLOAT} blue {blue: FLOAT}"
+msgstr "颜色 红 {red: FLOAT} 绿 {green: FLOAT} 蓝 {blue: FLOAT}"
+
+#: addons/block_code/blocks/math/color_rgba.tres
+msgid "Create a color from red, green, blue, and alpha values from 0 to 1."
+msgstr "从 0 到 1 的红、绿、蓝和 Alpha 值创建颜色。"
+
+#: addons/block_code/blocks/math/color_rgba.tres
+msgid "color red {red: FLOAT} green {green: FLOAT} blue {blue: FLOAT} alpha {alpha: FLOAT}"
+msgstr "颜色 红 {red: FLOAT} 绿 {green: FLOAT} 蓝 {blue: FLOAT} Alpha {alpha: FLOAT}"
+
+#: addons/block_code/blocks/math/color_with_alpha.tres
+msgid "Copy a Color with a new alpha value."
+msgstr "复制 Color 并使用新的 Alpha 值。"
+
+#: addons/block_code/blocks/math/color_with_alpha.tres
+msgid "{color: COLOR} with alpha {alpha: FLOAT}"
+msgstr "{color: COLOR} 使用 Alpha {alpha: FLOAT}"
+
+#: addons/block_code/blocks/math/deg_to_rad.tres
+msgid "Convert degrees to radians."
+msgstr "将角度转换为弧度。"
+
+#: addons/block_code/blocks/math/deg_to_rad.tres
+msgid "{degrees: FLOAT} degrees to radians"
+msgstr "{degrees: FLOAT} 度转弧度"
+
+#: addons/block_code/blocks/math/floor.tres
+msgid "Round a number down."
+msgstr "将数字向下取整。"
+
+#: addons/block_code/blocks/math/floor_to_int.tres
+msgid "Floor a number and return an integer."
+msgstr "向下取整一个数并返回整数。"
+
+#: addons/block_code/blocks/math/floor_to_int.tres
+msgid "floor {value: FLOAT} to integer"
+msgstr "将 {value: FLOAT} 向下取整为整数"
+
+#: addons/block_code/blocks/math/fposmod.tres
+msgid "Floating point positive modulo."
+msgstr "浮点正模。"
+
+#: addons/block_code/blocks/math/fposmod.tres
+msgid "positive modulo {x: FLOAT} by {y: FLOAT}"
+msgstr "{x: FLOAT} 对 {y: FLOAT} 取正模"
+
+#: addons/block_code/blocks/math/int_modulo.tres
+msgid "Get the integer remainder after division."
+msgstr "获取整数除法后的余数。"
+
+#: addons/block_code/blocks/math/int_modulo.tres
+msgid "{a: INT} modulo {b: INT}"
+msgstr "{a: INT} 对 {b: INT} 取模"
+
+#: addons/block_code/blocks/math/inverse_lerp.tres
+msgid "Get how far a value is between two numbers, from 0 to 1."
+msgstr "获取一个值在两个数字之间的位置，范围为 0 到 1。"
+
+#: addons/block_code/blocks/math/inverse_lerp.tres
+msgid "inverse lerp from {from: FLOAT} to {to: FLOAT} at {value: FLOAT}"
+msgstr "从 {from: FLOAT} 到 {to: FLOAT} 在 {value: FLOAT} 处的反向插值"
+
+#: addons/block_code/blocks/math/is_equal_approx.tres
+msgid "True if two floating point numbers are approximately equal."
+msgstr "如果两个浮点数近似相等，则为 True。"
+
+#: addons/block_code/blocks/math/is_equal_approx.tres
+msgid "{a: FLOAT} is approximately {b: FLOAT}"
+msgstr "{a: FLOAT} 近似等于 {b: FLOAT}"
+
+#: addons/block_code/blocks/math/is_zero_approx.tres
+msgid "True if a floating point number is approximately zero."
+msgstr "如果浮点数近似为零，则为 True。"
+
+#: addons/block_code/blocks/math/is_zero_approx.tres
+msgid "{value: FLOAT} is approximately zero"
+msgstr "{value: FLOAT} 近似为零"
+
+#: addons/block_code/blocks/math/lerp.tres
+msgid "Linearly interpolate between two numbers."
+msgstr "在两个数字之间线性插值。"
+
+#: addons/block_code/blocks/math/max.tres
+msgid "Get the larger of two numbers."
+msgstr "获取两个数字中较大的一个。"
+
+#: addons/block_code/blocks/math/min.tres
+msgid "Get the smaller of two numbers."
+msgstr "获取两个数字中较小的一个。"
+
+#: addons/block_code/blocks/math/modulo.tres
+msgid "Get the floating point remainder after division."
+msgstr "获取浮点除法后的余数。"
+
+#: addons/block_code/blocks/math/modulo.tres
+msgid "{a: FLOAT} modulo {b: FLOAT}"
+msgstr "{a: FLOAT} 对 {b: FLOAT} 取模"
+
+#: addons/block_code/blocks/math/move_toward.tres
+msgid "Move a number toward another number by a fixed amount."
+msgstr "将数字按固定量移向另一个数字。"
+
+#: addons/block_code/blocks/math/nearest_power_of_2.tres
+msgid "Nearest power of two greater than or equal to an integer."
+msgstr "大于或等于整数的最近 2 的幂。"
+
+#: addons/block_code/blocks/math/nearest_power_of_2.tres
+msgid "nearest power of 2 for {value: INT}"
+msgstr "{value: INT} 的最近 2 的幂"
+
+#: addons/block_code/blocks/math/pingpong.tres
+msgid "Wrap a value back and forth between 0 and the given length."
+msgstr "让值在 0 和给定长度之间来回循环。"
+
+#: addons/block_code/blocks/math/pingpong.tres
+msgid "ping-pong {value: FLOAT} with length {length: FLOAT}"
+msgstr "{value: FLOAT} 按长度 {length: FLOAT} 往返循环"
+
+#: addons/block_code/blocks/math/posmod.tres
+msgid "Integer positive modulo."
+msgstr "整数正模。"
+
+#: addons/block_code/blocks/math/posmod.tres
+msgid "positive integer modulo {x: INT} by {y: INT}"
+msgstr "{x: INT} 对 {y: INT} 取正整数模"
+
+#: addons/block_code/blocks/math/rad_to_deg.tres
+msgid "Convert radians to degrees."
+msgstr "将弧度转换为角度。"
+
+#: addons/block_code/blocks/math/rad_to_deg.tres
+msgid "{radians: FLOAT} radians to degrees"
+msgstr "{radians: FLOAT} 弧度转度"
+
+#: addons/block_code/blocks/math/randf.tres
+msgid "Generate a random floating point number from 0 to 1."
+msgstr "生成 0 到 1 的随机浮点数。"
+
+#: addons/block_code/blocks/math/randf.tres
+msgid "random floating point number from 0 to 1"
+msgstr "0 到 1 的随机浮点数"
+
+#: addons/block_code/blocks/math/random_bool_chance.tres
+msgid "Return true randomly using a chance from 0 to 1."
+msgstr "使用 0 到 1 的概率随机返回 true。"
+
+#: addons/block_code/blocks/math/random_bool_chance.tres
+msgid "random chance {chance: FLOAT}"
+msgstr "随机概率 {chance: FLOAT}"
+
+#: addons/block_code/blocks/math/remap.tres
+msgid "Map a value from one range to another."
+msgstr "将值从一个范围映射到另一个范围。"
+
+#: addons/block_code/blocks/math/remap.tres
+msgid "remap {value: FLOAT} from {istart: FLOAT}-{istop: FLOAT} to {ostart: FLOAT}-{ostop: FLOAT}"
+msgstr "将 {value: FLOAT} 从 {istart: FLOAT}-{istop: FLOAT} 重映射到 {ostart: FLOAT}-{ostop: FLOAT}"
+
+#: addons/block_code/blocks/math/round.tres
+msgid "Round a number to the nearest whole number."
+msgstr "将数字四舍五入到最接近的整数。"
+
+#: addons/block_code/blocks/math/round_to_int.tres
+msgid "Round a number and return an integer."
+msgstr "四舍五入一个数并返回整数。"
+
+#: addons/block_code/blocks/math/round_to_int.tres
+msgid "round {value: FLOAT} to integer"
+msgstr "将 {value: FLOAT} 四舍五入为整数"
+
+#: addons/block_code/blocks/math/sign.tres
+msgid "Return -1, 0, or 1 depending on the sign of the number."
+msgstr "根据数字的符号返回 -1、0 或 1。"
+
+#: addons/block_code/blocks/math/sign.tres
+msgid "sign of {number: FLOAT}"
+msgstr "{number: FLOAT} 的符号"
+
+#: addons/block_code/blocks/math/snapped.tres
+msgid "Snap a number to the nearest multiple of a step."
+msgstr "将数字吸附到最接近的步长倍数。"
+
+#: addons/block_code/blocks/math/snapped.tres
+msgid "snap {value: FLOAT} to step {step: FLOAT}"
+msgstr "将 {value: FLOAT} 吸附到步长 {step: FLOAT}"
+
+#: addons/block_code/blocks/math/sqrt.tres
+msgid "Get the square root of a number."
+msgstr "获取数字的平方根。"
+
+#: addons/block_code/blocks/math/sqrt.tres
+msgid "square root of {number: FLOAT}"
+msgstr "{number: FLOAT} 的平方根"
+
+#: addons/block_code/blocks/math/vector2_add.tres
+msgid "Add two Vector2 values."
+msgstr "将两个 Vector2 值相加。"
+
+#: addons/block_code/blocks/math/vector2_add.tres
+msgid "{a: VECTOR2} + {b: VECTOR2}"
+msgstr "{a: VECTOR2} + {b: VECTOR2}"
+
+#: addons/block_code/blocks/math/vector2_angle.tres
+msgid "Get the angle of a Vector2 in radians."
+msgstr "获取 Vector2 的角度（弧度）。"
+
+#: addons/block_code/blocks/math/vector2_angle_to.tres
+msgid "Angle from one Vector2 to another."
+msgstr "从一个 Vector2 到另一个 Vector2 的角度。"
+
+#: addons/block_code/blocks/math/vector2_angle_to.tres
+msgid "angle from {from: VECTOR2} to {to: VECTOR2}"
+msgstr "从 {from: VECTOR2} 到 {to: VECTOR2} 的角度"
+
+#: addons/block_code/blocks/math/vector2_angle_to_point.tres
+msgid "Angle from a Vector2 position to a target point."
+msgstr "从 Vector2 位置到目标点的角度。"
+
+#: addons/block_code/blocks/math/vector2_angle_to_point.tres
+msgid "angle from point {from: VECTOR2} to point {to: VECTOR2}"
+msgstr "从点 {from: VECTOR2} 到点 {to: VECTOR2} 的角度"
+
+#: addons/block_code/blocks/math/vector2_bounce.tres
+msgid "Bounce a vector from a normal."
+msgstr "让向量从法线反弹。"
+
+#: addons/block_code/blocks/math/vector2_bounce.tres
+msgid "bounce {vector: VECTOR2} from normal {normal: VECTOR2}"
+msgstr "{vector: VECTOR2} 从法线 {normal: VECTOR2} 反弹"
+
+#: addons/block_code/blocks/math/vector2_direction_to.tres
+msgid "Get the direction from one Vector2 to another."
+msgstr "获取从一个 Vector2 到另一个 Vector2 的方向。"
+
+#: addons/block_code/blocks/math/vector2_distance_to.tres
+msgid "Get the distance between two Vector2 values."
+msgstr "获取两个 Vector2 值之间的距离。"
+
+#: addons/block_code/blocks/math/vector2_dot.tres
+msgid "Calculate the dot product of two Vector2 values."
+msgstr "计算两个 Vector2 值的点积。"
+
+#: addons/block_code/blocks/math/vector2_dot.tres
+msgid "dot product of {a: VECTOR2} and {b: VECTOR2}"
+msgstr "{a: VECTOR2} 与 {b: VECTOR2} 的点积"
+
+#: addons/block_code/blocks/math/vector2_length.tres
+msgid "Get the length of a Vector2."
+msgstr "获取 Vector2 的长度。"
+
+#: addons/block_code/blocks/math/vector2_lerp.tres
+msgid "Interpolate between two Vector2 values."
+msgstr "在两个 Vector2 值之间插值。"
+
+#: addons/block_code/blocks/math/vector2_lerp.tres
+msgid "lerp vector from {from: VECTOR2} to {to: VECTOR2} by {weight: FLOAT}"
+msgstr "向量从 {from: VECTOR2} 到 {to: VECTOR2} 按 {weight: FLOAT} 插值"
+
+#: addons/block_code/blocks/math/vector2_limit_length.tres
+msgid "Limit a Vector2 to a maximum length."
+msgstr "将 Vector2 限制为最大长度。"
+
+#: addons/block_code/blocks/math/vector2_limit_length.tres
+msgid "limit {vector: VECTOR2} length to {length: FLOAT}"
+msgstr "将 {vector: VECTOR2} 的长度限制为 {length: FLOAT}"
+
+#: addons/block_code/blocks/math/vector2_move_toward.tres
+msgid "Move a Vector2 toward another Vector2 by a maximum distance."
+msgstr "将 Vector2 以最大距离移向另一个 Vector2。"
+
+#: addons/block_code/blocks/math/vector2_move_toward.tres
+msgid "move {from: VECTOR2} toward {to: VECTOR2} by {delta: FLOAT}"
+msgstr "将 {from: VECTOR2} 向 {to: VECTOR2} 移动 {delta: FLOAT}"
+
+#: addons/block_code/blocks/math/vector2_normalized.tres
+msgid "Get a Vector2 with the same direction and length 1."
+msgstr "获取方向相同且长度为 1 的 Vector2。"
+
+#: addons/block_code/blocks/math/vector2_perpendicular.tres
+msgid "A perpendicular vector."
+msgstr "垂直向量。"
+
+#: addons/block_code/blocks/math/vector2_perpendicular.tres
+msgid "perpendicular of {vector: VECTOR2}"
+msgstr "{vector: VECTOR2} 的垂直向量"
+
+#: addons/block_code/blocks/math/vector2_project.tres
+msgid "Project a vector onto another vector."
+msgstr "将向量投影到另一个向量上。"
+
+#: addons/block_code/blocks/math/vector2_project.tres
+msgid "project {vector: VECTOR2} onto {onto: VECTOR2}"
+msgstr "将 {vector: VECTOR2} 投影到 {onto: VECTOR2}"
+
+#: addons/block_code/blocks/math/vector2_reflect.tres
+msgid "Reflect a vector around a line."
+msgstr "让向量沿直线反射。"
+
+#: addons/block_code/blocks/math/vector2_reflect.tres
+msgid "reflect {vector: VECTOR2} around line {line: VECTOR2}"
+msgstr "让 {vector: VECTOR2} 围绕直线 {line: VECTOR2} 反射"
+
+#: addons/block_code/blocks/math/vector2_rotated.tres
+msgid "Rotate a Vector2 by an angle in radians."
+msgstr "按弧度角旋转 Vector2。"
+
+#: addons/block_code/blocks/math/vector2_rotated.tres
+msgid "{vector: VECTOR2} rotated by {angle: FLOAT}"
+msgstr "{vector: VECTOR2} 旋转 {angle: FLOAT}"
+
+#: addons/block_code/blocks/math/vector2_slide.tres
+msgid "Slide a vector along a normal."
+msgstr "让向量沿法线滑动。"
+
+#: addons/block_code/blocks/math/vector2_slide.tres
+msgid "slide {vector: VECTOR2} on normal {normal: VECTOR2}"
+msgstr "让 {vector: VECTOR2} 沿法线 {normal: VECTOR2} 滑动"
+
+#: addons/block_code/blocks/math/vector2_subtract.tres
+msgid "Subtract one Vector2 from another."
+msgstr "从一个 Vector2 中减去另一个。"
+
+#: addons/block_code/blocks/math/vector2_subtract.tres
+msgid "{a: VECTOR2} - {b: VECTOR2}"
+msgstr "{a: VECTOR2} - {b: VECTOR2}"
+
+#: addons/block_code/blocks/math/vector2_with_x.tres
+msgid "Copy a Vector2 with a new x component."
+msgstr "复制 Vector2 并使用新的 x 分量。"
+
+#: addons/block_code/blocks/math/vector2_with_x.tres
+msgid "{vector: VECTOR2} with x {x: FLOAT}"
+msgstr "{vector: VECTOR2} 使用 x {x: FLOAT}"
+
+#: addons/block_code/blocks/math/vector2_with_y.tres
+msgid "Copy a Vector2 with a new y component."
+msgstr "复制 Vector2 并使用新的 y 分量。"
+
+#: addons/block_code/blocks/math/vector2_with_y.tres
+msgid "{vector: VECTOR2} with y {y: FLOAT}"
+msgstr "{vector: VECTOR2} 使用 y {y: FLOAT}"
+
+#: addons/block_code/blocks/math/vector2_x.tres
+msgid "X component of a Vector2."
+msgstr "Vector2 的 X 分量。"
+
+#: addons/block_code/blocks/math/vector2_x.tres
+msgid "x of {vector: VECTOR2}"
+msgstr "{vector: VECTOR2} 的 x"
+
+#: addons/block_code/blocks/math/vector2_y.tres
+msgid "Y component of a Vector2."
+msgstr "Vector2 的 Y 分量。"
+
+#: addons/block_code/blocks/math/vector2_y.tres
+msgid "y of {vector: VECTOR2}"
+msgstr "{vector: VECTOR2} 的 y"
+
+#: addons/block_code/blocks/math/vector3_add.tres
+msgid "Add two Vector3 values."
+msgstr "将两个 Vector3 值相加。"
+
+#: addons/block_code/blocks/math/vector3_add.tres
+msgid "{a: VECTOR3} + {b: VECTOR3}"
+msgstr "{a: VECTOR3} + {b: VECTOR3}"
+
+#: addons/block_code/blocks/math/vector3_angle_to.tres
+msgid "Angle from one Vector3 to another."
+msgstr "从一个 Vector3 到另一个 Vector3 的角度。"
+
+#: addons/block_code/blocks/math/vector3_angle_to.tres
+msgid "angle from {from: VECTOR3} to {to: VECTOR3}"
+msgstr "从 {from: VECTOR3} 到 {to: VECTOR3} 的角度"
+
+#: addons/block_code/blocks/math/vector3_bounce.tres
+msgid "Bounce a Vector3 from a normal."
+msgstr "让 Vector3 从法线反弹。"
+
+#: addons/block_code/blocks/math/vector3_bounce.tres
+msgid "bounce {vector: VECTOR3} from normal {normal: VECTOR3}"
+msgstr "{vector: VECTOR3} 从法线 {normal: VECTOR3} 反弹"
+
+#: addons/block_code/blocks/math/vector3_cross.tres
+msgid "Cross product of two Vector3 values."
+msgstr "两个 Vector3 值的叉积。"
+
+#: addons/block_code/blocks/math/vector3_cross.tres
+msgid "cross product of {a: VECTOR3} and {b: VECTOR3}"
+msgstr "{a: VECTOR3} 与 {b: VECTOR3} 的叉积"
+
+#: addons/block_code/blocks/math/vector3_direction_to.tres
+msgid "Get the direction from one Vector3 to another."
+msgstr "获取从一个 Vector3 到另一个 Vector3 的方向。"
+
+#: addons/block_code/blocks/math/vector3_direction_to.tres
+msgid "direction from {from: VECTOR3} to {to: VECTOR3}"
+msgstr "从 {from: VECTOR3} 到 {to: VECTOR3} 的方向"
+
+#: addons/block_code/blocks/math/vector3_distance_to.tres
+msgid "Get the distance between two Vector3 values."
+msgstr "获取两个 Vector3 值之间的距离。"
+
+#: addons/block_code/blocks/math/vector3_distance_to.tres
+msgid "distance from {from: VECTOR3} to {to: VECTOR3}"
+msgstr "从 {from: VECTOR3} 到 {to: VECTOR3} 的距离"
+
+#: addons/block_code/blocks/math/vector3_dot.tres
+msgid "Calculate the dot product of two Vector3 values."
+msgstr "计算两个 Vector3 值的点积。"
+
+#: addons/block_code/blocks/math/vector3_dot.tres
+msgid "dot product of {a: VECTOR3} and {b: VECTOR3}"
+msgstr "{a: VECTOR3} 与 {b: VECTOR3} 的点积"
+
+#: addons/block_code/blocks/math/vector3_length.tres
+msgid "Get the length of a Vector3."
+msgstr "获取 Vector3 的长度。"
+
+#: addons/block_code/blocks/math/vector3_length.tres
+msgid "length of {vector: VECTOR3}"
+msgstr "{vector: VECTOR3} 的长度"
+
+#: addons/block_code/blocks/math/vector3_lerp.tres
+msgid "Interpolate between two Vector3 values."
+msgstr "在两个 Vector3 值之间插值。"
+
+#: addons/block_code/blocks/math/vector3_lerp.tres
+msgid "lerp vector3 from {from: VECTOR3} to {to: VECTOR3} by {weight: FLOAT}"
+msgstr "Vector3 从 {from: VECTOR3} 到 {to: VECTOR3} 按 {weight: FLOAT} 插值"
+
+#: addons/block_code/blocks/math/vector3_normalized.tres
+msgid "Get a Vector3 with the same direction and length 1."
+msgstr "获取方向相同且长度为 1 的 Vector3。"
+
+#: addons/block_code/blocks/math/vector3_normalized.tres
+msgid "normalized {vector: VECTOR3}"
+msgstr "{vector: VECTOR3} 的归一化向量"
+
+#: addons/block_code/blocks/math/vector3_project.tres
+msgid "Project a Vector3 onto another Vector3."
+msgstr "将 Vector3 投影到另一个 Vector3 上。"
+
+#: addons/block_code/blocks/math/vector3_project.tres
+msgid "project {vector: VECTOR3} onto {onto: VECTOR3}"
+msgstr "将 {vector: VECTOR3} 投影到 {onto: VECTOR3}"
+
+#: addons/block_code/blocks/math/vector3_reflect.tres
+msgid "Reflect a Vector3 around a line."
+msgstr "让 Vector3 围绕直线反射。"
+
+#: addons/block_code/blocks/math/vector3_reflect.tres
+msgid "reflect {vector: VECTOR3} around line {line: VECTOR3}"
+msgstr "让 {vector: VECTOR3} 围绕直线 {line: VECTOR3} 反射"
+
+#: addons/block_code/blocks/math/vector3_slide.tres
+msgid "Slide a Vector3 along a normal."
+msgstr "让 Vector3 沿法线滑动。"
+
+#: addons/block_code/blocks/math/vector3_slide.tres
+msgid "slide {vector: VECTOR3} on normal {normal: VECTOR3}"
+msgstr "让 {vector: VECTOR3} 沿法线 {normal: VECTOR3} 滑动"
+
+#: addons/block_code/blocks/math/vector3_subtract.tres
+msgid "Subtract one Vector3 from another."
+msgstr "从一个 Vector3 中减去另一个。"
+
+#: addons/block_code/blocks/math/vector3_subtract.tres
+msgid "{a: VECTOR3} - {b: VECTOR3}"
+msgstr "{a: VECTOR3} - {b: VECTOR3}"
+
+#: addons/block_code/blocks/math/vector3_x.tres
+msgid "X component of a Vector3."
+msgstr "Vector3 的 X 分量。"
+
+#: addons/block_code/blocks/math/vector3_x.tres
+msgid "x of {vector: VECTOR3}"
+msgstr "{vector: VECTOR3} 的 x"
+
+#: addons/block_code/blocks/math/vector3_y.tres
+msgid "Y component of a Vector3."
+msgstr "Vector3 的 Y 分量。"
+
+#: addons/block_code/blocks/math/vector3_y.tres
+msgid "y of {vector: VECTOR3}"
+msgstr "{vector: VECTOR3} 的 y"
+
+#: addons/block_code/blocks/math/vector3_z.tres
+msgid "Z component of a Vector3."
+msgstr "Vector3 的 Z 分量。"
+
+#: addons/block_code/blocks/math/vector3_z.tres
+msgid "z of {vector: VECTOR3}"
+msgstr "{vector: VECTOR3} 的 z"
+
+#: addons/block_code/blocks/math/wrapf.tres
+msgid "Wrap a number between a minimum and maximum."
+msgstr "将数字环绕在最小值和最大值之间。"
+
+#: addons/block_code/blocks/math/wrapf.tres
+msgid "wrap {value: FLOAT} between {min: FLOAT} and {max: FLOAT}"
+msgstr "将 {value: FLOAT} 环绕在 {min: FLOAT} 和 {max: FLOAT} 之间"
+
+#: addons/block_code/blocks/physics/area2d_has_overlapping_bodies.tres
+#: addons/block_code/blocks/physics/area2d_overlapping_body_count.tres
+msgid "Physics | Area2D"
+msgstr "物理|Area2D"
+
+#: addons/block_code/blocks/physics/area2d_has_overlapping_bodies.tres
+msgid "Whether an Area2D overlaps any physics bodies."
+msgstr "Area2D 是否与任何物理体重叠。"
+
+#: addons/block_code/blocks/physics/area2d_has_overlapping_bodies.tres
+msgid "{area: OBJECT} has overlapping bodies"
+msgstr "{area: OBJECT} 有重叠的物理体"
+
+#: addons/block_code/blocks/physics/area2d_overlapping_body_count.tres
+msgid "Number of physics bodies overlapping an Area2D."
+msgstr "与 Area2D 重叠的物理体数量。"
+
+#: addons/block_code/blocks/physics/area2d_overlapping_body_count.tres
+msgid "overlapping body count of {area: OBJECT}"
+msgstr "{area: OBJECT} 的重叠物理体数量"
+
+#: addons/block_code/blocks/physics/characterbody2d_change_velocity.tres
+msgid "Add to CharacterBody2D velocity."
+msgstr "增加 CharacterBody2D 速度。"
+
+#: addons/block_code/blocks/physics/characterbody2d_change_velocity.tres
+msgid "change velocity by {amount: VECTOR2}"
+msgstr "速度增加 {amount: VECTOR2}"
+
+#: addons/block_code/blocks/physics/characterbody2d_is_on_ceiling.tres
+msgid "Whether this CharacterBody2D is touching a ceiling."
+msgstr "此 CharacterBody2D 是否接触天花板。"
+
+#: addons/block_code/blocks/physics/characterbody2d_is_on_ceiling.tres
+msgid "is on ceiling"
+msgstr "在天花板上"
+
+#: addons/block_code/blocks/physics/characterbody2d_is_on_wall.tres
+msgid "Whether this CharacterBody2D is touching a wall."
+msgstr "此 CharacterBody2D 是否接触墙壁。"
+
+#: addons/block_code/blocks/physics/characterbody2d_is_on_wall.tres
+msgid "is on wall"
+msgstr "在墙上"
+
+#: addons/block_code/blocks/physics/characterbody2d_set_velocity.tres
+msgid "Set CharacterBody2D velocity."
+msgstr "设置 CharacterBody2D 速度。"
+
+#: addons/block_code/blocks/physics/characterbody2d_set_velocity.tres
+msgid "set velocity to {value: VECTOR2}"
+msgstr "将速度设为 {value: VECTOR2}"
+
+#: addons/block_code/blocks/physics/characterbody2d_velocity.tres
+msgid "Current CharacterBody2D velocity."
+msgstr "当前 CharacterBody2D 速度。"
+
+#: addons/block_code/blocks/physics/characterbody2d_velocity.tres
+msgid "velocity"
+msgstr "速度"
+
+#: addons/block_code/blocks/physics/raycast2d_collider.tres
+#: addons/block_code/blocks/physics/raycast2d_collision_normal.tres
+#: addons/block_code/blocks/physics/raycast2d_collision_point.tres
+#: addons/block_code/blocks/physics/raycast2d_force_update.tres
+#: addons/block_code/blocks/physics/raycast2d_is_colliding.tres
+msgid "Physics | RayCast2D"
+msgstr "物理|RayCast2D"
+
+#: addons/block_code/blocks/physics/raycast2d_collider.tres
+msgid "Collider hit by a RayCast2D."
+msgstr "RayCast2D 命中的碰撞体。"
+
+#: addons/block_code/blocks/physics/raycast2d_collider.tres
+msgid "collider of {raycast: OBJECT}"
+msgstr "{raycast: OBJECT} 的碰撞体"
+
+#: addons/block_code/blocks/physics/raycast2d_collision_normal.tres
+msgid "Collision normal of a RayCast2D."
+msgstr "RayCast2D 的碰撞法线。"
+
+#: addons/block_code/blocks/physics/raycast2d_collision_normal.tres
+msgid "collision normal of {raycast: OBJECT}"
+msgstr "{raycast: OBJECT} 的碰撞法线"
+
+#: addons/block_code/blocks/physics/raycast2d_collision_point.tres
+msgid "Collision point of a RayCast2D."
+msgstr "RayCast2D 的碰撞点。"
+
+#: addons/block_code/blocks/physics/raycast2d_collision_point.tres
+msgid "collision point of {raycast: OBJECT}"
+msgstr "{raycast: OBJECT} 的碰撞点"
+
+#: addons/block_code/blocks/physics/raycast2d_force_update.tres
+msgid "Update a RayCast2D immediately."
+msgstr "立即更新 RayCast2D。"
+
+#: addons/block_code/blocks/physics/raycast2d_force_update.tres
+msgid "force update {raycast: OBJECT}"
+msgstr "强制更新 {raycast: OBJECT}"
+
+#: addons/block_code/blocks/physics/raycast2d_is_colliding.tres
+msgid "Whether a RayCast2D is colliding."
+msgstr "RayCast2D 是否正在碰撞。"
+
+#: addons/block_code/blocks/physics/raycast2d_is_colliding.tres
+msgid "{raycast: OBJECT} is colliding"
+msgstr "{raycast: OBJECT} 正在碰撞"
+
+#: addons/block_code/blocks/physics/rigidbody2d_apply_force.tres
+#: addons/block_code/blocks/physics/rigidbody2d_apply_impulse.tres
+#: addons/block_code/blocks/physics/rigidbody2d_linear_velocity.tres
+#: addons/block_code/blocks/physics/rigidbody2d_set_linear_velocity.tres
+msgid "Physics | RigidBody2D"
+msgstr "物理|RigidBody2D"
+
+#: addons/block_code/blocks/physics/rigidbody2d_apply_force.tres
+msgid "Apply a force to a RigidBody2D."
+msgstr "对 RigidBody2D 施加力。"
+
+#: addons/block_code/blocks/physics/rigidbody2d_apply_force.tres
+msgid "apply force {force: VECTOR2} to {body: OBJECT}"
+msgstr "对 {body: OBJECT} 施加力 {force: VECTOR2}"
+
+#: addons/block_code/blocks/physics/rigidbody2d_apply_impulse.tres
+msgid "Apply an impulse to a RigidBody2D."
+msgstr "对 RigidBody2D 施加冲量。"
+
+#: addons/block_code/blocks/physics/rigidbody2d_apply_impulse.tres
+msgid "apply impulse {impulse: VECTOR2} to {body: OBJECT}"
+msgstr "对 {body: OBJECT} 施加冲量 {impulse: VECTOR2}"
+
+#: addons/block_code/blocks/physics/rigidbody2d_linear_velocity.tres
+msgid "Linear velocity of a RigidBody2D."
+msgstr "RigidBody2D 的线速度。"
+
+#: addons/block_code/blocks/physics/rigidbody2d_linear_velocity.tres
+msgid "linear velocity of {body: OBJECT}"
+msgstr "{body: OBJECT} 的线速度"
+
+#: addons/block_code/blocks/physics/rigidbody2d_set_linear_velocity.tres
+msgid "Set linear velocity of a RigidBody2D."
+msgstr "设置 RigidBody2D 的线速度。"
+
+#: addons/block_code/blocks/physics/rigidbody2d_set_linear_velocity.tres
+msgid "set linear velocity of {body: OBJECT} to {velocity: VECTOR2}"
+msgstr "将 {body: OBJECT} 的线速度设为 {velocity: VECTOR2}"
+
+#: addons/block_code/blocks/sounds/audio_is_playing.tres
+msgid "True if this audio player is playing."
+msgstr "如果此音频播放器正在播放，则为 True。"
+
+#: addons/block_code/blocks/sounds/audio_set_pitch_scale.tres
+msgid "Set this audio player's pitch scale."
+msgstr "设置此音频播放器的音高缩放。"
+
+#: addons/block_code/blocks/sounds/audio_set_volume_db.tres
+msgid "Set this audio player's volume in decibels."
+msgstr "设置此音频播放器的音量（分贝）。"
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_bus.tres
+msgid "Get the audio bus name."
+msgstr "获取音频总线名称。"
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_bus.tres
+msgid "audio bus"
+msgstr "音频总线"
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_pitch_scale.tres
+msgid "Get the audio pitch scale."
+msgstr "获取音频音高缩放。"
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_pitch_scale.tres
+msgid "pitch scale"
+msgstr "音高缩放"
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_play_from_position.tres
+msgid "Play audio from a position in seconds."
+msgstr "从指定秒数位置播放音频。"
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_play_from_position.tres
+msgid "play from {seconds: FLOAT} seconds"
+msgstr "从 {seconds: FLOAT} 秒播放"
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_playback_position.tres
+msgid "Current audio playback position in seconds."
+msgstr "当前音频播放位置（秒）。"
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_playback_position.tres
+msgid "playback position"
+msgstr "播放位置"
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_seek.tres
+msgid "Seek audio playback."
+msgstr "跳转音频播放位置。"
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_seek.tres
+msgid "seek audio to {seconds: FLOAT} seconds"
+msgstr "将音频跳转到 {seconds: FLOAT} 秒"
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_set_bus.tres
+msgid "Set the audio bus name."
+msgstr "设置音频总线名称。"
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_set_bus.tres
+msgid "set audio bus to {bus_name: STRING_NAME}"
+msgstr "将音频总线设为 {bus_name: STRING_NAME}"
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_set_stream_from_file.tres
+msgid "Set the audio stream from a resource path."
+msgstr "从资源路径设置音频流。"
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_set_stream_from_file.tres
+msgid "set stream from file {file_path: STRING}"
+msgstr "从文件 {file_path: STRING} 设置流"
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_volume_db.tres
+msgid "Get the audio volume in decibels."
+msgstr "获取音频音量（分贝）。"
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_volume_db.tres
+msgid "volume db"
+msgstr "音量 dB"
+
+#: addons/block_code/blocks/transform/change_node_global_position.tres
+msgid "Change a Node2D global position by an amount."
+msgstr "按给定量改变 Node2D 全局位置。"
+
+#: addons/block_code/blocks/transform/change_node_global_position.tres
+msgid "change {node: OBJECT} global position by {amount: VECTOR2}"
+msgstr "将 {node: OBJECT} 的全局位置改变 {amount: VECTOR2}"
+
+#: addons/block_code/blocks/transform/change_node_position.tres
+msgid "Move a Node2D or Control node by an amount."
+msgstr "按给定量移动 Node2D 或 Control 节点。"
+
+#: addons/block_code/blocks/transform/change_node_rotation_degrees.tres
+msgid "Rotate a Node2D by degrees."
+msgstr "按角度旋转 Node2D。"
+
+#: addons/block_code/blocks/transform/change_node_scale.tres
+msgid "Change a Node2D or Control scale by an amount."
+msgstr "按给定量改变 Node2D 或 Control 的缩放。"
+
+#: addons/block_code/blocks/transform/change_node_scale.tres
+msgid "change {node: OBJECT} scale by {amount: VECTOR2}"
+msgstr "将 {node: OBJECT} 的缩放改变 {amount: VECTOR2}"
+
+#: addons/block_code/blocks/transform/node3d_global_position.tres
+#: addons/block_code/blocks/transform/node3d_position.tres
+#: addons/block_code/blocks/transform/node3d_rotation_degrees.tres
+#: addons/block_code/blocks/transform/node3d_scale.tres
+#: addons/block_code/blocks/transform/set_node3d_global_position.tres
+#: addons/block_code/blocks/transform/set_node3d_position.tres
+#: addons/block_code/blocks/transform/set_node3d_rotation_degrees.tres
+#: addons/block_code/blocks/transform/set_node3d_scale.tres
+msgid "Transform | 3D"
+msgstr "变换|3D"
+
+#: addons/block_code/blocks/transform/node3d_global_position.tres
+msgid "Get a Node3D global position."
+msgstr "获取 Node3D 全局位置。"
+
+#: addons/block_code/blocks/transform/node3d_global_position.tres
+msgid "3D global position of {node: OBJECT}"
+msgstr "{node: OBJECT} 的 3D 全局位置"
+
+#: addons/block_code/blocks/transform/node3d_position.tres
+msgid "Get a Node3D position."
+msgstr "获取 Node3D 位置。"
+
+#: addons/block_code/blocks/transform/node3d_position.tres
+msgid "3D position of {node: OBJECT}"
+msgstr "{node: OBJECT} 的 3D 位置"
+
+#: addons/block_code/blocks/transform/node3d_rotation_degrees.tres
+msgid "Get a Node3D rotation in degrees."
+msgstr "获取 Node3D 旋转角度。"
+
+#: addons/block_code/blocks/transform/node3d_rotation_degrees.tres
+msgid "3D rotation degrees of {node: OBJECT}"
+msgstr "{node: OBJECT} 的 3D 旋转角度"
+
+#: addons/block_code/blocks/transform/node3d_scale.tres
+msgid "Get a Node3D scale."
+msgstr "获取 Node3D 缩放。"
+
+#: addons/block_code/blocks/transform/node3d_scale.tres
+msgid "3D scale of {node: OBJECT}"
+msgstr "{node: OBJECT} 的 3D 缩放"
+
+#: addons/block_code/blocks/transform/node_global_position.tres
+msgid "Get the global position of a Node2D or Control node."
+msgstr "获取 Node2D 或 Control 节点的全局位置。"
+
+#: addons/block_code/blocks/transform/node_global_rotation_degrees.tres
+msgid "Get a Node2D global rotation in degrees."
+msgstr "获取 Node2D 全局旋转角度。"
+
+#: addons/block_code/blocks/transform/node_global_rotation_degrees.tres
+msgid "global rotation degrees of {node: OBJECT}"
+msgstr "{node: OBJECT} 的全局旋转角度"
+
+#: addons/block_code/blocks/transform/node_global_scale.tres
+msgid "Get a Node2D global scale."
+msgstr "获取 Node2D 全局缩放。"
+
+#: addons/block_code/blocks/transform/node_global_scale.tres
+msgid "global scale of {node: OBJECT}"
+msgstr "{node: OBJECT} 的全局缩放"
+
+#: addons/block_code/blocks/transform/node_look_at.tres
+msgid "Make a Node2D look at a position."
+msgstr "让 Node2D 朝向指定位置。"
+
+#: addons/block_code/blocks/transform/node_position.tres
+msgid "Get the position of a Node2D or Control node."
+msgstr "获取 Node2D 或 Control 节点的位置。"
+
+#: addons/block_code/blocks/transform/node_rotation_degrees.tres
+msgid "Get the rotation of a Node2D in degrees."
+msgstr "获取 Node2D 的旋转角度。"
+
+#: addons/block_code/blocks/transform/node_scale.tres
+msgid "Get the scale of a Node2D or Control node."
+msgstr "获取 Node2D 或 Control 节点的缩放。"
+
+#: addons/block_code/blocks/transform/set_node3d_global_position.tres
+msgid "Set a Node3D global position."
+msgstr "设置 Node3D 全局位置。"
+
+#: addons/block_code/blocks/transform/set_node3d_global_position.tres
+msgid "set {node: OBJECT} 3D global position to {position: VECTOR3}"
+msgstr "将 {node: OBJECT} 的 3D 全局位置设为 {position: VECTOR3}"
+
+#: addons/block_code/blocks/transform/set_node3d_position.tres
+msgid "Set a Node3D position."
+msgstr "设置 Node3D 位置。"
+
+#: addons/block_code/blocks/transform/set_node3d_position.tres
+msgid "set {node: OBJECT} 3D position to {position: VECTOR3}"
+msgstr "将 {node: OBJECT} 的 3D 位置设为 {position: VECTOR3}"
+
+#: addons/block_code/blocks/transform/set_node3d_rotation_degrees.tres
+msgid "Set a Node3D rotation in degrees."
+msgstr "设置 Node3D 旋转角度。"
+
+#: addons/block_code/blocks/transform/set_node3d_rotation_degrees.tres
+msgid "set {node: OBJECT} 3D rotation degrees to {rotation: VECTOR3}"
+msgstr "将 {node: OBJECT} 的 3D 旋转角度设为 {rotation: VECTOR3}"
+
+#: addons/block_code/blocks/transform/set_node3d_scale.tres
+msgid "Set a Node3D scale."
+msgstr "设置 Node3D 缩放。"
+
+#: addons/block_code/blocks/transform/set_node3d_scale.tres
+msgid "set {node: OBJECT} 3D scale to {scale: VECTOR3}"
+msgstr "将 {node: OBJECT} 的 3D 缩放设为 {scale: VECTOR3}"
+
+#: addons/block_code/blocks/transform/set_node_global_position.tres
+msgid "Set the global position of a Node2D or Control node."
+msgstr "设置 Node2D 或 Control 节点的全局位置。"
+
+#: addons/block_code/blocks/transform/set_node_global_rotation_degrees.tres
+msgid "Set a Node2D global rotation in degrees."
+msgstr "设置 Node2D 全局旋转角度。"
+
+#: addons/block_code/blocks/transform/set_node_global_rotation_degrees.tres
+msgid "set {node: OBJECT} global rotation degrees to {degrees: FLOAT}"
+msgstr "将 {node: OBJECT} 的全局旋转角度设为 {degrees: FLOAT}"
+
+#: addons/block_code/blocks/transform/set_node_global_scale.tres
+msgid "Set a Node2D global scale."
+msgstr "设置 Node2D 全局缩放。"
+
+#: addons/block_code/blocks/transform/set_node_global_scale.tres
+msgid "set {node: OBJECT} global scale to {scale: VECTOR2}"
+msgstr "将 {node: OBJECT} 的全局缩放设为 {scale: VECTOR2}"
+
+#: addons/block_code/blocks/transform/set_node_rotation_degrees.tres
+msgid "Set the rotation of a Node2D in degrees."
+msgstr "设置 Node2D 的旋转角度。"
+
+#: addons/block_code/blocks/transform/set_node_scale.tres
+msgid "Set the scale of a Node2D or Control node."
+msgstr "设置 Node2D 或 Control 节点的缩放。"
+
+#: addons/block_code/blocks/ui/button_set_text.tres
+msgid "Set the text for the button."
+msgstr "设置按钮文本。"
+
+#: addons/block_code/blocks/ui/button_text.tres
+msgid "Get the button text."
+msgstr "获取按钮文本。"
+
+#: addons/block_code/blocks/ui/button_text.tres
+msgid "button text"
+msgstr "按钮文本"
+
+#: addons/block_code/blocks/ui/control_has_focus.tres
+msgid "Whether this Control has focus."
+msgstr "此 Control 是否有焦点。"
+
+#: addons/block_code/blocks/ui/control_has_focus.tres
+msgid "control has focus"
+msgstr "Control 有焦点"
+
+#: addons/block_code/blocks/ui/control_position.tres
+msgid "Get the Control position."
+msgstr "获取 Control 位置。"
+
+#: addons/block_code/blocks/ui/control_position.tres
+msgid "control position"
+msgstr "Control 位置"
+
+#: addons/block_code/blocks/ui/control_release_focus.tres
+msgid "Release focus from this Control."
+msgstr "释放此 Control 的焦点。"
+
+#: addons/block_code/blocks/ui/control_release_focus.tres
+msgid "release focus"
+msgstr "释放焦点"
+
+#: addons/block_code/blocks/ui/control_set_position.tres
+msgid "Set the Control position."
+msgstr "设置 Control 位置。"
+
+#: addons/block_code/blocks/ui/control_set_position.tres
+msgid "set control position to {position: VECTOR2}"
+msgstr "将 Control 位置设为 {position: VECTOR2}"
+
+#: addons/block_code/blocks/ui/control_set_size.tres
+msgid "Set the Control size."
+msgstr "设置 Control 大小。"
+
+#: addons/block_code/blocks/ui/control_set_size.tres
+msgid "set control size to {size: VECTOR2}"
+msgstr "将 Control 大小设为 {size: VECTOR2}"
+
+#: addons/block_code/blocks/ui/control_size.tres
+msgid "Get the Control size."
+msgstr "获取 Control 大小。"
+
+#: addons/block_code/blocks/ui/control_size.tres
+msgid "control size"
+msgstr "Control 大小"
+
+#: addons/block_code/blocks/ui/label_text.tres
+msgid "Get the label text."
+msgstr "获取标签文本。"
+
+#: addons/block_code/blocks/ui/label_text.tres
+msgid "label text"
+msgstr "标签文本"
+
+#: addons/block_code/blocks/ui/line_edit_clear.tres
+msgid "Clear the line edit text."
+msgstr "清空文本输入框文本。"
+
+#: addons/block_code/blocks/ui/line_edit_clear.tres
+msgid "clear text"
+msgstr "清空文本"
+
+#: addons/block_code/blocks/ui/line_edit_placeholder_text.tres
+msgid "Get the LineEdit placeholder text."
+msgstr "获取 LineEdit 占位符文本。"
+
+#: addons/block_code/blocks/ui/line_edit_placeholder_text.tres
+msgid "placeholder text"
+msgstr "占位符文本"
+
+#: addons/block_code/blocks/ui/line_edit_set_placeholder_text.tres
+msgid "Set the LineEdit placeholder text."
+msgstr "设置 LineEdit 占位符文本。"
+
+#: addons/block_code/blocks/ui/line_edit_set_placeholder_text.tres
+msgid "set placeholder text to {text: STRING}"
+msgstr "将占位符文本设为 {text: STRING}"
+
+#: addons/block_code/blocks/ui/line_edit_set_text.tres
+msgid "Set the text for the line edit."
+msgstr "设置文本输入框的文本。"
+
+#: addons/block_code/blocks/ui/line_edit_text.tres
+msgid "text"
+msgstr "文本"
+
+#: addons/block_code/blocks/ui/progress_bar_value.tres
+msgid "Get the ProgressBar value."
+msgstr "获取 ProgressBar 值。"
+
+#: addons/block_code/blocks/ui/progress_bar_value.tres
+msgid "progress bar value"
+msgstr "进度条值"
+
+#: addons/block_code/blocks/variables/bool_to_string.tres
+msgid "Convert a bool to text."
+msgstr "将 bool 转换为文本。"
+
+#: addons/block_code/blocks/variables/bool_to_string.tres
+msgid "{value: BOOL} to text"
+msgstr "{value: BOOL} 转为文本"
+
+#: addons/block_code/blocks/variables/float_to_int.tres
+msgid "Convert a floating point number to an integer."
+msgstr "将浮点数转换为整数。"
+
+#: addons/block_code/blocks/variables/float_to_int.tres
+msgid "{value: FLOAT} to integer"
+msgstr "{value: FLOAT} 转为整数"
+
+#: addons/block_code/blocks/variables/float_to_string.tres
+msgid "Convert a float to text."
+msgstr "将 float 转换为文本。"
+
+#: addons/block_code/blocks/variables/float_to_string.tres
+msgid "{value: FLOAT} to text"
+msgstr "{value: FLOAT} 转为文本"
+
+#: addons/block_code/blocks/variables/int_to_float.tres
+msgid "Convert an integer to a float."
+msgstr "将整数转换为 float。"
+
+#: addons/block_code/blocks/variables/int_to_float.tres
+msgid "{value: INT} to float"
+msgstr "{value: INT} 转为 float"
+
+#: addons/block_code/blocks/variables/int_to_string.tres
+msgid "Convert an integer to text."
+msgstr "将整数转换为文本。"
+
+#: addons/block_code/blocks/variables/int_to_string.tres
+msgid "{value: INT} to text"
+msgstr "{value: INT} 转为文本"
+
+#: addons/block_code/blocks/variables/object_to_string.tres
+msgid "Convert an object to text."
+msgstr "将对象转换为文本。"
+
+#: addons/block_code/blocks/variables/object_to_string.tres
+msgid "{object: OBJECT} to text"
+msgstr "{object: OBJECT} 转为文本"
+
+#: addons/block_code/blocks/variables/string_to_float.tres
+msgid "Convert a string to a floating point number."
+msgstr "将字符串转换为浮点数。"
+
+#: addons/block_code/blocks/variables/string_to_float.tres
+msgid "{text: STRING} to float"
+msgstr "{text: STRING} 转为 float"
+
+#: addons/block_code/blocks/variables/string_to_int.tres
+msgid "Convert a string to an integer."
+msgstr "将字符串转换为整数。"
+
+#: addons/block_code/blocks/variables/string_to_int.tres
+msgid "{text: STRING} to integer"
+msgstr "{text: STRING} 转为整数"
+
+#: addons/block_code/ui/picker/categories/block_category_display.gd
+msgid "Delete custom block \"%s\"?"
+msgstr "删除自定义积木“%s”？"
+
+#: addons/block_code/ui/picker/picker.gd
+msgid "Failed to delete custom block: %s"
+msgstr "删除自定义积木失败：%s"

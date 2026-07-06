@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_game_is_paused"]
+
+[resource]
+script = ExtResource("1_game_is_paused")
+name = &"game_is_paused"
+description = "True if the scene tree is paused."
+category = "Lifecycle | Game"
+type = 3
+variant_type = 1
+display_template = "game is paused"
+code_template = "get_tree().paused"
+defaults = {}

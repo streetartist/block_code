@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_area2d_overlapping_body_count"]
+
+[resource]
+script = ExtResource("1_area2d_overlapping_body_count")
+name = &"area2d_overlapping_body_count"
+description = "Number of physics bodies overlapping an Area2D."
+category = "Physics | Area2D"
+type = 3
+variant_type = 2
+display_template = "overlapping body count of {area: OBJECT}"
+code_template = "{area}.get_overlapping_bodies().size()"

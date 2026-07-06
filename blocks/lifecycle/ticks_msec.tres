@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_ticks_msec"]
+
+[resource]
+script = ExtResource("1_ticks_msec")
+name = &"ticks_msec"
+description = "Milliseconds since the engine started."
+category = "Lifecycle | Game"
+type = 3
+variant_type = 2
+display_template = "milliseconds since start"
+code_template = "Time.get_ticks_msec()"
+defaults = {}

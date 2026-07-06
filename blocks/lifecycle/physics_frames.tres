@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_physics_frames"]
+
+[resource]
+script = ExtResource("1_physics_frames")
+name = &"physics_frames"
+description = "Number of physics frames since startup."
+category = "Lifecycle"
+type = 3
+variant_type = 2
+display_template = "physics frame count"
+code_template = "Engine.get_physics_frames()"

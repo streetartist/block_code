@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_mouse_velocity"]
+
+[resource]
+script = ExtResource("1_mouse_velocity")
+name = &"mouse_velocity"
+description = "Get the last mouse movement velocity."
+category = "Input"
+type = 3
+variant_type = 5
+display_template = "mouse velocity"
+code_template = "Input.get_last_mouse_velocity()"
+defaults = {}

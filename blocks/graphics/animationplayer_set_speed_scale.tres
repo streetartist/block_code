@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_animationplayer_set_speed_scale"]
+
+[resource]
+script = ExtResource("1_animationplayer_set_speed_scale")
+name = &"animationplayer_set_speed_scale"
+target_node_class = "AnimationPlayer"
+description = "Set AnimationPlayer speed scale."
+category = "Graphics | Animation"
+type = 2
+variant_type = 0
+display_template = "set animation speed scale to {scale: FLOAT}"
+code_template = "speed_scale = {scale}"
+defaults = {
+"scale": 1.0
+}

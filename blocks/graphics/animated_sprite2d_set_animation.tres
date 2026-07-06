@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_animated_sprite2d_set_animation"]
+
+[resource]
+script = ExtResource("1_animated_sprite2d_set_animation")
+name = &"animated_sprite2d_set_animation"
+target_node_class = "AnimatedSprite2D"
+description = "Set the AnimatedSprite2D animation."
+category = "Graphics | Animation"
+type = 2
+variant_type = 0
+display_template = "set sprite animation to {animation_name: STRING_NAME}"
+code_template = "animation = '{animation_name}'"
+defaults = {
+"animation_name": "default"
+}

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_atan2_degrees"]
+
+[resource]
+script = ExtResource("1_atan2_degrees")
+name = &"atan2_degrees"
+description = "Angle from y and x in degrees."
+category = "Math"
+type = 3
+variant_type = 3
+display_template = "angle degrees from y {y: FLOAT} and x {x: FLOAT}"
+code_template = "rad_to_deg(atan2({y}, {x}))"
+defaults = {
+"x": 1.0,
+"y": 0.0
+}

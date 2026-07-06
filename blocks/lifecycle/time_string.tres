@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_time_string"]
+
+[resource]
+script = ExtResource("1_time_string")
+name = &"time_string"
+description = "Current time from the system clock."
+category = "Lifecycle | Game"
+type = 3
+variant_type = 4
+display_template = "current time"
+code_template = "Time.get_time_string_from_system()"
+defaults = {}

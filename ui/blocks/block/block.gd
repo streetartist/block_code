@@ -6,6 +6,7 @@ const BlockDefinition = preload("res://addons/block_code/code_generation/block_d
 const _Types = preload("res://addons/block_code/types/types.gd")
 
 signal drag_started(block: Block, offset: Vector2)
+signal context_menu_requested(block: Block, screen_position: Vector2i)
 signal modified
 
 ## Color of block (optionally used to draw block color)
@@ -281,6 +282,14 @@ func confirm_duplicate():
 	_block_canvas.reconnect_block.emit(new_block)
 
 	modified.emit()
+
+
+func has_custom_context_menu() -> bool:
+	return not context_menu_requested.get_connections().is_empty()
+
+
+func request_context_menu(screen_position: Vector2i):
+	context_menu_requested.emit(self, screen_position)
 
 
 func remove_from_tree():

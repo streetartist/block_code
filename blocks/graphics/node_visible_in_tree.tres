@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_node_visible_in_tree"]
+
+[resource]
+script = ExtResource("1_node_visible_in_tree")
+name = &"node_visible_in_tree"
+description = "Whether a CanvasItem node is visible in the tree."
+category = "Graphics | Visibility"
+type = 3
+variant_type = 1
+display_template = "{node: OBJECT} is visible in tree"
+code_template = "{node}.is_visible_in_tree()"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_set_engine_time_scale"]
+
+[resource]
+script = ExtResource("1_set_engine_time_scale")
+name = &"set_engine_time_scale"
+description = "Set the engine time scale."
+category = "Lifecycle | Game"
+type = 2
+variant_type = 0
+display_template = "set engine time scale to {time_scale: FLOAT}"
+code_template = "Engine.time_scale = {time_scale}"
+defaults = {
+"time_scale": 1.0
+}

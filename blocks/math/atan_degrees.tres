@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_atan_degrees"]
+
+[resource]
+script = ExtResource("1_atan_degrees")
+name = &"atan_degrees"
+description = "Arctangent in degrees."
+category = "Math"
+type = 3
+variant_type = 3
+display_template = "atan degrees of {value: FLOAT}"
+code_template = "rad_to_deg(atan({value}))"
+defaults = {
+"value": 0.0
+}

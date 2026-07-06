@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_rigidbody2d_set_linear_velocity"]
+
+[resource]
+script = ExtResource("1_rigidbody2d_set_linear_velocity")
+name = &"rigidbody2d_set_linear_velocity"
+description = "Set linear velocity of a RigidBody2D."
+category = "Physics | RigidBody2D"
+type = 2
+variant_type = 0
+display_template = "set linear velocity of {body: OBJECT} to {velocity: VECTOR2}"
+code_template = "{body}.linear_velocity = {velocity}"
+defaults = {
+"velocity": Vector2(0, 0)
+}

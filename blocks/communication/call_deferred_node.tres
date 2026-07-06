@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_call_deferred_node"]
+
+[resource]
+script = ExtResource("1_call_deferred_node")
+name = &"call_deferred_node"
+description = "Call a method on a node later, when it is safe."
+category = "Communication | Methods"
+type = 2
+variant_type = 0
+display_template = "call deferred method {method_name: STRING} on {node: OBJECT}"
+code_template = "{node}.call_deferred({method_name})"
+defaults = {
+"method_name": "method_name"
+}

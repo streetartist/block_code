@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_audiostreamplayer_volume_db"]
+
+[resource]
+script = ExtResource("1_audiostreamplayer_volume_db")
+name = &"audiostreamplayer_volume_db"
+target_node_class = "AudioStreamPlayer"
+description = "Get the audio volume in decibels."
+category = "Sounds"
+type = 3
+variant_type = 3
+display_template = "volume db"
+code_template = "volume_db"

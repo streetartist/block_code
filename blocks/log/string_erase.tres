@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_string_erase"]
+
+[resource]
+script = ExtResource("1_string_erase")
+name = &"string_erase"
+description = "Erase characters from a string."
+category = "Log"
+type = 3
+variant_type = 4
+display_template = "erase {length: INT} characters from {text: STRING} at {position: INT}"
+code_template = "{text}.erase({position}, {length})"
+defaults = {
+"length": 1,
+"position": 0,
+"text": ""
+}

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_color_with_alpha"]
+
+[resource]
+script = ExtResource("1_color_with_alpha")
+name = &"color_with_alpha"
+description = "Copy a Color with a new alpha value."
+category = "Graphics | Modulate"
+type = 3
+variant_type = 20
+display_template = "{color: COLOR} with alpha {alpha: FLOAT}"
+code_template = "Color({color}.r, {color}.g, {color}.b, {alpha})"
+defaults = {
+"alpha": 1.0
+}

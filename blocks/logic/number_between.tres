@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_number_between"]
+
+[resource]
+script = ExtResource("1_number_between")
+name = &"number_between"
+description = "True if a number is between the minimum and maximum values, inclusive."
+category = "Logic | Comparison"
+type = 3
+variant_type = 1
+display_template = "{value: FLOAT} is between {min: FLOAT} and {max: FLOAT}"
+code_template = "{value} >= {min} and {value} <= {max}"
+defaults = {
+"value": 0.5,
+"min": 0.0,
+"max": 1.0
+}

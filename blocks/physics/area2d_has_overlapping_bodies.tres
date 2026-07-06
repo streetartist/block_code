@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_area2d_has_overlapping_bodies"]
+
+[resource]
+script = ExtResource("1_area2d_has_overlapping_bodies")
+name = &"area2d_has_overlapping_bodies"
+description = "Whether an Area2D overlaps any physics bodies."
+category = "Physics | Area2D"
+type = 3
+variant_type = 1
+display_template = "{area: OBJECT} has overlapping bodies"
+code_template = "{area}.has_overlapping_bodies()"

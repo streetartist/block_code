@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_get_node_or_null"]
+
+[resource]
+script = ExtResource("1_get_node_or_null")
+name = &"get_node_or_null"
+description = "Get a node by path, or null if it is missing."
+category = "Communication | Nodes"
+type = 3
+variant_type = 24
+display_template = "node or null at path {path: STRING}"
+code_template = "get_node_or_null({path})"
+defaults = {
+"path": "."
+}

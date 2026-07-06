@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_characterbody2d_velocity"]
+
+[resource]
+script = ExtResource("1_characterbody2d_velocity")
+name = &"characterbody2d_velocity"
+description = "Current CharacterBody2D velocity."
+category = "Physics | Velocity"
+type = 3
+variant_type = 5
+display_template = "velocity"
+code_template = "velocity"

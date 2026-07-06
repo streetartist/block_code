@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_vector3_normalized"]
+
+[resource]
+script = ExtResource("1_vector3_normalized")
+name = &"vector3_normalized"
+description = "Get a Vector3 with the same direction and length 1."
+category = "Math"
+type = 3
+variant_type = 9
+display_template = "normalized {vector: VECTOR3}"
+code_template = "{vector}.normalized()"
+defaults = {
+"vector": Vector3(1, 0, 0)
+}

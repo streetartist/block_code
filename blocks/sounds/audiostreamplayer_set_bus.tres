@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_audiostreamplayer_set_bus"]
+
+[resource]
+script = ExtResource("1_audiostreamplayer_set_bus")
+name = &"audiostreamplayer_set_bus"
+target_node_class = "AudioStreamPlayer"
+description = "Set the audio bus name."
+category = "Sounds"
+type = 2
+variant_type = 0
+display_template = "set audio bus to {bus_name: STRING_NAME}"
+code_template = "bus = '{bus_name}'"
+defaults = {
+"bus_name": "Master"
+}

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_get_tree_root"]
+
+[resource]
+script = ExtResource("1_get_tree_root")
+name = &"get_tree_root"
+description = "Get the root viewport of the scene tree."
+category = "Communication | Nodes"
+type = 3
+variant_type = 24
+display_template = "tree root"
+code_template = "get_tree().root"
+defaults = {}

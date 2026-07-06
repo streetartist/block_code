@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_float_to_string"]
+
+[resource]
+script = ExtResource("1_float_to_string")
+name = &"float_to_string"
+description = "Convert a float to text."
+category = "Variables"
+type = 3
+variant_type = 4
+display_template = "{value: FLOAT} to text"
+code_template = "str({value})"
+defaults = {
+"value": 0.0
+}

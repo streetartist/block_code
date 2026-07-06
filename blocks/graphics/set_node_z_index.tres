@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_set_node_z_index"]
+
+[resource]
+script = ExtResource("1_set_node_z_index")
+name = &"set_node_z_index"
+description = "Set the z index of a CanvasItem node."
+category = "Graphics | Visibility"
+type = 2
+variant_type = 0
+display_template = "set {node: OBJECT} z index to {z_index: INT}"
+code_template = "{node}.z_index = {z_index}"
+defaults = {
+"z_index": 0
+}

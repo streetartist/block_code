@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_object_is_valid"]
+
+[resource]
+script = ExtResource("1_object_is_valid")
+name = &"object_is_valid"
+description = "True if an object reference still points to a valid object."
+category = "Logic | Comparison"
+type = 3
+variant_type = 1
+display_template = "{object: OBJECT} is valid"
+code_template = "is_instance_valid({object})"
+defaults = {}

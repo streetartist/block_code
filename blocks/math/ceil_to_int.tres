@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_ceil_to_int"]
+
+[resource]
+script = ExtResource("1_ceil_to_int")
+name = &"ceil_to_int"
+description = "Ceil a number and return an integer."
+category = "Math"
+type = 3
+variant_type = 2
+display_template = "ceil {value: FLOAT} to integer"
+code_template = "ceili({value})"
+defaults = {
+"value": 0.0
+}

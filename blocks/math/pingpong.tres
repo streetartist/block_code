@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_pingpong"]
+
+[resource]
+script = ExtResource("1_pingpong")
+name = &"pingpong"
+description = "Wrap a value back and forth between 0 and the given length."
+category = "Math"
+type = 3
+variant_type = 3
+display_template = "ping-pong {value: FLOAT} with length {length: FLOAT}"
+code_template = "pingpong({value}, {length})"
+defaults = {
+"value": 0.0,
+"length": 1.0
+}

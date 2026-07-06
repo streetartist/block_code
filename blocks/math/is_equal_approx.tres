@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_is_equal_approx"]
+
+[resource]
+script = ExtResource("1_is_equal_approx")
+name = &"is_equal_approx"
+description = "True if two floating point numbers are approximately equal."
+category = "Logic | Comparison"
+type = 3
+variant_type = 1
+display_template = "{a: FLOAT} is approximately {b: FLOAT}"
+code_template = "is_equal_approx({a}, {b})"
+defaults = {
+"a": 1.0,
+"b": 1.0
+}

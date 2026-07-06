@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_move_node_to_front"]
+
+[resource]
+script = ExtResource("1_move_node_to_front")
+name = &"move_node_to_front"
+description = "Move a CanvasItem node in front of its siblings."
+category = "Graphics | Visibility"
+type = 2
+variant_type = 0
+display_template = "move {node: OBJECT} to front"
+code_template = "{node}.move_to_front()"
+defaults = {}

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_node_path"]
+
+[resource]
+script = ExtResource("1_node_path")
+name = &"node_path"
+description = "Get a node's path as text."
+category = "Communication | Nodes"
+type = 3
+variant_type = 4
+display_template = "path of {node: OBJECT}"
+code_template = "str({node}.get_path())"

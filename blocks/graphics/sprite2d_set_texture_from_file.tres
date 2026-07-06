@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_sprite2d_set_texture_from_file"]
+
+[resource]
+script = ExtResource("1_sprite2d_set_texture_from_file")
+name = &"sprite2d_set_texture_from_file"
+target_node_class = "Sprite2D"
+description = "Set Sprite2D texture from a resource path."
+category = "Graphics | Sprite2D"
+type = 2
+variant_type = 0
+display_template = "set sprite texture from file {file_path: STRING}"
+code_template = "texture = load({file_path})"
+defaults = {
+"file_path": "res://"
+}

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_rigidbody2d_apply_force"]
+
+[resource]
+script = ExtResource("1_rigidbody2d_apply_force")
+name = &"rigidbody2d_apply_force"
+description = "Apply a force to a RigidBody2D."
+category = "Physics | RigidBody2D"
+type = 2
+variant_type = 0
+display_template = "apply force {force: VECTOR2} to {body: OBJECT}"
+code_template = "{body}.apply_force({force})"
+defaults = {
+"force": Vector2(0, 0)
+}

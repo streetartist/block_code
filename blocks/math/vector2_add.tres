@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_vector2_add"]
+
+[resource]
+script = ExtResource("1_vector2_add")
+name = &"vector2_add"
+description = "Add two Vector2 values."
+category = "Math"
+type = 3
+variant_type = 5
+display_template = "{a: VECTOR2} + {b: VECTOR2}"
+code_template = "{a} + {b}"
+defaults = {
+"a": Vector2(0, 0),
+"b": Vector2(1, 1)
+}

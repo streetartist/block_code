@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_sprite2d_set_flip_h"]
+
+[resource]
+script = ExtResource("1_sprite2d_set_flip_h")
+name = &"sprite2d_set_flip_h"
+target_node_class = "Sprite2D"
+description = "Set whether this Sprite2D is flipped horizontally."
+category = "Graphics | Sprite2D"
+type = 2
+variant_type = 0
+display_template = "set sprite flip h to {flipped: BOOL}"
+code_template = "flip_h = {flipped}"
+defaults = {
+"flipped": false
+}

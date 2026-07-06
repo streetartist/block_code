@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_node_owner"]
+
+[resource]
+script = ExtResource("1_node_owner")
+name = &"node_owner"
+description = "Get the owner of a node."
+category = "Communication | Nodes"
+type = 3
+variant_type = 24
+display_template = "owner of {node: OBJECT}"
+code_template = "{node}.owner"
+defaults = {}

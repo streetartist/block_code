@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_start_joy_vibration"]
+
+[resource]
+script = ExtResource("1_start_joy_vibration")
+name = &"start_joy_vibration"
+description = "Start joypad vibration."
+category = "Input"
+type = 2
+variant_type = 0
+display_template = "vibrate joypad {device: INT} weak {weak: FLOAT} strong {strong: FLOAT} for {duration: FLOAT} seconds"
+code_template = "Input.start_joy_vibration({device}, {weak}, {strong}, {duration})"
+defaults = {
+"device": 0,
+"duration": 0.5,
+"strong": 1.0,
+"weak": 0.5
+}

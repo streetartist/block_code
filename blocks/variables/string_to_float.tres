@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_string_to_float"]
+
+[resource]
+script = ExtResource("1_string_to_float")
+name = &"string_to_float"
+description = "Convert a string to a floating point number."
+category = "Variables"
+type = 3
+variant_type = 3
+display_template = "{text: STRING} to float"
+code_template = "{text}.to_float()"
+defaults = {
+"text": "1.5"
+}

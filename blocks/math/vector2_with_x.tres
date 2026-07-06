@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_vector2_with_x"]
+
+[resource]
+script = ExtResource("1_vector2_with_x")
+name = &"vector2_with_x"
+description = "Copy a Vector2 with a new x component."
+category = "Math"
+type = 3
+variant_type = 5
+display_template = "{vector: VECTOR2} with x {x: FLOAT}"
+code_template = "Vector2({x}, {vector}.y)"
+defaults = {
+"x": 0.0
+}

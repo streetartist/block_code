@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_mouse_mode"]
+
+[resource]
+script = ExtResource("1_mouse_mode")
+name = &"mouse_mode"
+description = "Current mouse mode as an integer."
+category = "Input"
+type = 3
+variant_type = 2
+display_template = "mouse mode"
+code_template = "Input.mouse_mode"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_set_node_process_mode"]
+
+[resource]
+script = ExtResource("1_set_node_process_mode")
+name = &"set_node_process_mode"
+description = "Set a node's process mode by integer enum value."
+category = "Lifecycle"
+type = 2
+variant_type = 0
+display_template = "set process mode of {node: OBJECT} to {mode: INT}"
+code_template = "{node}.process_mode = {mode}"
+defaults = {
+"mode": 0
+}

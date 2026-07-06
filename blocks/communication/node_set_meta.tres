@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_node_set_meta"]
+
+[resource]
+script = ExtResource("1_node_set_meta")
+name = &"node_set_meta"
+description = "Set metadata on a node."
+category = "Communication | Nodes"
+type = 2
+variant_type = 0
+display_template = "set metadata {key: STRING} of {node: OBJECT} to {value: STRING}"
+code_template = "{node}.set_meta({key}, {value})"
+defaults = {
+"key": "key",
+"value": "value"
+}

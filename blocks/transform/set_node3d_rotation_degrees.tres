@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_set_node3d_rotation_degrees"]
+
+[resource]
+script = ExtResource("1_set_node3d_rotation_degrees")
+name = &"set_node3d_rotation_degrees"
+description = "Set a Node3D rotation in degrees."
+category = "Transform | 3D"
+type = 2
+variant_type = 0
+display_template = "set {node: OBJECT} 3D rotation degrees to {rotation: VECTOR3}"
+code_template = "{node}.rotation_degrees = {rotation}"
+defaults = {
+"rotation": Vector3(0, 0, 0)
+}

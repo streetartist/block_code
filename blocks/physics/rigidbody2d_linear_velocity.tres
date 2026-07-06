@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_rigidbody2d_linear_velocity"]
+
+[resource]
+script = ExtResource("1_rigidbody2d_linear_velocity")
+name = &"rigidbody2d_linear_velocity"
+description = "Linear velocity of a RigidBody2D."
+category = "Physics | RigidBody2D"
+type = 3
+variant_type = 5
+display_template = "linear velocity of {body: OBJECT}"
+code_template = "{body}.linear_velocity"

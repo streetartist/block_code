@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_sprite2d_flip_h"]
+
+[resource]
+script = ExtResource("1_sprite2d_flip_h")
+name = &"sprite2d_flip_h"
+target_node_class = "Sprite2D"
+description = "Whether this Sprite2D is flipped horizontally."
+category = "Graphics | Sprite2D"
+type = 3
+variant_type = 1
+display_template = "sprite flip h"
+code_template = "flip_h"

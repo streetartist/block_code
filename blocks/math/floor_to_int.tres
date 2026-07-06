@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_floor_to_int"]
+
+[resource]
+script = ExtResource("1_floor_to_int")
+name = &"floor_to_int"
+description = "Floor a number and return an integer."
+category = "Math"
+type = 3
+variant_type = 2
+display_template = "floor {value: FLOAT} to integer"
+code_template = "floori({value})"
+defaults = {
+"value": 0.0
+}

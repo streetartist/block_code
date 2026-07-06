@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_string_insert"]
+
+[resource]
+script = ExtResource("1_string_insert")
+name = &"string_insert"
+description = "Insert text at an index."
+category = "Log"
+type = 3
+variant_type = 4
+display_template = "insert {piece: STRING} into {text: STRING} at {position: INT}"
+code_template = "{text}.insert({position}, {piece})"
+defaults = {
+"piece": "",
+"position": 0,
+"text": ""
+}

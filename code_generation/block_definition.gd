@@ -267,6 +267,7 @@ static func new_property_getter(_class_name: String, property: Dictionary, categ
 
 static func new_variable_setter(variable: VariableDefinition) -> Resource:
 	var _type_string: String = Types.VARIANT_TYPE_TO_STRING[variable.var_type]
+	var script_identifier := variable.get_script_identifier()
 	var block_definition: Resource = new(
 		VARIABLE_SETTER_NAME_FORMAT % variable.var_name,
 		"",
@@ -275,12 +276,13 @@ static func new_variable_setter(variable: VariableDefinition) -> Resource:
 		Types.BlockType.STATEMENT,
 		TYPE_NIL,
 		"set %s to {value: %s}" % [variable.var_name, _type_string],
-		"%s = {value}" % variable.var_name,
+		"%s = {value}" % script_identifier,
 	)
 	return block_definition
 
 
 static func new_variable_getter(variable: VariableDefinition) -> Resource:
+	var script_identifier := variable.get_script_identifier()
 	var block_definition: Resource = new(
 		VARIABLE_GETTER_NAME_FORMAT % variable.var_name,
 		"",
@@ -289,6 +291,6 @@ static func new_variable_getter(variable: VariableDefinition) -> Resource:
 		Types.BlockType.VALUE,
 		variable.var_type,
 		"%s" % variable.var_name,
-		"%s" % variable.var_name,
+		"%s" % script_identifier,
 	)
 	return block_definition

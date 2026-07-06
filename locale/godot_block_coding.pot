@@ -1307,3 +1307,2398 @@ msgstr ""
 #: addons/block_code/blocks/sounds/audio_set_pitch_scale.tres
 msgid "set pitch scale to {pitch_scale: FLOAT}"
 msgstr ""
+
+#: addons/block_code/blocks/communication/call_deferred_node.tres
+msgid "Call a method on a node later, when it is safe."
+msgstr ""
+
+#: addons/block_code/blocks/communication/call_deferred_node.tres
+msgid "call deferred method {method_name: STRING} on {node: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/communication/create_tween.tres
+msgid "Create a tween from this node."
+msgstr ""
+
+#: addons/block_code/blocks/communication/create_tween.tres
+msgid "new tween"
+msgstr ""
+
+#: addons/block_code/blocks/communication/duplicate_node.tres
+msgid "Create a duplicate of a node."
+msgstr ""
+
+#: addons/block_code/blocks/communication/duplicate_node.tres
+msgid "duplicate of {node: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/communication/emit_signal_node.tres
+msgid "Emit a signal from a node without arguments."
+msgstr ""
+
+#: addons/block_code/blocks/communication/emit_signal_node.tres
+msgid "emit signal {signal_name: STRING} from {node: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/communication/find_child.tres
+msgid "Find a child node by name."
+msgstr ""
+
+#: addons/block_code/blocks/communication/get_child.tres
+msgid "Get a child node by index."
+msgstr ""
+
+#: addons/block_code/blocks/communication/get_child_count.tres
+msgid "Get the number of children on a node."
+msgstr ""
+
+#: addons/block_code/blocks/communication/get_node_or_null.tres
+msgid "Get a node by path, or null if it is missing."
+msgstr ""
+
+#: addons/block_code/blocks/communication/get_node_or_null.tres
+msgid "node or null at path {path: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/communication/get_node_parent.tres
+msgid "Get the parent of a node."
+msgstr ""
+
+#: addons/block_code/blocks/communication/get_parent.tres
+msgid "Get this node's parent."
+msgstr ""
+
+#: addons/block_code/blocks/communication/get_tree.tres
+msgid "Get the current scene tree."
+msgstr ""
+
+#: addons/block_code/blocks/communication/get_tree_root.tres
+msgid "Get the root viewport of the scene tree."
+msgstr ""
+
+#: addons/block_code/blocks/communication/get_tree_root.tres
+msgid "tree root"
+msgstr ""
+
+#: addons/block_code/blocks/communication/get_viewport.tres
+msgid "Get the current viewport."
+msgstr ""
+
+#: addons/block_code/blocks/communication/get_viewport.tres
+msgid "viewport"
+msgstr ""
+
+#: addons/block_code/blocks/communication/has_node.tres
+msgid "True if this node has a node at the given path."
+msgstr ""
+
+#: addons/block_code/blocks/communication/has_node.tres
+msgid "has node at path {path: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/communication/move_child_to_index.tres
+msgid "Move a child node to a new sibling index."
+msgstr ""
+
+#: addons/block_code/blocks/communication/move_child_to_index.tres
+msgid "move child {child: OBJECT} of {parent: OBJECT} to index {index: INT}"
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_find_parent.tres
+msgid "Find a parent node by name pattern."
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_find_parent.tres
+msgid "find parent named {pattern: STRING} from {node: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_get_meta.tres
+msgid "Get metadata from a node as text."
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_get_meta.tres
+msgid "metadata {key: STRING} of {node: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_get_node_or_null.tres
+msgid "Get a child node by path, or null if it is missing."
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_get_node_or_null.tres
+msgid "node or null at path {path: STRING} in {node: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_has_meta.tres
+msgid "True if a node has metadata with the given key."
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_has_meta.tres
+msgid "{node: OBJECT} has metadata {key: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_has_node.tres
+msgid "True if a node has a child at the given path."
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_has_node.tres
+msgid "{node: OBJECT} has node at path {path: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_index.tres
+msgid "Get a node's index among its siblings."
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_index.tres
+msgid "index of {node: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_is_ancestor_of.tres
+msgid "Whether one node is an ancestor of another."
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_is_ancestor_of.tres
+msgid "{ancestor: OBJECT} is ancestor of {node: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_is_inside_tree.tres
+msgid "Whether a node is inside the scene tree."
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_is_inside_tree.tres
+msgid "{node: OBJECT} is inside tree"
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_is_ready.tres
+msgid "Whether a node has completed ready."
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_is_ready.tres
+msgid "{node: OBJECT} is ready"
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_name.tres
+msgid "Get a node's name."
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_owner.tres
+msgid "Get the owner of a node."
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_owner.tres
+msgid "owner of {node: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_path.tres
+msgid "Get a node's path as text."
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_path.tres
+msgid "path of {node: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_path_to.tres
+msgid "Get the path from one node to another as text."
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_path_to.tres
+msgid "path from {from_node: OBJECT} to {to_node: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_process_mode.tres
+msgid "Get a node's process mode as an integer."
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_process_mode.tres
+msgid "process mode of {node: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_remove_meta.tres
+msgid "Remove metadata from a node."
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_remove_meta.tres
+msgid "remove metadata {key: STRING} from {node: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_scene_file_path.tres
+msgid "Get the scene file path of a node."
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_scene_file_path.tres
+msgid "scene file path of {node: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_set_meta.tres
+msgid "Set metadata on a node."
+msgstr ""
+
+#: addons/block_code/blocks/communication/node_set_meta.tres
+msgid "set metadata {key: STRING} of {node: OBJECT} to {value: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/communication/object_has_method.tres
+msgid "True if an object has a method with the given name."
+msgstr ""
+
+#: addons/block_code/blocks/communication/object_has_method.tres
+msgid "{object: OBJECT} has method {method_name: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/communication/object_has_signal.tres
+msgid "True if an object has a signal with the given name."
+msgstr ""
+
+#: addons/block_code/blocks/communication/object_has_signal.tres
+msgid "{object: OBJECT} has signal {signal_name: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/communication/object_is_queued_for_deletion.tres
+msgid "True if an object has been queued for deletion."
+msgstr ""
+
+#: addons/block_code/blocks/communication/object_is_queued_for_deletion.tres
+msgid "{object: OBJECT} is queued for deletion"
+msgstr ""
+
+#: addons/block_code/blocks/communication/quit_game.tres
+msgid "Quit the running game."
+msgstr ""
+
+#: addons/block_code/blocks/communication/remove_child.tres
+msgid "Remove a child from this node without deleting it."
+msgstr ""
+
+#: addons/block_code/blocks/communication/remove_child_from_node.tres
+msgid "Remove a child from a node without deleting it."
+msgstr ""
+
+#: addons/block_code/blocks/communication/request_ready.tres
+msgid "Request that a node runs ready again the next time it enters the tree."
+msgstr ""
+
+#: addons/block_code/blocks/communication/request_ready.tres
+msgid "request ready for {node: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/communication/set_game_paused.tres
+msgid "Pause or unpause the game."
+msgstr ""
+
+#: addons/block_code/blocks/communication/set_node_name.tres
+msgid "Set a node's name."
+msgstr ""
+
+#: addons/block_code/blocks/communication/set_node_process_mode.tres
+msgid "Set a node's process mode by integer enum value."
+msgstr ""
+
+#: addons/block_code/blocks/communication/set_node_process_mode.tres
+msgid "set process mode of {node: OBJECT} to {mode: INT}"
+msgstr ""
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_animation.tres
+msgid "Current AnimatedSprite2D animation name."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_animation.tres
+msgid "sprite animation name"
+msgstr ""
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_frame.tres
+msgid "Current AnimatedSprite2D frame."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_frame.tres
+msgid "sprite animation frame"
+msgstr ""
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_is_playing.tres
+msgid "Whether AnimatedSprite2D is playing."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_is_playing.tres
+msgid "sprite animation is playing"
+msgstr ""
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_pause.tres
+msgid "Pause an AnimatedSprite2D animation."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_pause.tres
+msgid "pause sprite animation"
+msgstr ""
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_play.tres
+msgid "Play an AnimatedSprite2D animation."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_play.tres
+msgid "play sprite animation {animation_name: STRING_NAME}"
+msgstr ""
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_set_animation.tres
+msgid "Set the AnimatedSprite2D animation."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_set_animation.tres
+msgid "set sprite animation to {animation_name: STRING_NAME}"
+msgstr ""
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_set_frame.tres
+msgid "Set the AnimatedSprite2D frame."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_set_frame.tres
+msgid "set sprite animation frame to {frame: INT}"
+msgstr ""
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_stop.tres
+msgid "Stop an AnimatedSprite2D animation."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/animated_sprite2d_stop.tres
+msgid "stop sprite animation"
+msgstr ""
+
+#: addons/block_code/blocks/graphics/animationplayer_current_animation.tres
+msgid "Current AnimationPlayer animation name."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/animationplayer_current_animation.tres
+msgid "current animation"
+msgstr ""
+
+#: addons/block_code/blocks/graphics/animationplayer_seek.tres
+msgid "Seek the current animation."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/animationplayer_seek.tres
+msgid "seek animation to {seconds: FLOAT} seconds"
+msgstr ""
+
+#: addons/block_code/blocks/graphics/animationplayer_set_speed_scale.tres
+msgid "Set AnimationPlayer speed scale."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/animationplayer_set_speed_scale.tres
+msgid "set animation speed scale to {scale: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/graphics/animationplayer_speed_scale.tres
+msgid "AnimationPlayer speed scale."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/animationplayer_speed_scale.tres
+msgid "animation speed scale"
+msgstr ""
+
+#: addons/block_code/blocks/graphics/move_node_to_front.tres
+msgid "Move a CanvasItem node in front of its siblings."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/move_node_to_front.tres
+msgid "move {node: OBJECT} to front"
+msgstr ""
+
+#: addons/block_code/blocks/graphics/node_is_visible.tres
+msgid "True if a CanvasItem node is visible."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/node_modulate.tres
+msgid "Get a CanvasItem node's modulate color."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/node_modulate.tres
+msgid "modulate of {node: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/graphics/node_self_modulate.tres
+msgid "Get a CanvasItem node's self modulate color."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/node_self_modulate.tres
+msgid "self modulate of {node: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/graphics/node_visible_in_tree.tres
+msgid "Whether a CanvasItem node is visible in the tree."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/node_visible_in_tree.tres
+msgid "{node: OBJECT} is visible in tree"
+msgstr ""
+
+#: addons/block_code/blocks/graphics/node_z_index.tres
+msgid "Get the z index of a CanvasItem node."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/node_z_index.tres
+msgid "z index of {node: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/graphics/set_node_modulate.tres
+msgid "Set the modulate color of a CanvasItem node."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/set_node_self_modulate.tres
+msgid "Set a CanvasItem node's self modulate color."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/set_node_self_modulate.tres
+msgid "set {node: OBJECT} self modulate to {color: COLOR}"
+msgstr ""
+
+#: addons/block_code/blocks/graphics/set_node_visible.tres
+msgid "Set whether a CanvasItem node is visible."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/set_node_z_index.tres
+msgid "Set the z index of a CanvasItem node."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/set_node_z_index.tres
+msgid "set {node: OBJECT} z index to {z_index: INT}"
+msgstr ""
+
+#: addons/block_code/blocks/graphics/sprite2d_flip_h.tres
+#: addons/block_code/blocks/graphics/sprite2d_flip_v.tres
+#: addons/block_code/blocks/graphics/sprite2d_frame.tres
+#: addons/block_code/blocks/graphics/sprite2d_set_flip_h.tres
+#: addons/block_code/blocks/graphics/sprite2d_set_flip_v.tres
+#: addons/block_code/blocks/graphics/sprite2d_set_frame.tres
+#: addons/block_code/blocks/graphics/sprite2d_set_texture_from_file.tres
+msgid "Graphics | Sprite2D"
+msgstr ""
+
+#: addons/block_code/blocks/graphics/sprite2d_flip_h.tres
+msgid "Whether this Sprite2D is flipped horizontally."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/sprite2d_flip_h.tres
+msgid "sprite flip h"
+msgstr ""
+
+#: addons/block_code/blocks/graphics/sprite2d_flip_v.tres
+msgid "Whether this Sprite2D is flipped vertically."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/sprite2d_flip_v.tres
+msgid "sprite flip v"
+msgstr ""
+
+#: addons/block_code/blocks/graphics/sprite2d_frame.tres
+msgid "Current Sprite2D frame."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/sprite2d_frame.tres
+msgid "sprite frame"
+msgstr ""
+
+#: addons/block_code/blocks/graphics/sprite2d_set_flip_h.tres
+msgid "Set whether this Sprite2D is flipped horizontally."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/sprite2d_set_flip_h.tres
+msgid "set sprite flip h to {flipped: BOOL}"
+msgstr ""
+
+#: addons/block_code/blocks/graphics/sprite2d_set_flip_v.tres
+msgid "Set whether this Sprite2D is flipped vertically."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/sprite2d_set_flip_v.tres
+msgid "set sprite flip v to {flipped: BOOL}"
+msgstr ""
+
+#: addons/block_code/blocks/graphics/sprite2d_set_frame.tres
+msgid "Set the Sprite2D frame."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/sprite2d_set_frame.tres
+msgid "set sprite frame to {frame: INT}"
+msgstr ""
+
+#: addons/block_code/blocks/graphics/sprite2d_set_texture_from_file.tres
+msgid "Set Sprite2D texture from a resource path."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/sprite2d_set_texture_from_file.tres
+msgid "set sprite texture from file {file_path: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/graphics/viewport_size.tres
+msgid "The size of the viewport."
+msgstr ""
+
+#: addons/block_code/blocks/graphics/viewport_size.tres
+msgid "viewport size"
+msgstr ""
+
+#: addons/block_code/blocks/input/action_just_pressed.tres
+msgid "Whether an input action was just pressed this frame."
+msgstr ""
+
+#: addons/block_code/blocks/input/action_just_pressed.tres
+msgid "action {action_name: STRING_NAME} was just pressed"
+msgstr ""
+
+#: addons/block_code/blocks/input/action_just_released.tres
+msgid "Whether an input action was just released this frame."
+msgstr ""
+
+#: addons/block_code/blocks/input/action_just_released.tres
+msgid "action {action_name: STRING_NAME} was just released"
+msgstr ""
+
+#: addons/block_code/blocks/input/action_pressed.tres
+msgid "Whether an input action is currently pressed."
+msgstr ""
+
+#: addons/block_code/blocks/input/action_pressed.tres
+msgid "action {action_name: STRING_NAME} is pressed"
+msgstr ""
+
+#: addons/block_code/blocks/input/action_raw_strength.tres
+msgid "Get the raw strength of an input action, before deadzone processing."
+msgstr ""
+
+#: addons/block_code/blocks/input/action_raw_strength.tres
+msgid "raw strength of action {action_name: STRING_NAME}"
+msgstr ""
+
+#: addons/block_code/blocks/input/action_strength.tres
+msgid "Get the strength of an input action."
+msgstr ""
+
+#: addons/block_code/blocks/input/anything_pressed.tres
+msgid "True if any input is currently pressed."
+msgstr ""
+
+#: addons/block_code/blocks/input/anything_pressed.tres
+msgid "any input is pressed"
+msgstr ""
+
+#: addons/block_code/blocks/input/input_axis.tres
+msgid "Get a value from -1 to 1 using two input actions."
+msgstr ""
+
+#: addons/block_code/blocks/input/input_vector.tres
+msgid "Get a 2D input vector from four input actions."
+msgstr ""
+
+#: addons/block_code/blocks/input/input_vector.tres
+msgid "input vector left {left: STRING_NAME} right {right: STRING_NAME} up {up: STRING_NAME} down {down: STRING_NAME}"
+msgstr ""
+
+#: addons/block_code/blocks/input/is_mouse_button_pressed.tres
+msgid "True if a mouse button is currently pressed."
+msgstr ""
+
+#: addons/block_code/blocks/input/joy_axis.tres
+msgid "Get a joystick axis value."
+msgstr ""
+
+#: addons/block_code/blocks/input/joy_axis.tres
+msgid "joypad {device: INT} axis {axis: INT}"
+msgstr ""
+
+#: addons/block_code/blocks/input/joy_button_pressed.tres
+msgid "Whether a joypad button is pressed."
+msgstr ""
+
+#: addons/block_code/blocks/input/joy_button_pressed.tres
+msgid "joypad {device: INT} button {button: INT} is pressed"
+msgstr ""
+
+#: addons/block_code/blocks/input/joy_name.tres
+msgid "Get the name of a connected joypad."
+msgstr ""
+
+#: addons/block_code/blocks/input/joy_name.tres
+msgid "name of joypad {device: INT}"
+msgstr ""
+
+#: addons/block_code/blocks/input/joypad_count.tres
+msgid "Number of connected joypads."
+msgstr ""
+
+#: addons/block_code/blocks/input/joypad_count.tres
+msgid "connected joypad count"
+msgstr ""
+
+#: addons/block_code/blocks/input/key_pressed.tres
+msgid "True if the given keyboard key is currently pressed."
+msgstr ""
+
+#: addons/block_code/blocks/input/key_pressed.tres
+msgid "key {key: STRING} is pressed"
+msgstr ""
+
+#: addons/block_code/blocks/input/mouse_mode.tres
+msgid "Current mouse mode as an integer."
+msgstr ""
+
+#: addons/block_code/blocks/input/mouse_mode.tres
+msgid "mouse mode"
+msgstr ""
+
+#: addons/block_code/blocks/input/mouse_velocity.tres
+msgid "Get the last mouse movement velocity."
+msgstr ""
+
+#: addons/block_code/blocks/input/mouse_velocity.tres
+msgid "mouse velocity"
+msgstr ""
+
+#: addons/block_code/blocks/input/set_mouse_mode_captured.tres
+msgid "Capture the mouse cursor."
+msgstr ""
+
+#: addons/block_code/blocks/input/set_mouse_mode_captured.tres
+msgid "set mouse mode captured"
+msgstr ""
+
+#: addons/block_code/blocks/input/set_mouse_mode_hidden.tres
+msgid "Hide the mouse cursor."
+msgstr ""
+
+#: addons/block_code/blocks/input/set_mouse_mode_hidden.tres
+msgid "set mouse mode hidden"
+msgstr ""
+
+#: addons/block_code/blocks/input/set_mouse_mode_visible.tres
+msgid "Show and release the mouse cursor."
+msgstr ""
+
+#: addons/block_code/blocks/input/set_mouse_mode_visible.tres
+msgid "set mouse mode visible"
+msgstr ""
+
+#: addons/block_code/blocks/input/start_joy_vibration.tres
+msgid "Start joypad vibration."
+msgstr ""
+
+#: addons/block_code/blocks/input/start_joy_vibration.tres
+msgid "vibrate joypad {device: INT} weak {weak: FLOAT} strong {strong: FLOAT} for {duration: FLOAT} seconds"
+msgstr ""
+
+#: addons/block_code/blocks/input/stop_joy_vibration.tres
+msgid "Stop joypad vibration."
+msgstr ""
+
+#: addons/block_code/blocks/input/stop_joy_vibration.tres
+msgid "stop vibration on joypad {device: INT}"
+msgstr ""
+
+#: addons/block_code/blocks/input/warp_mouse.tres
+msgid "Move the mouse cursor to a viewport position."
+msgstr ""
+
+#: addons/block_code/blocks/input/warp_mouse.tres
+msgid "warp mouse to {position: VECTOR2}"
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/date_string.tres
+#: addons/block_code/blocks/lifecycle/datetime_string.tres
+#: addons/block_code/blocks/lifecycle/engine_time_scale.tres
+#: addons/block_code/blocks/lifecycle/game_is_paused.tres
+#: addons/block_code/blocks/lifecycle/randomize.tres
+#: addons/block_code/blocks/lifecycle/seed_random.tres
+#: addons/block_code/blocks/lifecycle/set_engine_time_scale.tres
+#: addons/block_code/blocks/lifecycle/ticks_msec.tres
+#: addons/block_code/blocks/lifecycle/ticks_usec.tres
+#: addons/block_code/blocks/lifecycle/time_string.tres
+#: addons/block_code/blocks/lifecycle/unix_time.tres
+msgid "Lifecycle | Game"
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/date_string.tres
+msgid "Current date from the system clock."
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/date_string.tres
+msgid "current date"
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/datetime_string.tres
+msgid "Current date and time from the system clock."
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/datetime_string.tres
+msgid "current date and time"
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/engine_time_scale.tres
+msgid "Get the engine time scale."
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/engine_time_scale.tres
+msgid "engine time scale"
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/frames_per_second.tres
+msgid "Current rendered frames per second."
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/frames_per_second.tres
+msgid "frames per second"
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/game_is_paused.tres
+msgid "True if the scene tree is paused."
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/game_is_paused.tres
+msgid "game is paused"
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/max_fps.tres
+msgid "Maximum frames per second setting."
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/max_fps.tres
+msgid "max fps"
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/physics_delta_time.tres
+msgid "The last physics process delta time."
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/physics_delta_time.tres
+msgid "physics delta time"
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/physics_frames.tres
+msgid "Number of physics frames since startup."
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/physics_frames.tres
+msgid "physics frame count"
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/process_delta_time.tres
+msgid "The last process delta time."
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/process_delta_time.tres
+msgid "process delta time"
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/process_frames.tres
+msgid "Number of rendered process frames since startup."
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/process_frames.tres
+msgid "process frame count"
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/randomize.tres
+msgid "Randomize the random number generator seed."
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/randomize.tres
+msgid "randomize"
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/seed_random.tres
+msgid "Set the random number generator seed."
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/seed_random.tres
+msgid "set random seed to {seed: INT}"
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/set_engine_time_scale.tres
+msgid "Set the engine time scale."
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/set_engine_time_scale.tres
+msgid "set engine time scale to {time_scale: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/set_max_fps.tres
+msgid "Set maximum frames per second. Use 0 for unlimited."
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/set_max_fps.tres
+msgid "set max fps to {fps: INT}"
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/set_physics_process_enabled.tres
+msgid "Enable or disable physics process callbacks for this node."
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/set_process_enabled.tres
+msgid "Enable or disable process callbacks for this node."
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/ticks_msec.tres
+msgid "Milliseconds since the engine started."
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/ticks_msec.tres
+msgid "milliseconds since start"
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/ticks_usec.tres
+msgid "Microseconds since the engine started."
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/ticks_usec.tres
+msgid "microseconds since start"
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/time_string.tres
+msgid "Current time from the system clock."
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/time_string.tres
+msgid "current time"
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/unix_time.tres
+msgid "Current Unix time from the system clock."
+msgstr ""
+
+#: addons/block_code/blocks/lifecycle/unix_time.tres
+msgid "current unix time"
+msgstr ""
+
+#: addons/block_code/blocks/log/print_rich.tres
+msgid "Print rich text to the output console."
+msgstr ""
+
+#: addons/block_code/blocks/log/print_rich.tres
+msgid "print rich {message: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/log/printerr.tres
+msgid "Print a message to standard error."
+msgstr ""
+
+#: addons/block_code/blocks/log/printerr.tres
+msgid "print error {message: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/log/push_error.tres
+msgid "Show an error in the debugger."
+msgstr ""
+
+#: addons/block_code/blocks/log/push_error.tres
+msgid "push error {message: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/log/push_warning.tres
+msgid "Show a warning in the debugger."
+msgstr ""
+
+#: addons/block_code/blocks/log/push_warning.tres
+msgid "push warning {message: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/log/string_begins_with.tres
+msgid "True if a string starts with another string."
+msgstr ""
+
+#: addons/block_code/blocks/log/string_begins_with.tres
+msgid "{text: STRING} begins with {prefix: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/log/string_capitalize.tres
+msgid "Capitalize a string."
+msgstr ""
+
+#: addons/block_code/blocks/log/string_capitalize.tres
+msgid "capitalize {text: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/log/string_contains.tres
+msgid "True if a string contains another string."
+msgstr ""
+
+#: addons/block_code/blocks/log/string_contains.tres
+msgid "{text: STRING} contains {piece: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/log/string_count.tres
+msgid "Count occurrences of a substring."
+msgstr ""
+
+#: addons/block_code/blocks/log/string_count.tres
+msgid "count {piece: STRING} in {text: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/log/string_ends_with.tres
+msgid "True if a string ends with another string."
+msgstr ""
+
+#: addons/block_code/blocks/log/string_ends_with.tres
+msgid "{text: STRING} ends with {suffix: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/log/string_erase.tres
+msgid "Erase characters from a string."
+msgstr ""
+
+#: addons/block_code/blocks/log/string_erase.tres
+msgid "erase {length: INT} characters from {text: STRING} at {position: INT}"
+msgstr ""
+
+#: addons/block_code/blocks/log/string_find.tres
+msgid "Find the first index of text inside a string."
+msgstr ""
+
+#: addons/block_code/blocks/log/string_find.tres
+msgid "index of {piece: STRING} in {text: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/log/string_insert.tres
+msgid "Insert text at an index."
+msgstr ""
+
+#: addons/block_code/blocks/log/string_insert.tres
+msgid "insert {piece: STRING} into {text: STRING} at {position: INT}"
+msgstr ""
+
+#: addons/block_code/blocks/log/string_is_empty.tres
+msgid "True if a string is empty."
+msgstr ""
+
+#: addons/block_code/blocks/log/string_is_empty.tres
+msgid "{text: STRING} is empty"
+msgstr ""
+
+#: addons/block_code/blocks/log/string_is_valid_float.tres
+msgid "Whether a string can be parsed as a float."
+msgstr ""
+
+#: addons/block_code/blocks/log/string_is_valid_float.tres
+msgid "{text: STRING} is valid float"
+msgstr ""
+
+#: addons/block_code/blocks/log/string_is_valid_identifier.tres
+msgid "Whether a string is a valid identifier."
+msgstr ""
+
+#: addons/block_code/blocks/log/string_is_valid_identifier.tres
+msgid "{text: STRING} is valid identifier"
+msgstr ""
+
+#: addons/block_code/blocks/log/string_is_valid_int.tres
+msgid "Whether a string can be parsed as an integer."
+msgstr ""
+
+#: addons/block_code/blocks/log/string_is_valid_int.tres
+msgid "{text: STRING} is valid integer"
+msgstr ""
+
+#: addons/block_code/blocks/log/string_left.tres
+msgid "Left part of a string."
+msgstr ""
+
+#: addons/block_code/blocks/log/string_left.tres
+msgid "left {length: INT} characters of {text: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/log/string_length.tres
+msgid "Get the number of characters in a string."
+msgstr ""
+
+#: addons/block_code/blocks/log/string_length.tres
+msgid "length of {text: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/log/string_md5.tres
+msgid "MD5 hash of a string."
+msgstr ""
+
+#: addons/block_code/blocks/log/string_md5.tres
+msgid "MD5 of {text: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/log/string_repeat.tres
+msgid "Repeat a string multiple times."
+msgstr ""
+
+#: addons/block_code/blocks/log/string_repeat.tres
+msgid "repeat {text: STRING} {count: INT} times"
+msgstr ""
+
+#: addons/block_code/blocks/log/string_replace.tres
+msgid "Replace all occurrences of one string with another."
+msgstr ""
+
+#: addons/block_code/blocks/log/string_replace.tres
+msgid "replace {from: STRING} with {to: STRING} in {text: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/log/string_right.tres
+msgid "Right part of a string."
+msgstr ""
+
+#: addons/block_code/blocks/log/string_right.tres
+msgid "right {length: INT} characters of {text: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/log/string_sha256.tres
+msgid "SHA-256 hash of a string."
+msgstr ""
+
+#: addons/block_code/blocks/log/string_sha256.tres
+msgid "SHA256 of {text: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/log/string_strip_edges.tres
+msgid "Remove whitespace from the start and end of a string."
+msgstr ""
+
+#: addons/block_code/blocks/log/string_strip_edges.tres
+msgid "{text: STRING} without edge spaces"
+msgstr ""
+
+#: addons/block_code/blocks/log/string_substr.tres
+msgid "Get part of a string."
+msgstr ""
+
+#: addons/block_code/blocks/log/string_substr.tres
+msgid "substring of {text: STRING} from {from: INT} length {length: INT}"
+msgstr ""
+
+#: addons/block_code/blocks/log/string_to_lower.tres
+msgid "Convert a string to lowercase."
+msgstr ""
+
+#: addons/block_code/blocks/log/string_to_lower.tres
+msgid "{text: STRING} to lowercase"
+msgstr ""
+
+#: addons/block_code/blocks/log/string_to_upper.tres
+msgid "Convert a string to uppercase."
+msgstr ""
+
+#: addons/block_code/blocks/log/string_to_upper.tres
+msgid "{text: STRING} to uppercase"
+msgstr ""
+
+#: addons/block_code/blocks/log/string_uri_decode.tres
+msgid "URI decode a string."
+msgstr ""
+
+#: addons/block_code/blocks/log/string_uri_decode.tres
+msgid "URI decode {text: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/log/string_uri_encode.tres
+msgid "URI encode a string."
+msgstr ""
+
+#: addons/block_code/blocks/log/string_uri_encode.tres
+msgid "URI encode {text: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/log/to_string.tres
+msgid "Converts [i]parameter[/i] to a [b]String[/b]"
+msgstr ""
+
+#: addons/block_code/blocks/log/to_string.tres
+msgid "{parameter: NIL} to string"
+msgstr ""
+
+#: addons/block_code/blocks/logic/assert_condition.tres
+msgid "Stop with an error in debug builds if the condition is false."
+msgstr ""
+
+#: addons/block_code/blocks/logic/assert_condition.tres
+msgid "assert {condition: BOOL}"
+msgstr ""
+
+#: addons/block_code/blocks/logic/false_value.tres
+msgid "The boolean value false."
+msgstr ""
+
+#: addons/block_code/blocks/logic/false_value.tres
+msgid "false"
+msgstr ""
+
+#: addons/block_code/blocks/logic/number_between.tres
+msgid "True if a number is between the minimum and maximum values, inclusive."
+msgstr ""
+
+#: addons/block_code/blocks/logic/number_between.tres
+msgid "{value: FLOAT} is between {min: FLOAT} and {max: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/logic/number_not_between.tres
+msgid "Whether a number is outside a range."
+msgstr ""
+
+#: addons/block_code/blocks/logic/number_not_between.tres
+msgid "{value: FLOAT} is not between {min: FLOAT} and {max: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/logic/object_is_valid.tres
+msgid "True if an object reference still points to a valid object."
+msgstr ""
+
+#: addons/block_code/blocks/logic/object_is_valid.tres
+msgid "{object: OBJECT} is valid"
+msgstr ""
+
+#: addons/block_code/blocks/logic/objects_same.tres
+msgid "True if two objects are the same instance."
+msgstr ""
+
+#: addons/block_code/blocks/logic/objects_same.tres
+msgid "{a: OBJECT} is same as {b: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/logic/string_equals.tres
+msgid "True if two strings are equal."
+msgstr ""
+
+#: addons/block_code/blocks/logic/string_equals.tres
+msgid "{a: STRING} equals {b: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/logic/string_not_equals.tres
+msgid "Whether two strings are different."
+msgstr ""
+
+#: addons/block_code/blocks/logic/string_not_equals.tres
+msgid "{a: STRING} does not equal {b: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/logic/true_value.tres
+msgid "The boolean value true."
+msgstr ""
+
+#: addons/block_code/blocks/logic/true_value.tres
+msgid "true"
+msgstr ""
+
+#: addons/block_code/blocks/logic/xor.tres
+msgid "Exclusive OR."
+msgstr ""
+
+#: addons/block_code/blocks/logic/xor.tres
+msgid "{a: BOOL} xor {b: BOOL}"
+msgstr ""
+
+#: addons/block_code/blocks/math/abs.tres
+msgid "Get the absolute value of a number."
+msgstr ""
+
+#: addons/block_code/blocks/math/acos_degrees.tres
+msgid "Arccosine in degrees."
+msgstr ""
+
+#: addons/block_code/blocks/math/acos_degrees.tres
+msgid "acos degrees of {value: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/asin_degrees.tres
+msgid "Arcsine in degrees."
+msgstr ""
+
+#: addons/block_code/blocks/math/asin_degrees.tres
+msgid "asin degrees of {value: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/atan2_degrees.tres
+msgid "Angle from y and x in degrees."
+msgstr ""
+
+#: addons/block_code/blocks/math/atan2_degrees.tres
+msgid "angle degrees from y {y: FLOAT} and x {x: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/atan_degrees.tres
+msgid "Arctangent in degrees."
+msgstr ""
+
+#: addons/block_code/blocks/math/atan_degrees.tres
+msgid "atan degrees of {value: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/ceil.tres
+msgid "Round a number up."
+msgstr ""
+
+#: addons/block_code/blocks/math/ceil_to_int.tres
+msgid "Ceil a number and return an integer."
+msgstr ""
+
+#: addons/block_code/blocks/math/ceil_to_int.tres
+msgid "ceil {value: FLOAT} to integer"
+msgstr ""
+
+#: addons/block_code/blocks/math/clamp.tres
+msgid "Clamp a number between a minimum and maximum."
+msgstr ""
+
+#: addons/block_code/blocks/math/clamp_int.tres
+msgid "Clamp an integer between a minimum and maximum."
+msgstr ""
+
+#: addons/block_code/blocks/math/clamp_int.tres
+msgid "clamp integer {value: INT} between {min: INT} and {max: INT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/color_alpha.tres
+msgid "Alpha component of a Color."
+msgstr ""
+
+#: addons/block_code/blocks/math/color_alpha.tres
+msgid "alpha of {color: COLOR}"
+msgstr ""
+
+#: addons/block_code/blocks/math/color_blue.tres
+msgid "Blue component of a Color."
+msgstr ""
+
+#: addons/block_code/blocks/math/color_blue.tres
+msgid "blue of {color: COLOR}"
+msgstr ""
+
+#: addons/block_code/blocks/math/color_darkened.tres
+msgid "Get a darker version of a color."
+msgstr ""
+
+#: addons/block_code/blocks/math/color_darkened.tres
+msgid "{color: COLOR} darkened by {amount: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/color_from_hsv.tres
+msgid "Create a color from HSV and alpha values."
+msgstr ""
+
+#: addons/block_code/blocks/math/color_from_hsv.tres
+msgid "color hue {hue: FLOAT} saturation {saturation: FLOAT} value {value: FLOAT} alpha {alpha: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/color_green.tres
+msgid "Green component of a Color."
+msgstr ""
+
+#: addons/block_code/blocks/math/color_green.tres
+msgid "green of {color: COLOR}"
+msgstr ""
+
+#: addons/block_code/blocks/math/color_lerp.tres
+msgid "Interpolate between two colors."
+msgstr ""
+
+#: addons/block_code/blocks/math/color_lerp.tres
+msgid "lerp color from {from: COLOR} to {to: COLOR} by {weight: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/color_lightened.tres
+msgid "Get a lighter version of a color."
+msgstr ""
+
+#: addons/block_code/blocks/math/color_lightened.tres
+msgid "{color: COLOR} lightened by {amount: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/color_red.tres
+msgid "Red component of a Color."
+msgstr ""
+
+#: addons/block_code/blocks/math/color_red.tres
+msgid "red of {color: COLOR}"
+msgstr ""
+
+#: addons/block_code/blocks/math/color_rgb.tres
+msgid "Create a color from red, green, and blue values from 0 to 1."
+msgstr ""
+
+#: addons/block_code/blocks/math/color_rgb.tres
+msgid "color red {red: FLOAT} green {green: FLOAT} blue {blue: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/color_rgba.tres
+msgid "Create a color from red, green, blue, and alpha values from 0 to 1."
+msgstr ""
+
+#: addons/block_code/blocks/math/color_rgba.tres
+msgid "color red {red: FLOAT} green {green: FLOAT} blue {blue: FLOAT} alpha {alpha: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/color_with_alpha.tres
+msgid "Copy a Color with a new alpha value."
+msgstr ""
+
+#: addons/block_code/blocks/math/color_with_alpha.tres
+msgid "{color: COLOR} with alpha {alpha: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/deg_to_rad.tres
+msgid "Convert degrees to radians."
+msgstr ""
+
+#: addons/block_code/blocks/math/deg_to_rad.tres
+msgid "{degrees: FLOAT} degrees to radians"
+msgstr ""
+
+#: addons/block_code/blocks/math/floor.tres
+msgid "Round a number down."
+msgstr ""
+
+#: addons/block_code/blocks/math/floor_to_int.tres
+msgid "Floor a number and return an integer."
+msgstr ""
+
+#: addons/block_code/blocks/math/floor_to_int.tres
+msgid "floor {value: FLOAT} to integer"
+msgstr ""
+
+#: addons/block_code/blocks/math/fposmod.tres
+msgid "Floating point positive modulo."
+msgstr ""
+
+#: addons/block_code/blocks/math/fposmod.tres
+msgid "positive modulo {x: FLOAT} by {y: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/int_modulo.tres
+msgid "Get the integer remainder after division."
+msgstr ""
+
+#: addons/block_code/blocks/math/int_modulo.tres
+msgid "{a: INT} modulo {b: INT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/inverse_lerp.tres
+msgid "Get how far a value is between two numbers, from 0 to 1."
+msgstr ""
+
+#: addons/block_code/blocks/math/inverse_lerp.tres
+msgid "inverse lerp from {from: FLOAT} to {to: FLOAT} at {value: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/is_equal_approx.tres
+msgid "True if two floating point numbers are approximately equal."
+msgstr ""
+
+#: addons/block_code/blocks/math/is_equal_approx.tres
+msgid "{a: FLOAT} is approximately {b: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/is_zero_approx.tres
+msgid "True if a floating point number is approximately zero."
+msgstr ""
+
+#: addons/block_code/blocks/math/is_zero_approx.tres
+msgid "{value: FLOAT} is approximately zero"
+msgstr ""
+
+#: addons/block_code/blocks/math/lerp.tres
+msgid "Linearly interpolate between two numbers."
+msgstr ""
+
+#: addons/block_code/blocks/math/max.tres
+msgid "Get the larger of two numbers."
+msgstr ""
+
+#: addons/block_code/blocks/math/min.tres
+msgid "Get the smaller of two numbers."
+msgstr ""
+
+#: addons/block_code/blocks/math/modulo.tres
+msgid "Get the floating point remainder after division."
+msgstr ""
+
+#: addons/block_code/blocks/math/modulo.tres
+msgid "{a: FLOAT} modulo {b: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/move_toward.tres
+msgid "Move a number toward another number by a fixed amount."
+msgstr ""
+
+#: addons/block_code/blocks/math/nearest_power_of_2.tres
+msgid "Nearest power of two greater than or equal to an integer."
+msgstr ""
+
+#: addons/block_code/blocks/math/nearest_power_of_2.tres
+msgid "nearest power of 2 for {value: INT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/pingpong.tres
+msgid "Wrap a value back and forth between 0 and the given length."
+msgstr ""
+
+#: addons/block_code/blocks/math/pingpong.tres
+msgid "ping-pong {value: FLOAT} with length {length: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/posmod.tres
+msgid "Integer positive modulo."
+msgstr ""
+
+#: addons/block_code/blocks/math/posmod.tres
+msgid "positive integer modulo {x: INT} by {y: INT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/rad_to_deg.tres
+msgid "Convert radians to degrees."
+msgstr ""
+
+#: addons/block_code/blocks/math/rad_to_deg.tres
+msgid "{radians: FLOAT} radians to degrees"
+msgstr ""
+
+#: addons/block_code/blocks/math/randf.tres
+msgid "Generate a random floating point number from 0 to 1."
+msgstr ""
+
+#: addons/block_code/blocks/math/randf.tres
+msgid "random floating point number from 0 to 1"
+msgstr ""
+
+#: addons/block_code/blocks/math/random_bool_chance.tres
+msgid "Return true randomly using a chance from 0 to 1."
+msgstr ""
+
+#: addons/block_code/blocks/math/random_bool_chance.tres
+msgid "random chance {chance: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/remap.tres
+msgid "Map a value from one range to another."
+msgstr ""
+
+#: addons/block_code/blocks/math/remap.tres
+msgid "remap {value: FLOAT} from {istart: FLOAT}-{istop: FLOAT} to {ostart: FLOAT}-{ostop: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/round.tres
+msgid "Round a number to the nearest whole number."
+msgstr ""
+
+#: addons/block_code/blocks/math/round_to_int.tres
+msgid "Round a number and return an integer."
+msgstr ""
+
+#: addons/block_code/blocks/math/round_to_int.tres
+msgid "round {value: FLOAT} to integer"
+msgstr ""
+
+#: addons/block_code/blocks/math/sign.tres
+msgid "Return -1, 0, or 1 depending on the sign of the number."
+msgstr ""
+
+#: addons/block_code/blocks/math/sign.tres
+msgid "sign of {number: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/snapped.tres
+msgid "Snap a number to the nearest multiple of a step."
+msgstr ""
+
+#: addons/block_code/blocks/math/snapped.tres
+msgid "snap {value: FLOAT} to step {step: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/sqrt.tres
+msgid "Get the square root of a number."
+msgstr ""
+
+#: addons/block_code/blocks/math/sqrt.tres
+msgid "square root of {number: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_add.tres
+msgid "Add two Vector2 values."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_add.tres
+msgid "{a: VECTOR2} + {b: VECTOR2}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_angle.tres
+msgid "Get the angle of a Vector2 in radians."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_angle_to.tres
+msgid "Angle from one Vector2 to another."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_angle_to.tres
+msgid "angle from {from: VECTOR2} to {to: VECTOR2}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_angle_to_point.tres
+msgid "Angle from a Vector2 position to a target point."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_angle_to_point.tres
+msgid "angle from point {from: VECTOR2} to point {to: VECTOR2}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_bounce.tres
+msgid "Bounce a vector from a normal."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_bounce.tres
+msgid "bounce {vector: VECTOR2} from normal {normal: VECTOR2}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_direction_to.tres
+msgid "Get the direction from one Vector2 to another."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_distance_to.tres
+msgid "Get the distance between two Vector2 values."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_dot.tres
+msgid "Calculate the dot product of two Vector2 values."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_dot.tres
+msgid "dot product of {a: VECTOR2} and {b: VECTOR2}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_length.tres
+msgid "Get the length of a Vector2."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_lerp.tres
+msgid "Interpolate between two Vector2 values."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_lerp.tres
+msgid "lerp vector from {from: VECTOR2} to {to: VECTOR2} by {weight: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_limit_length.tres
+msgid "Limit a Vector2 to a maximum length."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_limit_length.tres
+msgid "limit {vector: VECTOR2} length to {length: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_move_toward.tres
+msgid "Move a Vector2 toward another Vector2 by a maximum distance."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_move_toward.tres
+msgid "move {from: VECTOR2} toward {to: VECTOR2} by {delta: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_normalized.tres
+msgid "Get a Vector2 with the same direction and length 1."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_perpendicular.tres
+msgid "A perpendicular vector."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_perpendicular.tres
+msgid "perpendicular of {vector: VECTOR2}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_project.tres
+msgid "Project a vector onto another vector."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_project.tres
+msgid "project {vector: VECTOR2} onto {onto: VECTOR2}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_reflect.tres
+msgid "Reflect a vector around a line."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_reflect.tres
+msgid "reflect {vector: VECTOR2} around line {line: VECTOR2}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_rotated.tres
+msgid "Rotate a Vector2 by an angle in radians."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_rotated.tres
+msgid "{vector: VECTOR2} rotated by {angle: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_slide.tres
+msgid "Slide a vector along a normal."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_slide.tres
+msgid "slide {vector: VECTOR2} on normal {normal: VECTOR2}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_subtract.tres
+msgid "Subtract one Vector2 from another."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_subtract.tres
+msgid "{a: VECTOR2} - {b: VECTOR2}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_with_x.tres
+msgid "Copy a Vector2 with a new x component."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_with_x.tres
+msgid "{vector: VECTOR2} with x {x: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_with_y.tres
+msgid "Copy a Vector2 with a new y component."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_with_y.tres
+msgid "{vector: VECTOR2} with y {y: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_x.tres
+msgid "X component of a Vector2."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_x.tres
+msgid "x of {vector: VECTOR2}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_y.tres
+msgid "Y component of a Vector2."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector2_y.tres
+msgid "y of {vector: VECTOR2}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_add.tres
+msgid "Add two Vector3 values."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_add.tres
+msgid "{a: VECTOR3} + {b: VECTOR3}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_angle_to.tres
+msgid "Angle from one Vector3 to another."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_angle_to.tres
+msgid "angle from {from: VECTOR3} to {to: VECTOR3}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_bounce.tres
+msgid "Bounce a Vector3 from a normal."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_bounce.tres
+msgid "bounce {vector: VECTOR3} from normal {normal: VECTOR3}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_cross.tres
+msgid "Cross product of two Vector3 values."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_cross.tres
+msgid "cross product of {a: VECTOR3} and {b: VECTOR3}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_direction_to.tres
+msgid "Get the direction from one Vector3 to another."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_direction_to.tres
+msgid "direction from {from: VECTOR3} to {to: VECTOR3}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_distance_to.tres
+msgid "Get the distance between two Vector3 values."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_distance_to.tres
+msgid "distance from {from: VECTOR3} to {to: VECTOR3}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_dot.tres
+msgid "Calculate the dot product of two Vector3 values."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_dot.tres
+msgid "dot product of {a: VECTOR3} and {b: VECTOR3}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_length.tres
+msgid "Get the length of a Vector3."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_length.tres
+msgid "length of {vector: VECTOR3}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_lerp.tres
+msgid "Interpolate between two Vector3 values."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_lerp.tres
+msgid "lerp vector3 from {from: VECTOR3} to {to: VECTOR3} by {weight: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_normalized.tres
+msgid "Get a Vector3 with the same direction and length 1."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_normalized.tres
+msgid "normalized {vector: VECTOR3}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_project.tres
+msgid "Project a Vector3 onto another Vector3."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_project.tres
+msgid "project {vector: VECTOR3} onto {onto: VECTOR3}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_reflect.tres
+msgid "Reflect a Vector3 around a line."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_reflect.tres
+msgid "reflect {vector: VECTOR3} around line {line: VECTOR3}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_slide.tres
+msgid "Slide a Vector3 along a normal."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_slide.tres
+msgid "slide {vector: VECTOR3} on normal {normal: VECTOR3}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_subtract.tres
+msgid "Subtract one Vector3 from another."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_subtract.tres
+msgid "{a: VECTOR3} - {b: VECTOR3}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_x.tres
+msgid "X component of a Vector3."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_x.tres
+msgid "x of {vector: VECTOR3}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_y.tres
+msgid "Y component of a Vector3."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_y.tres
+msgid "y of {vector: VECTOR3}"
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_z.tres
+msgid "Z component of a Vector3."
+msgstr ""
+
+#: addons/block_code/blocks/math/vector3_z.tres
+msgid "z of {vector: VECTOR3}"
+msgstr ""
+
+#: addons/block_code/blocks/math/wrapf.tres
+msgid "Wrap a number between a minimum and maximum."
+msgstr ""
+
+#: addons/block_code/blocks/math/wrapf.tres
+msgid "wrap {value: FLOAT} between {min: FLOAT} and {max: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/physics/area2d_has_overlapping_bodies.tres
+#: addons/block_code/blocks/physics/area2d_overlapping_body_count.tres
+msgid "Physics | Area2D"
+msgstr ""
+
+#: addons/block_code/blocks/physics/area2d_has_overlapping_bodies.tres
+msgid "Whether an Area2D overlaps any physics bodies."
+msgstr ""
+
+#: addons/block_code/blocks/physics/area2d_has_overlapping_bodies.tres
+msgid "{area: OBJECT} has overlapping bodies"
+msgstr ""
+
+#: addons/block_code/blocks/physics/area2d_overlapping_body_count.tres
+msgid "Number of physics bodies overlapping an Area2D."
+msgstr ""
+
+#: addons/block_code/blocks/physics/area2d_overlapping_body_count.tres
+msgid "overlapping body count of {area: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/physics/characterbody2d_change_velocity.tres
+msgid "Add to CharacterBody2D velocity."
+msgstr ""
+
+#: addons/block_code/blocks/physics/characterbody2d_change_velocity.tres
+msgid "change velocity by {amount: VECTOR2}"
+msgstr ""
+
+#: addons/block_code/blocks/physics/characterbody2d_is_on_ceiling.tres
+msgid "Whether this CharacterBody2D is touching a ceiling."
+msgstr ""
+
+#: addons/block_code/blocks/physics/characterbody2d_is_on_ceiling.tres
+msgid "is on ceiling"
+msgstr ""
+
+#: addons/block_code/blocks/physics/characterbody2d_is_on_wall.tres
+msgid "Whether this CharacterBody2D is touching a wall."
+msgstr ""
+
+#: addons/block_code/blocks/physics/characterbody2d_is_on_wall.tres
+msgid "is on wall"
+msgstr ""
+
+#: addons/block_code/blocks/physics/characterbody2d_set_velocity.tres
+msgid "Set CharacterBody2D velocity."
+msgstr ""
+
+#: addons/block_code/blocks/physics/characterbody2d_set_velocity.tres
+msgid "set velocity to {value: VECTOR2}"
+msgstr ""
+
+#: addons/block_code/blocks/physics/characterbody2d_velocity.tres
+msgid "Current CharacterBody2D velocity."
+msgstr ""
+
+#: addons/block_code/blocks/physics/characterbody2d_velocity.tres
+msgid "velocity"
+msgstr ""
+
+#: addons/block_code/blocks/physics/raycast2d_collider.tres
+#: addons/block_code/blocks/physics/raycast2d_collision_normal.tres
+#: addons/block_code/blocks/physics/raycast2d_collision_point.tres
+#: addons/block_code/blocks/physics/raycast2d_force_update.tres
+#: addons/block_code/blocks/physics/raycast2d_is_colliding.tres
+msgid "Physics | RayCast2D"
+msgstr ""
+
+#: addons/block_code/blocks/physics/raycast2d_collider.tres
+msgid "Collider hit by a RayCast2D."
+msgstr ""
+
+#: addons/block_code/blocks/physics/raycast2d_collider.tres
+msgid "collider of {raycast: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/physics/raycast2d_collision_normal.tres
+msgid "Collision normal of a RayCast2D."
+msgstr ""
+
+#: addons/block_code/blocks/physics/raycast2d_collision_normal.tres
+msgid "collision normal of {raycast: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/physics/raycast2d_collision_point.tres
+msgid "Collision point of a RayCast2D."
+msgstr ""
+
+#: addons/block_code/blocks/physics/raycast2d_collision_point.tres
+msgid "collision point of {raycast: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/physics/raycast2d_force_update.tres
+msgid "Update a RayCast2D immediately."
+msgstr ""
+
+#: addons/block_code/blocks/physics/raycast2d_force_update.tres
+msgid "force update {raycast: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/physics/raycast2d_is_colliding.tres
+msgid "Whether a RayCast2D is colliding."
+msgstr ""
+
+#: addons/block_code/blocks/physics/raycast2d_is_colliding.tres
+msgid "{raycast: OBJECT} is colliding"
+msgstr ""
+
+#: addons/block_code/blocks/physics/rigidbody2d_apply_force.tres
+#: addons/block_code/blocks/physics/rigidbody2d_apply_impulse.tres
+#: addons/block_code/blocks/physics/rigidbody2d_linear_velocity.tres
+#: addons/block_code/blocks/physics/rigidbody2d_set_linear_velocity.tres
+msgid "Physics | RigidBody2D"
+msgstr ""
+
+#: addons/block_code/blocks/physics/rigidbody2d_apply_force.tres
+msgid "Apply a force to a RigidBody2D."
+msgstr ""
+
+#: addons/block_code/blocks/physics/rigidbody2d_apply_force.tres
+msgid "apply force {force: VECTOR2} to {body: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/physics/rigidbody2d_apply_impulse.tres
+msgid "Apply an impulse to a RigidBody2D."
+msgstr ""
+
+#: addons/block_code/blocks/physics/rigidbody2d_apply_impulse.tres
+msgid "apply impulse {impulse: VECTOR2} to {body: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/physics/rigidbody2d_linear_velocity.tres
+msgid "Linear velocity of a RigidBody2D."
+msgstr ""
+
+#: addons/block_code/blocks/physics/rigidbody2d_linear_velocity.tres
+msgid "linear velocity of {body: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/physics/rigidbody2d_set_linear_velocity.tres
+msgid "Set linear velocity of a RigidBody2D."
+msgstr ""
+
+#: addons/block_code/blocks/physics/rigidbody2d_set_linear_velocity.tres
+msgid "set linear velocity of {body: OBJECT} to {velocity: VECTOR2}"
+msgstr ""
+
+#: addons/block_code/blocks/sounds/audio_is_playing.tres
+msgid "True if this audio player is playing."
+msgstr ""
+
+#: addons/block_code/blocks/sounds/audio_set_pitch_scale.tres
+msgid "Set this audio player's pitch scale."
+msgstr ""
+
+#: addons/block_code/blocks/sounds/audio_set_volume_db.tres
+msgid "Set this audio player's volume in decibels."
+msgstr ""
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_bus.tres
+msgid "Get the audio bus name."
+msgstr ""
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_bus.tres
+msgid "audio bus"
+msgstr ""
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_pitch_scale.tres
+msgid "Get the audio pitch scale."
+msgstr ""
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_pitch_scale.tres
+msgid "pitch scale"
+msgstr ""
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_play_from_position.tres
+msgid "Play audio from a position in seconds."
+msgstr ""
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_play_from_position.tres
+msgid "play from {seconds: FLOAT} seconds"
+msgstr ""
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_playback_position.tres
+msgid "Current audio playback position in seconds."
+msgstr ""
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_playback_position.tres
+msgid "playback position"
+msgstr ""
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_seek.tres
+msgid "Seek audio playback."
+msgstr ""
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_seek.tres
+msgid "seek audio to {seconds: FLOAT} seconds"
+msgstr ""
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_set_bus.tres
+msgid "Set the audio bus name."
+msgstr ""
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_set_bus.tres
+msgid "set audio bus to {bus_name: STRING_NAME}"
+msgstr ""
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_set_stream_from_file.tres
+msgid "Set the audio stream from a resource path."
+msgstr ""
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_set_stream_from_file.tres
+msgid "set stream from file {file_path: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_volume_db.tres
+msgid "Get the audio volume in decibels."
+msgstr ""
+
+#: addons/block_code/blocks/sounds/audiostreamplayer_volume_db.tres
+msgid "volume db"
+msgstr ""
+
+#: addons/block_code/blocks/transform/change_node_global_position.tres
+msgid "Change a Node2D global position by an amount."
+msgstr ""
+
+#: addons/block_code/blocks/transform/change_node_global_position.tres
+msgid "change {node: OBJECT} global position by {amount: VECTOR2}"
+msgstr ""
+
+#: addons/block_code/blocks/transform/change_node_position.tres
+msgid "Move a Node2D or Control node by an amount."
+msgstr ""
+
+#: addons/block_code/blocks/transform/change_node_rotation_degrees.tres
+msgid "Rotate a Node2D by degrees."
+msgstr ""
+
+#: addons/block_code/blocks/transform/change_node_scale.tres
+msgid "Change a Node2D or Control scale by an amount."
+msgstr ""
+
+#: addons/block_code/blocks/transform/change_node_scale.tres
+msgid "change {node: OBJECT} scale by {amount: VECTOR2}"
+msgstr ""
+
+#: addons/block_code/blocks/transform/node3d_global_position.tres
+#: addons/block_code/blocks/transform/node3d_position.tres
+#: addons/block_code/blocks/transform/node3d_rotation_degrees.tres
+#: addons/block_code/blocks/transform/node3d_scale.tres
+#: addons/block_code/blocks/transform/set_node3d_global_position.tres
+#: addons/block_code/blocks/transform/set_node3d_position.tres
+#: addons/block_code/blocks/transform/set_node3d_rotation_degrees.tres
+#: addons/block_code/blocks/transform/set_node3d_scale.tres
+msgid "Transform | 3D"
+msgstr ""
+
+#: addons/block_code/blocks/transform/node3d_global_position.tres
+msgid "Get a Node3D global position."
+msgstr ""
+
+#: addons/block_code/blocks/transform/node3d_global_position.tres
+msgid "3D global position of {node: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/transform/node3d_position.tres
+msgid "Get a Node3D position."
+msgstr ""
+
+#: addons/block_code/blocks/transform/node3d_position.tres
+msgid "3D position of {node: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/transform/node3d_rotation_degrees.tres
+msgid "Get a Node3D rotation in degrees."
+msgstr ""
+
+#: addons/block_code/blocks/transform/node3d_rotation_degrees.tres
+msgid "3D rotation degrees of {node: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/transform/node3d_scale.tres
+msgid "Get a Node3D scale."
+msgstr ""
+
+#: addons/block_code/blocks/transform/node3d_scale.tres
+msgid "3D scale of {node: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/transform/node_global_position.tres
+msgid "Get the global position of a Node2D or Control node."
+msgstr ""
+
+#: addons/block_code/blocks/transform/node_global_rotation_degrees.tres
+msgid "Get a Node2D global rotation in degrees."
+msgstr ""
+
+#: addons/block_code/blocks/transform/node_global_rotation_degrees.tres
+msgid "global rotation degrees of {node: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/transform/node_global_scale.tres
+msgid "Get a Node2D global scale."
+msgstr ""
+
+#: addons/block_code/blocks/transform/node_global_scale.tres
+msgid "global scale of {node: OBJECT}"
+msgstr ""
+
+#: addons/block_code/blocks/transform/node_look_at.tres
+msgid "Make a Node2D look at a position."
+msgstr ""
+
+#: addons/block_code/blocks/transform/node_position.tres
+msgid "Get the position of a Node2D or Control node."
+msgstr ""
+
+#: addons/block_code/blocks/transform/node_rotation_degrees.tres
+msgid "Get the rotation of a Node2D in degrees."
+msgstr ""
+
+#: addons/block_code/blocks/transform/node_scale.tres
+msgid "Get the scale of a Node2D or Control node."
+msgstr ""
+
+#: addons/block_code/blocks/transform/set_node3d_global_position.tres
+msgid "Set a Node3D global position."
+msgstr ""
+
+#: addons/block_code/blocks/transform/set_node3d_global_position.tres
+msgid "set {node: OBJECT} 3D global position to {position: VECTOR3}"
+msgstr ""
+
+#: addons/block_code/blocks/transform/set_node3d_position.tres
+msgid "Set a Node3D position."
+msgstr ""
+
+#: addons/block_code/blocks/transform/set_node3d_position.tres
+msgid "set {node: OBJECT} 3D position to {position: VECTOR3}"
+msgstr ""
+
+#: addons/block_code/blocks/transform/set_node3d_rotation_degrees.tres
+msgid "Set a Node3D rotation in degrees."
+msgstr ""
+
+#: addons/block_code/blocks/transform/set_node3d_rotation_degrees.tres
+msgid "set {node: OBJECT} 3D rotation degrees to {rotation: VECTOR3}"
+msgstr ""
+
+#: addons/block_code/blocks/transform/set_node3d_scale.tres
+msgid "Set a Node3D scale."
+msgstr ""
+
+#: addons/block_code/blocks/transform/set_node3d_scale.tres
+msgid "set {node: OBJECT} 3D scale to {scale: VECTOR3}"
+msgstr ""
+
+#: addons/block_code/blocks/transform/set_node_global_position.tres
+msgid "Set the global position of a Node2D or Control node."
+msgstr ""
+
+#: addons/block_code/blocks/transform/set_node_global_rotation_degrees.tres
+msgid "Set a Node2D global rotation in degrees."
+msgstr ""
+
+#: addons/block_code/blocks/transform/set_node_global_rotation_degrees.tres
+msgid "set {node: OBJECT} global rotation degrees to {degrees: FLOAT}"
+msgstr ""
+
+#: addons/block_code/blocks/transform/set_node_global_scale.tres
+msgid "Set a Node2D global scale."
+msgstr ""
+
+#: addons/block_code/blocks/transform/set_node_global_scale.tres
+msgid "set {node: OBJECT} global scale to {scale: VECTOR2}"
+msgstr ""
+
+#: addons/block_code/blocks/transform/set_node_rotation_degrees.tres
+msgid "Set the rotation of a Node2D in degrees."
+msgstr ""
+
+#: addons/block_code/blocks/transform/set_node_scale.tres
+msgid "Set the scale of a Node2D or Control node."
+msgstr ""
+
+#: addons/block_code/blocks/ui/button_pressed.tres
+msgid "True if the button is pressed."
+msgstr ""
+
+#: addons/block_code/blocks/ui/button_set_disabled.tres
+msgid "Enable or disable the button."
+msgstr ""
+
+#: addons/block_code/blocks/ui/button_set_text.tres
+msgid "Set the text for the button."
+msgstr ""
+
+#: addons/block_code/blocks/ui/button_text.tres
+msgid "Get the button text."
+msgstr ""
+
+#: addons/block_code/blocks/ui/button_text.tres
+msgid "button text"
+msgstr ""
+
+#: addons/block_code/blocks/ui/control_grab_focus.tres
+msgid "Give keyboard focus to this control."
+msgstr ""
+
+#: addons/block_code/blocks/ui/control_has_focus.tres
+msgid "Whether this Control has focus."
+msgstr ""
+
+#: addons/block_code/blocks/ui/control_has_focus.tres
+msgid "control has focus"
+msgstr ""
+
+#: addons/block_code/blocks/ui/control_position.tres
+msgid "Get the Control position."
+msgstr ""
+
+#: addons/block_code/blocks/ui/control_position.tres
+msgid "control position"
+msgstr ""
+
+#: addons/block_code/blocks/ui/control_release_focus.tres
+msgid "Release focus from this Control."
+msgstr ""
+
+#: addons/block_code/blocks/ui/control_release_focus.tres
+msgid "release focus"
+msgstr ""
+
+#: addons/block_code/blocks/ui/control_set_position.tres
+msgid "Set the Control position."
+msgstr ""
+
+#: addons/block_code/blocks/ui/control_set_position.tres
+msgid "set control position to {position: VECTOR2}"
+msgstr ""
+
+#: addons/block_code/blocks/ui/control_set_size.tres
+msgid "Set the Control size."
+msgstr ""
+
+#: addons/block_code/blocks/ui/control_set_size.tres
+msgid "set control size to {size: VECTOR2}"
+msgstr ""
+
+#: addons/block_code/blocks/ui/control_size.tres
+msgid "Get the Control size."
+msgstr ""
+
+#: addons/block_code/blocks/ui/control_size.tres
+msgid "control size"
+msgstr ""
+
+#: addons/block_code/blocks/ui/label_text.tres
+msgid "Get the label text."
+msgstr ""
+
+#: addons/block_code/blocks/ui/label_text.tres
+msgid "label text"
+msgstr ""
+
+#: addons/block_code/blocks/ui/line_edit_clear.tres
+msgid "Clear the line edit text."
+msgstr ""
+
+#: addons/block_code/blocks/ui/line_edit_clear.tres
+msgid "clear text"
+msgstr ""
+
+#: addons/block_code/blocks/ui/line_edit_placeholder_text.tres
+msgid "Get the LineEdit placeholder text."
+msgstr ""
+
+#: addons/block_code/blocks/ui/line_edit_placeholder_text.tres
+msgid "placeholder text"
+msgstr ""
+
+#: addons/block_code/blocks/ui/line_edit_set_placeholder_text.tres
+msgid "Set the LineEdit placeholder text."
+msgstr ""
+
+#: addons/block_code/blocks/ui/line_edit_set_placeholder_text.tres
+msgid "set placeholder text to {text: STRING}"
+msgstr ""
+
+#: addons/block_code/blocks/ui/line_edit_set_text.tres
+msgid "Set the text for the line edit."
+msgstr ""
+
+#: addons/block_code/blocks/ui/line_edit_text.tres
+msgid "Get the text from the line edit."
+msgstr ""
+
+#: addons/block_code/blocks/ui/line_edit_text.tres
+msgid "text"
+msgstr ""
+
+#: addons/block_code/blocks/ui/progress_bar_set_value.tres
+msgid "Set the value for a progress bar, slider, or other range control."
+msgstr ""
+
+#: addons/block_code/blocks/ui/progress_bar_value.tres
+msgid "Get the ProgressBar value."
+msgstr ""
+
+#: addons/block_code/blocks/ui/progress_bar_value.tres
+msgid "progress bar value"
+msgstr ""
+
+#: addons/block_code/blocks/variables/bool_to_string.tres
+msgid "Convert a bool to text."
+msgstr ""
+
+#: addons/block_code/blocks/variables/bool_to_string.tres
+msgid "{value: BOOL} to text"
+msgstr ""
+
+#: addons/block_code/blocks/variables/float_to_int.tres
+msgid "Convert a floating point number to an integer."
+msgstr ""
+
+#: addons/block_code/blocks/variables/float_to_int.tres
+msgid "{value: FLOAT} to integer"
+msgstr ""
+
+#: addons/block_code/blocks/variables/float_to_string.tres
+msgid "Convert a float to text."
+msgstr ""
+
+#: addons/block_code/blocks/variables/float_to_string.tres
+msgid "{value: FLOAT} to text"
+msgstr ""
+
+#: addons/block_code/blocks/variables/int_to_float.tres
+msgid "Convert an integer to a float."
+msgstr ""
+
+#: addons/block_code/blocks/variables/int_to_float.tres
+msgid "{value: INT} to float"
+msgstr ""
+
+#: addons/block_code/blocks/variables/int_to_string.tres
+msgid "Convert an integer to text."
+msgstr ""
+
+#: addons/block_code/blocks/variables/int_to_string.tres
+msgid "{value: INT} to text"
+msgstr ""
+
+#: addons/block_code/blocks/variables/object_to_string.tres
+msgid "Convert an object to text."
+msgstr ""
+
+#: addons/block_code/blocks/variables/object_to_string.tres
+msgid "{object: OBJECT} to text"
+msgstr ""
+
+#: addons/block_code/blocks/variables/string_to_float.tres
+msgid "Convert a string to a floating point number."
+msgstr ""
+
+#: addons/block_code/blocks/variables/string_to_float.tres
+msgid "{text: STRING} to float"
+msgstr ""
+
+#: addons/block_code/blocks/variables/string_to_int.tres
+msgid "Convert a string to an integer."
+msgstr ""
+
+#: addons/block_code/blocks/variables/string_to_int.tres
+msgid "{text: STRING} to integer"
+msgstr ""
+
+#: addons/block_code/ui/picker/categories/block_category_display.gd
+msgid "Delete custom block \"%s\"?"
+msgstr ""
+
+#: addons/block_code/ui/picker/picker.gd
+msgid "Failed to delete custom block: %s"
+msgstr ""

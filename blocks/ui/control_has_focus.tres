@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_control_has_focus"]
+
+[resource]
+script = ExtResource("1_control_has_focus")
+name = &"control_has_focus"
+target_node_class = "Control"
+description = "Whether this Control has focus."
+category = "UI"
+type = 3
+variant_type = 1
+display_template = "control has focus"
+code_template = "has_focus()"

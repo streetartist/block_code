@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_node3d_scale"]
+
+[resource]
+script = ExtResource("1_node3d_scale")
+name = &"node3d_scale"
+description = "Get a Node3D scale."
+category = "Transform | 3D"
+type = 3
+variant_type = 9
+display_template = "3D scale of {node: OBJECT}"
+code_template = "{node}.scale"

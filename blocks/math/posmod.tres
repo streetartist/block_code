@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_posmod"]
+
+[resource]
+script = ExtResource("1_posmod")
+name = &"posmod"
+description = "Integer positive modulo."
+category = "Math"
+type = 3
+variant_type = 2
+display_template = "positive integer modulo {x: INT} by {y: INT}"
+code_template = "posmod({x}, {y})"
+defaults = {
+"x": 0,
+"y": 1
+}

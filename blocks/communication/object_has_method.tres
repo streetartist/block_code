@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_object_has_method"]
+
+[resource]
+script = ExtResource("1_object_has_method")
+name = &"object_has_method"
+description = "True if an object has a method with the given name."
+category = "Communication | Methods"
+type = 3
+variant_type = 1
+display_template = "{object: OBJECT} has method {method_name: STRING}"
+code_template = "{object}.has_method({method_name})"
+defaults = {
+"method_name": "method_name"
+}

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_sprite2d_frame"]
+
+[resource]
+script = ExtResource("1_sprite2d_frame")
+name = &"sprite2d_frame"
+target_node_class = "Sprite2D"
+description = "Current Sprite2D frame."
+category = "Graphics | Sprite2D"
+type = 3
+variant_type = 2
+display_template = "sprite frame"
+code_template = "frame"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_joy_name"]
+
+[resource]
+script = ExtResource("1_joy_name")
+name = &"joy_name"
+description = "Get the name of a connected joypad."
+category = "Input"
+type = 3
+variant_type = 4
+display_template = "name of joypad {device: INT}"
+code_template = "Input.get_joy_name({device})"
+defaults = {
+"device": 0
+}

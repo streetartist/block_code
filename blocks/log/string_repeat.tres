@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_string_repeat"]
+
+[resource]
+script = ExtResource("1_string_repeat")
+name = &"string_repeat"
+description = "Repeat a string multiple times."
+category = "Log"
+type = 3
+variant_type = 4
+display_template = "repeat {text: STRING} {count: INT} times"
+code_template = "{text}.repeat({count})"
+defaults = {
+"text": "ha",
+"count": 2
+}

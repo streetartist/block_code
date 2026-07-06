@@ -2,6 +2,7 @@
 extends ConfirmationDialog
 
 const BlockCodePlugin = preload("res://addons/block_code/block_code_plugin.gd")
+const VariableDefinition = preload("res://addons/block_code/code_generation/variable_definition.gd")
 
 signal create_variable(var_name: String, var_type: String)
 
@@ -12,6 +13,11 @@ signal create_variable(var_name: String, var_type: String)
 @onready var _messages := %Messages
 
 const available_types = ["STRING", "BOOL", "INT", "FLOAT", "VECTOR2", "COLOR"]
+
+const _ALLOWED_ASCII_SYMBOLS = {
+	45: true, # -
+	95: true, # _
+}
 
 
 func _ready():
@@ -59,7 +65,10 @@ func check_errors(new_var_name: String) -> bool:
 	if new_var_name.begins_with("__"):
 		errors.append("Variable name cannot start with two underscores")
 
-	if RegEx.create_from_string("[^_a-zA-Z0-9-]+").search(new_var_name) != null:
+	if new_var_name.begins_with(VariableDefinition.SCRIPT_IDENTIFIER_PREFIX):
+		errors.append("Variable name uses a reserved prefix")
+
+	if _contains_invalid_variable_name_character(new_var_name):
 		errors.append("Variable name cannot contain special characters")
 
 	var duplicate_variable_name := false
@@ -94,6 +103,24 @@ func check_errors(new_var_name: String) -> bool:
 		_messages.pop_context()
 
 		return true
+
+
+func _contains_invalid_variable_name_character(var_name: String) -> bool:
+	for i in range(var_name.length()):
+		var code := var_name.unicode_at(i)
+		if code > 127:
+			continue
+
+		if _is_ascii_letter_or_digit(code) or _ALLOWED_ASCII_SYMBOLS.has(code):
+			continue
+
+		return true
+
+	return false
+
+
+func _is_ascii_letter_or_digit(code: int) -> bool:
+	return (code >= 48 and code <= 57) or (code >= 65 and code <= 90) or (code >= 97 and code <= 122)
 
 
 func _on_confirmed():

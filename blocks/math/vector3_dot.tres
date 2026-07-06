@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_vector3_dot"]
+
+[resource]
+script = ExtResource("1_vector3_dot")
+name = &"vector3_dot"
+description = "Calculate the dot product of two Vector3 values."
+category = "Math"
+type = 3
+variant_type = 3
+display_template = "dot product of {a: VECTOR3} and {b: VECTOR3}"
+code_template = "{a}.dot({b})"
+defaults = {
+"a": Vector3(1, 0, 0),
+"b": Vector3(0, 1, 0)
+}

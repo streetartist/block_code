@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_vector2_slide"]
+
+[resource]
+script = ExtResource("1_vector2_slide")
+name = &"vector2_slide"
+description = "Slide a vector along a normal."
+category = "Math"
+type = 3
+variant_type = 5
+display_template = "slide {vector: VECTOR2} on normal {normal: VECTOR2}"
+code_template = "{vector}.slide({normal})"

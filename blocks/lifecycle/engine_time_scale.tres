@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_engine_time_scale"]
+
+[resource]
+script = ExtResource("1_engine_time_scale")
+name = &"engine_time_scale"
+description = "Get the engine time scale."
+category = "Lifecycle | Game"
+type = 3
+variant_type = 3
+display_template = "engine time scale"
+code_template = "Engine.time_scale"
+defaults = {}

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_control_set_size"]
+
+[resource]
+script = ExtResource("1_control_set_size")
+name = &"control_set_size"
+target_node_class = "Control"
+description = "Set the Control size."
+category = "UI"
+type = 2
+variant_type = 0
+display_template = "set control size to {size: VECTOR2}"
+code_template = "size = {size}"
+defaults = {
+"size": Vector2(100, 30)
+}

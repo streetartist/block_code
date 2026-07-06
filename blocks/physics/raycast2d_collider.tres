@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_raycast2d_collider"]
+
+[resource]
+script = ExtResource("1_raycast2d_collider")
+name = &"raycast2d_collider"
+description = "Collider hit by a RayCast2D."
+category = "Physics | RayCast2D"
+type = 3
+variant_type = 24
+display_template = "collider of {raycast: OBJECT}"
+code_template = "{raycast}.get_collider()"

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_animationplayer_seek"]
+
+[resource]
+script = ExtResource("1_animationplayer_seek")
+name = &"animationplayer_seek"
+target_node_class = "AnimationPlayer"
+description = "Seek the current animation."
+category = "Graphics | Animation"
+type = 2
+variant_type = 0
+display_template = "seek animation to {seconds: FLOAT} seconds"
+code_template = "seek({seconds}, true)"
+defaults = {
+"seconds": 0.0
+}

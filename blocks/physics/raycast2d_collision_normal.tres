@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_raycast2d_collision_normal"]
+
+[resource]
+script = ExtResource("1_raycast2d_collision_normal")
+name = &"raycast2d_collision_normal"
+description = "Collision normal of a RayCast2D."
+category = "Physics | RayCast2D"
+type = 3
+variant_type = 5
+display_template = "collision normal of {raycast: OBJECT}"
+code_template = "{raycast}.get_collision_normal()"

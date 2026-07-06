@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_control_position"]
+
+[resource]
+script = ExtResource("1_control_position")
+name = &"control_position"
+target_node_class = "Control"
+description = "Get the Control position."
+category = "UI"
+type = 3
+variant_type = 5
+display_template = "control position"
+code_template = "position"

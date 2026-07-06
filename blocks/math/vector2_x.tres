@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_vector2_x"]
+
+[resource]
+script = ExtResource("1_vector2_x")
+name = &"vector2_x"
+description = "X component of a Vector2."
+category = "Math"
+type = 3
+variant_type = 3
+display_template = "x of {vector: VECTOR2}"
+code_template = "{vector}.x"

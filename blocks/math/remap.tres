@@ -1,0 +1,20 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_remap"]
+
+[resource]
+script = ExtResource("1_remap")
+name = &"remap"
+description = "Map a value from one range to another."
+category = "Math"
+type = 3
+variant_type = 3
+display_template = "remap {value: FLOAT} from {istart: FLOAT}-{istop: FLOAT} to {ostart: FLOAT}-{ostop: FLOAT}"
+code_template = "remap({value}, {istart}, {istop}, {ostart}, {ostop})"
+defaults = {
+"value": 0.5,
+"istart": 0.0,
+"istop": 1.0,
+"ostart": 0.0,
+"ostop": 100.0
+}

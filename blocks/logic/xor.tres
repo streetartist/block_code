@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_xor"]
+
+[resource]
+script = ExtResource("1_xor")
+name = &"xor"
+description = "Exclusive OR."
+category = "Logic | Boolean"
+type = 3
+variant_type = 1
+display_template = "{a: BOOL} xor {b: BOOL}"
+code_template = "{a} != {b}"
+defaults = {
+"a": false,
+"b": false
+}

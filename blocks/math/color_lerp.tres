@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_color_lerp"]
+
+[resource]
+script = ExtResource("1_color_lerp")
+name = &"color_lerp"
+description = "Interpolate between two colors."
+category = "Graphics | Modulate"
+type = 3
+variant_type = 20
+display_template = "lerp color from {from: COLOR} to {to: COLOR} by {weight: FLOAT}"
+code_template = "{from}.lerp({to}, {weight})"
+defaults = {
+"from": Color(1, 1, 1, 1),
+"to": Color(0, 0, 0, 1),
+"weight": 0.5
+}

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_rigidbody2d_apply_impulse"]
+
+[resource]
+script = ExtResource("1_rigidbody2d_apply_impulse")
+name = &"rigidbody2d_apply_impulse"
+description = "Apply an impulse to a RigidBody2D."
+category = "Physics | RigidBody2D"
+type = 2
+variant_type = 0
+display_template = "apply impulse {impulse: VECTOR2} to {body: OBJECT}"
+code_template = "{body}.apply_impulse({impulse})"
+defaults = {
+"impulse": Vector2(0, 0)
+}

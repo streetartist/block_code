@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_vector2_lerp"]
+
+[resource]
+script = ExtResource("1_vector2_lerp")
+name = &"vector2_lerp"
+description = "Interpolate between two Vector2 values."
+category = "Math"
+type = 3
+variant_type = 5
+display_template = "lerp vector from {from: VECTOR2} to {to: VECTOR2} by {weight: FLOAT}"
+code_template = "{from}.lerp({to}, {weight})"
+defaults = {
+"from": Vector2(0, 0),
+"to": Vector2(1, 1),
+"weight": 0.5
+}

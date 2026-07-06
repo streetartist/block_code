@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_vector2_rotated"]
+
+[resource]
+script = ExtResource("1_vector2_rotated")
+name = &"vector2_rotated"
+description = "Rotate a Vector2 by an angle in radians."
+category = "Math"
+type = 3
+variant_type = 5
+display_template = "{vector: VECTOR2} rotated by {angle: FLOAT}"
+code_template = "{vector}.rotated({angle})"
+defaults = {
+"vector": Vector2(1, 0),
+"angle": 0.0
+}

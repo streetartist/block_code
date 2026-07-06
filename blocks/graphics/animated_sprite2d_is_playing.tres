@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_animated_sprite2d_is_playing"]
+
+[resource]
+script = ExtResource("1_animated_sprite2d_is_playing")
+name = &"animated_sprite2d_is_playing"
+target_node_class = "AnimatedSprite2D"
+description = "Whether AnimatedSprite2D is playing."
+category = "Graphics | Animation"
+type = 3
+variant_type = 1
+display_template = "sprite animation is playing"
+code_template = "is_playing()"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_node_has_node"]
+
+[resource]
+script = ExtResource("1_node_has_node")
+name = &"node_has_node"
+description = "True if a node has a child at the given path."
+category = "Communication | Nodes"
+type = 3
+variant_type = 1
+display_template = "{node: OBJECT} has node at path {path: STRING}"
+code_template = "{node}.has_node({path})"
+defaults = {
+"path": "."
+}

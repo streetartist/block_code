@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_float_to_int"]
+
+[resource]
+script = ExtResource("1_float_to_int")
+name = &"float_to_int"
+description = "Convert a floating point number to an integer."
+category = "Variables"
+type = 3
+variant_type = 2
+display_template = "{value: FLOAT} to integer"
+code_template = "int({value})"
+defaults = {
+"value": 1.0
+}

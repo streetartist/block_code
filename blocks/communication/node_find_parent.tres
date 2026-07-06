@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_node_find_parent"]
+
+[resource]
+script = ExtResource("1_node_find_parent")
+name = &"node_find_parent"
+description = "Find a parent node by name pattern."
+category = "Communication | Nodes"
+type = 3
+variant_type = 24
+display_template = "find parent named {pattern: STRING} from {node: OBJECT}"
+code_template = "{node}.find_parent({pattern})"
+defaults = {
+"pattern": "*"
+}

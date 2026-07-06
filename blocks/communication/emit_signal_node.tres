@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_emit_signal_node"]
+
+[resource]
+script = ExtResource("1_emit_signal_node")
+name = &"emit_signal_node"
+description = "Emit a signal from a node without arguments."
+category = "Communication | Methods"
+type = 2
+variant_type = 0
+display_template = "emit signal {signal_name: STRING} from {node: OBJECT}"
+code_template = "{node}.emit_signal({signal_name})"
+defaults = {
+"signal_name": "signal_name"
+}

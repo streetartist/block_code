@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_warp_mouse"]
+
+[resource]
+script = ExtResource("1_warp_mouse")
+name = &"warp_mouse"
+description = "Move the mouse cursor to a viewport position."
+category = "Input"
+type = 2
+variant_type = 0
+display_template = "warp mouse to {position: VECTOR2}"
+code_template = "Input.warp_mouse({position})"
+defaults = {
+"position": Vector2(0, 0)
+}

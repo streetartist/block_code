@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_vector3_reflect"]
+
+[resource]
+script = ExtResource("1_vector3_reflect")
+name = &"vector3_reflect"
+description = "Reflect a Vector3 around a line."
+category = "Math"
+type = 3
+variant_type = 9
+display_template = "reflect {vector: VECTOR3} around line {line: VECTOR3}"
+code_template = "{vector}.reflect({line})"

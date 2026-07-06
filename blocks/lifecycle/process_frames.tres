@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_process_frames"]
+
+[resource]
+script = ExtResource("1_process_frames")
+name = &"process_frames"
+description = "Number of rendered process frames since startup."
+category = "Lifecycle"
+type = 3
+variant_type = 2
+display_template = "process frame count"
+code_template = "Engine.get_process_frames()"

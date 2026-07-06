@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_sign"]
+
+[resource]
+script = ExtResource("1_sign")
+name = &"sign"
+description = "Return -1, 0, or 1 depending on the sign of the number."
+category = "Math"
+type = 3
+variant_type = 3
+display_template = "sign of {number: FLOAT}"
+code_template = "signf({number})"
+defaults = {
+"number": -1.0
+}

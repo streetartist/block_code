@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_characterbody2d_change_velocity"]
+
+[resource]
+script = ExtResource("1_characterbody2d_change_velocity")
+name = &"characterbody2d_change_velocity"
+description = "Add to CharacterBody2D velocity."
+category = "Physics | Velocity"
+type = 2
+variant_type = 0
+display_template = "change velocity by {amount: VECTOR2}"
+code_template = "velocity += {amount}"
+defaults = {
+"amount": Vector2(0, 0)
+}

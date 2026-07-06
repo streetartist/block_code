@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_line_edit_set_placeholder_text"]
+
+[resource]
+script = ExtResource("1_line_edit_set_placeholder_text")
+name = &"line_edit_set_placeholder_text"
+target_node_class = "LineEdit"
+description = "Set the LineEdit placeholder text."
+category = "UI"
+type = 2
+variant_type = 0
+display_template = "set placeholder text to {text: STRING}"
+code_template = "placeholder_text = {text}"
+defaults = {
+"text": ""
+}

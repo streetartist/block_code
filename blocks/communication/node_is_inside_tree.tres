@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_node_is_inside_tree"]
+
+[resource]
+script = ExtResource("1_node_is_inside_tree")
+name = &"node_is_inside_tree"
+description = "Whether a node is inside the scene tree."
+category = "Communication | Nodes"
+type = 3
+variant_type = 1
+display_template = "{node: OBJECT} is inside tree"
+code_template = "{node}.is_inside_tree()"

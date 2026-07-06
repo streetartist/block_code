@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_animated_sprite2d_animation"]
+
+[resource]
+script = ExtResource("1_animated_sprite2d_animation")
+name = &"animated_sprite2d_animation"
+target_node_class = "AnimatedSprite2D"
+description = "Current AnimatedSprite2D animation name."
+category = "Graphics | Animation"
+type = 3
+variant_type = 4
+display_template = "sprite animation name"
+code_template = "str(animation)"

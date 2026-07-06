@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_string_strip_edges"]
+
+[resource]
+script = ExtResource("1_string_strip_edges")
+name = &"string_strip_edges"
+description = "Remove whitespace from the start and end of a string."
+category = "Log"
+type = 3
+variant_type = 4
+display_template = "{text: STRING} without edge spaces"
+code_template = "{text}.strip_edges()"
+defaults = {
+"text": " Hello "
+}

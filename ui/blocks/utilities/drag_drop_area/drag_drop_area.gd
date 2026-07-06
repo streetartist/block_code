@@ -48,6 +48,11 @@ func _gui_input(event: InputEvent) -> void:
 			if not parent_block:
 				parent_block = BlockTreeUtil.get_parent_block(self)
 
+			if parent_block and parent_block.has_custom_context_menu():
+				accept_event()
+				parent_block.request_context_menu(DisplayServer.mouse_get_position())
+				return
+
 			if parent_block and parent_block.can_delete:
 				# Accepts to avoid menu conflicts
 				accept_event()

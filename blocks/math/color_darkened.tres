@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_color_darkened"]
+
+[resource]
+script = ExtResource("1_color_darkened")
+name = &"color_darkened"
+description = "Get a darker version of a color."
+category = "Graphics | Modulate"
+type = 3
+variant_type = 20
+display_template = "{color: COLOR} darkened by {amount: FLOAT}"
+code_template = "{color}.darkened({amount})"
+defaults = {
+"color": Color(1, 1, 1, 1),
+"amount": 0.2
+}

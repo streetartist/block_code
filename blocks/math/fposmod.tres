@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_fposmod"]
+
+[resource]
+script = ExtResource("1_fposmod")
+name = &"fposmod"
+description = "Floating point positive modulo."
+category = "Math"
+type = 3
+variant_type = 3
+display_template = "positive modulo {x: FLOAT} by {y: FLOAT}"
+code_template = "fposmod({x}, {y})"
+defaults = {
+"x": 0.0,
+"y": 1.0
+}

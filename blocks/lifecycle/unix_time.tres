@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_unix_time"]
+
+[resource]
+script = ExtResource("1_unix_time")
+name = &"unix_time"
+description = "Current Unix time from the system clock."
+category = "Lifecycle | Game"
+type = 3
+variant_type = 3
+display_template = "current unix time"
+code_template = "Time.get_unix_time_from_system()"
+defaults = {}

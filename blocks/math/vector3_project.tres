@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_vector3_project"]
+
+[resource]
+script = ExtResource("1_vector3_project")
+name = &"vector3_project"
+description = "Project a Vector3 onto another Vector3."
+category = "Math"
+type = 3
+variant_type = 9
+display_template = "project {vector: VECTOR3} onto {onto: VECTOR3}"
+code_template = "{vector}.project({onto})"

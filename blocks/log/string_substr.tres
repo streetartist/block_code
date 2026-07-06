@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_string_substr"]
+
+[resource]
+script = ExtResource("1_string_substr")
+name = &"string_substr"
+description = "Get part of a string."
+category = "Log"
+type = 3
+variant_type = 4
+display_template = "substring of {text: STRING} from {from: INT} length {length: INT}"
+code_template = "{text}.substr({from}, {length})"
+defaults = {
+"text": "Hello",
+"from": 0,
+"length": 1
+}

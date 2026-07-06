@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_stop_joy_vibration"]
+
+[resource]
+script = ExtResource("1_stop_joy_vibration")
+name = &"stop_joy_vibration"
+description = "Stop joypad vibration."
+category = "Input"
+type = 2
+variant_type = 0
+display_template = "stop vibration on joypad {device: INT}"
+code_template = "Input.stop_joy_vibration({device})"
+defaults = {
+"device": 0
+}

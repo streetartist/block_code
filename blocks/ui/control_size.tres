@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_control_size"]
+
+[resource]
+script = ExtResource("1_control_size")
+name = &"control_size"
+target_node_class = "Control"
+description = "Get the Control size."
+category = "UI"
+type = 3
+variant_type = 5
+display_template = "control size"
+code_template = "size"

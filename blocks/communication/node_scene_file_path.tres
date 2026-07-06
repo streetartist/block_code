@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_node_scene_file_path"]
+
+[resource]
+script = ExtResource("1_node_scene_file_path")
+name = &"node_scene_file_path"
+description = "Get the scene file path of a node."
+category = "Communication | Scenes"
+type = 3
+variant_type = 4
+display_template = "scene file path of {node: OBJECT}"
+code_template = "{node}.scene_file_path"
+defaults = {}

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_string_left"]
+
+[resource]
+script = ExtResource("1_string_left")
+name = &"string_left"
+description = "Left part of a string."
+category = "Log"
+type = 3
+variant_type = 4
+display_template = "left {length: INT} characters of {text: STRING}"
+code_template = "{text}.left({length})"
+defaults = {
+"length": 1,
+"text": ""
+}

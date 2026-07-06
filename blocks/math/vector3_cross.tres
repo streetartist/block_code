@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_vector3_cross"]
+
+[resource]
+script = ExtResource("1_vector3_cross")
+name = &"vector3_cross"
+description = "Cross product of two Vector3 values."
+category = "Math"
+type = 3
+variant_type = 9
+display_template = "cross product of {a: VECTOR3} and {b: VECTOR3}"
+code_template = "{a}.cross({b})"

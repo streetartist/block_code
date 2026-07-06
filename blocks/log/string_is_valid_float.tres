@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_string_is_valid_float"]
+
+[resource]
+script = ExtResource("1_string_is_valid_float")
+name = &"string_is_valid_float"
+description = "Whether a string can be parsed as a float."
+category = "Log"
+type = 3
+variant_type = 1
+display_template = "{text: STRING} is valid float"
+code_template = "{text}.is_valid_float()"
+defaults = {
+"text": "0.0"
+}

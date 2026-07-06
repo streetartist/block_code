@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_request_ready"]
+
+[resource]
+script = ExtResource("1_request_ready")
+name = &"request_ready"
+description = "Request that a node runs ready again the next time it enters the tree."
+category = "Lifecycle"
+type = 2
+variant_type = 0
+display_template = "request ready for {node: OBJECT}"
+code_template = "{node}.request_ready()"
+defaults = {}

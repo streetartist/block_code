@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_object_to_string"]
+
+[resource]
+script = ExtResource("1_object_to_string")
+name = &"object_to_string"
+description = "Convert an object to text."
+category = "Variables"
+type = 3
+variant_type = 4
+display_template = "{object: OBJECT} to text"
+code_template = "str({object})"

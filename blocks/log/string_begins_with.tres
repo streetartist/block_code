@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_string_begins_with"]
+
+[resource]
+script = ExtResource("1_string_begins_with")
+name = &"string_begins_with"
+description = "True if a string starts with another string."
+category = "Log"
+type = 3
+variant_type = 1
+display_template = "{text: STRING} begins with {prefix: STRING}"
+code_template = "{text}.begins_with({prefix})"
+defaults = {
+"text": "Hello",
+"prefix": "He"
+}

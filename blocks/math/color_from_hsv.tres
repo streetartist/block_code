@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_color_from_hsv"]
+
+[resource]
+script = ExtResource("1_color_from_hsv")
+name = &"color_from_hsv"
+description = "Create a color from HSV and alpha values."
+category = "Graphics | Modulate"
+type = 3
+variant_type = 20
+display_template = "color hue {hue: FLOAT} saturation {saturation: FLOAT} value {value: FLOAT} alpha {alpha: FLOAT}"
+code_template = "Color.from_hsv({hue}, {saturation}, {value}, {alpha})"
+defaults = {
+"alpha": 1.0,
+"hue": 0.0,
+"saturation": 1.0,
+"value": 1.0
+}

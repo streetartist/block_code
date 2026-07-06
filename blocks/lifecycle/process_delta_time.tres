@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_process_delta_time"]
+
+[resource]
+script = ExtResource("1_process_delta_time")
+name = &"process_delta_time"
+description = "The last process delta time."
+category = "Lifecycle"
+type = 3
+variant_type = 3
+display_template = "process delta time"
+code_template = "get_process_delta_time()"

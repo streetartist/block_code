@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_vector3_angle_to"]
+
+[resource]
+script = ExtResource("1_vector3_angle_to")
+name = &"vector3_angle_to"
+description = "Angle from one Vector3 to another."
+category = "Math"
+type = 3
+variant_type = 3
+display_template = "angle from {from: VECTOR3} to {to: VECTOR3}"
+code_template = "{from}.angle_to({to})"

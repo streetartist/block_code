@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_characterbody2d_is_on_ceiling"]
+
+[resource]
+script = ExtResource("1_characterbody2d_is_on_ceiling")
+name = &"characterbody2d_is_on_ceiling"
+description = "Whether this CharacterBody2D is touching a ceiling."
+category = "Physics | Velocity"
+type = 3
+variant_type = 1
+display_template = "is on ceiling"
+code_template = "is_on_ceiling()"

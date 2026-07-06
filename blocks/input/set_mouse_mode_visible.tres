@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_set_mouse_mode_visible"]
+
+[resource]
+script = ExtResource("1_set_mouse_mode_visible")
+name = &"set_mouse_mode_visible"
+description = "Show and release the mouse cursor."
+category = "Input"
+type = 2
+variant_type = 0
+display_template = "set mouse mode visible"
+code_template = "Input.mouse_mode = Input.MOUSE_MODE_VISIBLE"

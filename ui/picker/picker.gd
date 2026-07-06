@@ -7,6 +7,7 @@ const BlockCategoryButtonScene = preload("res://addons/block_code/ui/picker/cate
 const BlockCategoryButton = preload("res://addons/block_code/ui/picker/categories/block_category_button.gd")
 const BlockCategoryDisplay = preload("res://addons/block_code/ui/picker/categories/block_category_display.gd")
 const BlockCategoryDisplayScene = preload("res://addons/block_code/ui/picker/categories/block_category_display.tscn")
+const CustomBlockStore = preload("res://addons/block_code/custom_blocks/custom_block_store.gd")
 const TxUtils := preload("res://addons/block_code/translation/utils.gd")
 const VariableCategoryDisplayScene = preload("res://addons/block_code/ui/picker/categories/variable_category/variable_category_display.tscn")
 const VariableDefinition = preload("res://addons/block_code/code_generation/variable_definition.gd")
@@ -36,6 +37,7 @@ const CATEGORY_ORDER_OVERRIDE = {
 signal block_picked(block: Block, offset: Vector2)
 signal variable_created(variable: VariableDefinition)
 signal variables_deleted(variables: Array[String])
+signal custom_block_deleted
 
 @onready var _context := BlockEditorContext.get_default()
 
@@ -141,12 +143,34 @@ func _get_or_create_block_category_display(category: BlockCategory) -> BlockCate
 			block_category_display.variable_created.connect(func(variable): variable_created.emit(variable))
 			block_category_display.variables_deleted.connect(func(variables): variables_deleted.emit(variables))
 		block_category_display.title = category.name if category else ""
+		block_category_display.allow_custom_block_deletion = true
 		block_category_display.block_picked.connect(func(block: Block, offset: Vector2): block_picked.emit(block, offset))
+		block_category_display.custom_block_delete_requested.connect(_delete_custom_block)
 
 		_block_list.add_child(block_category_display)
 		_category_displays[category.name] = block_category_display
 
 	return block_category_display
+
+
+func _delete_custom_block(block_definition: BlockDefinition):
+	var result := CustomBlockStore.delete_definition(block_definition)
+	if int(result.get("error", FAILED)) != OK:
+		_show_custom_block_delete_error(result)
+		return
+
+	custom_block_deleted.emit()
+
+
+func _show_custom_block_delete_error(result: Dictionary):
+	var errors: Array = result.get("errors", [])
+	var error_text := "; ".join(errors)
+	if error_text.is_empty():
+		error_text = error_string(int(result.get("error", FAILED)))
+
+	var dialog := AcceptDialog.new()
+	dialog.dialog_text = tr("Failed to delete custom block: %s") % error_text
+	EditorInterface.popup_dialog_centered(dialog)
 
 
 func _block_definition_matches_search(block_definition: BlockDefinition, category: BlockCategory) -> bool:

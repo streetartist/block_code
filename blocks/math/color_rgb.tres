@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_color_rgb"]
+
+[resource]
+script = ExtResource("1_color_rgb")
+name = &"color_rgb"
+description = "Create a color from red, green, and blue values from 0 to 1."
+category = "Graphics | Modulate"
+type = 3
+variant_type = 20
+display_template = "color red {red: FLOAT} green {green: FLOAT} blue {blue: FLOAT}"
+code_template = "Color({red}, {green}, {blue}, 1.0)"
+defaults = {
+"red": 1.0,
+"green": 1.0,
+"blue": 1.0
+}

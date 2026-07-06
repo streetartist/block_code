@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_action_just_released"]
+
+[resource]
+script = ExtResource("1_action_just_released")
+name = &"action_just_released"
+description = "Whether an input action was just released this frame."
+category = "Input"
+type = 3
+variant_type = 1
+display_template = "action {action_name: STRING_NAME} was just released"
+code_template = "Input.is_action_just_released('{action_name}')"
+defaults = {
+"action_name": "ui_accept"
+}

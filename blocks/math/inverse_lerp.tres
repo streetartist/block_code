@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_inverse_lerp"]
+
+[resource]
+script = ExtResource("1_inverse_lerp")
+name = &"inverse_lerp"
+description = "Get how far a value is between two numbers, from 0 to 1."
+category = "Math"
+type = 3
+variant_type = 3
+display_template = "inverse lerp from {from: FLOAT} to {to: FLOAT} at {value: FLOAT}"
+code_template = "inverse_lerp({from}, {to}, {value})"
+defaults = {
+"from": 0.0,
+"to": 10.0,
+"value": 5.0
+}

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_printerr"]
+
+[resource]
+script = ExtResource("1_printerr")
+name = &"printerr"
+description = "Print a message to standard error."
+category = "Log"
+type = 2
+variant_type = 0
+display_template = "print error {message: STRING}"
+code_template = "printerr({message})"
+defaults = {
+"message": "Error"
+}

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_object_has_signal"]
+
+[resource]
+script = ExtResource("1_object_has_signal")
+name = &"object_has_signal"
+description = "True if an object has a signal with the given name."
+category = "Communication | Methods"
+type = 3
+variant_type = 1
+display_template = "{object: OBJECT} has signal {signal_name: STRING}"
+code_template = "{object}.has_signal({signal_name})"
+defaults = {
+"signal_name": "signal_name"
+}

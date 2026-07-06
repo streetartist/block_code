@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_action_pressed"]
+
+[resource]
+script = ExtResource("1_action_pressed")
+name = &"action_pressed"
+description = "Whether an input action is currently pressed."
+category = "Input"
+type = 3
+variant_type = 1
+display_template = "action {action_name: STRING_NAME} is pressed"
+code_template = "Input.is_action_pressed('{action_name}')"
+defaults = {
+"action_name": "ui_accept"
+}

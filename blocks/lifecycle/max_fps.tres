@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_max_fps"]
+
+[resource]
+script = ExtResource("1_max_fps")
+name = &"max_fps"
+description = "Maximum frames per second setting."
+category = "Lifecycle"
+type = 3
+variant_type = 2
+display_template = "max fps"
+code_template = "Engine.max_fps"

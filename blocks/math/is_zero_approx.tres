@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_is_zero_approx"]
+
+[resource]
+script = ExtResource("1_is_zero_approx")
+name = &"is_zero_approx"
+description = "True if a floating point number is approximately zero."
+category = "Logic | Comparison"
+type = 3
+variant_type = 1
+display_template = "{value: FLOAT} is approximately zero"
+code_template = "is_zero_approx({value})"
+defaults = {
+"value": 0.0
+}

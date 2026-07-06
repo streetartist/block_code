@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_node3d_position"]
+
+[resource]
+script = ExtResource("1_node3d_position")
+name = &"node3d_position"
+description = "Get a Node3D position."
+category = "Transform | 3D"
+type = 3
+variant_type = 9
+display_template = "3D position of {node: OBJECT}"
+code_template = "{node}.position"

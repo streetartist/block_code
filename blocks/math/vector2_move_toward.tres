@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_vector2_move_toward"]
+
+[resource]
+script = ExtResource("1_vector2_move_toward")
+name = &"vector2_move_toward"
+description = "Move a Vector2 toward another Vector2 by a maximum distance."
+category = "Math"
+type = 3
+variant_type = 5
+display_template = "move {from: VECTOR2} toward {to: VECTOR2} by {delta: FLOAT}"
+code_template = "{from}.move_toward({to}, {delta})"
+defaults = {
+"from": Vector2(0, 0),
+"to": Vector2(10, 0),
+"delta": 1.0
+}

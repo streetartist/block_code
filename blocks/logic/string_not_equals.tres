@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_string_not_equals"]
+
+[resource]
+script = ExtResource("1_string_not_equals")
+name = &"string_not_equals"
+description = "Whether two strings are different."
+category = "Logic | Comparison"
+type = 3
+variant_type = 1
+display_template = "{a: STRING} does not equal {b: STRING}"
+code_template = "{a} != {b}"
+defaults = {
+"a": "",
+"b": ""
+}

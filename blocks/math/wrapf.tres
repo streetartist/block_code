@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_wrapf"]
+
+[resource]
+script = ExtResource("1_wrapf")
+name = &"wrapf"
+description = "Wrap a number between a minimum and maximum."
+category = "Math"
+type = 3
+variant_type = 3
+display_template = "wrap {value: FLOAT} between {min: FLOAT} and {max: FLOAT}"
+code_template = "wrapf({value}, {min}, {max})"
+defaults = {
+"value": 370.0,
+"min": 0.0,
+"max": 360.0
+}

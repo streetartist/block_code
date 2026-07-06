@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_node_is_ancestor_of"]
+
+[resource]
+script = ExtResource("1_node_is_ancestor_of")
+name = &"node_is_ancestor_of"
+description = "Whether one node is an ancestor of another."
+category = "Communication | Nodes"
+type = 3
+variant_type = 1
+display_template = "{ancestor: OBJECT} is ancestor of {node: OBJECT}"
+code_template = "{ancestor}.is_ancestor_of({node})"

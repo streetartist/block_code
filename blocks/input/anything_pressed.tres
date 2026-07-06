@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_anything_pressed"]
+
+[resource]
+script = ExtResource("1_anything_pressed")
+name = &"anything_pressed"
+description = "True if any input is currently pressed."
+category = "Input"
+type = 3
+variant_type = 1
+display_template = "any input is pressed"
+code_template = "Input.is_anything_pressed()"
+defaults = {}

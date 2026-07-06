@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_audiostreamplayer_playback_position"]
+
+[resource]
+script = ExtResource("1_audiostreamplayer_playback_position")
+name = &"audiostreamplayer_playback_position"
+target_node_class = "AudioStreamPlayer"
+description = "Current audio playback position in seconds."
+category = "Sounds"
+type = 3
+variant_type = 3
+display_template = "playback position"
+code_template = "get_playback_position()"

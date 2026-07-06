@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_frames_per_second"]
+
+[resource]
+script = ExtResource("1_frames_per_second")
+name = &"frames_per_second"
+description = "Current rendered frames per second."
+category = "Lifecycle"
+type = 3
+variant_type = 3
+display_template = "frames per second"
+code_template = "Engine.get_frames_per_second()"

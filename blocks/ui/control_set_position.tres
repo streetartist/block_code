@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_control_set_position"]
+
+[resource]
+script = ExtResource("1_control_set_position")
+name = &"control_set_position"
+target_node_class = "Control"
+description = "Set the Control position."
+category = "UI"
+type = 2
+variant_type = 0
+display_template = "set control position to {position: VECTOR2}"
+code_template = "position = {position}"
+defaults = {
+"position": Vector2(0, 0)
+}

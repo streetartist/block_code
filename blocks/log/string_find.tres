@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_string_find"]
+
+[resource]
+script = ExtResource("1_string_find")
+name = &"string_find"
+description = "Find the first index of text inside a string."
+category = "Log"
+type = 3
+variant_type = 2
+display_template = "index of {piece: STRING} in {text: STRING}"
+code_template = "{text}.find({piece})"
+defaults = {
+"piece": "",
+"text": ""
+}

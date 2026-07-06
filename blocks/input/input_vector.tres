@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_input_vector"]
+
+[resource]
+script = ExtResource("1_input_vector")
+name = &"input_vector"
+description = "Get a 2D input vector from four input actions."
+category = "Input"
+type = 3
+variant_type = 5
+display_template = "input vector left {left: STRING_NAME} right {right: STRING_NAME} up {up: STRING_NAME} down {down: STRING_NAME}"
+code_template = "Input.get_vector('{left}', '{right}', '{up}', '{down}')"
+defaults = {
+"left": &"ui_left",
+"right": &"ui_right",
+"up": &"ui_up",
+"down": &"ui_down"
+}

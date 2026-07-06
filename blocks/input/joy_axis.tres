@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_joy_axis"]
+
+[resource]
+script = ExtResource("1_joy_axis")
+name = &"joy_axis"
+description = "Get a joystick axis value."
+category = "Input"
+type = 3
+variant_type = 3
+display_template = "joypad {device: INT} axis {axis: INT}"
+code_template = "Input.get_joy_axis({device}, {axis})"
+defaults = {
+"axis": 0,
+"device": 0
+}

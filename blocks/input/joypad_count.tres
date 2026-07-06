@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_joypad_count"]
+
+[resource]
+script = ExtResource("1_joypad_count")
+name = &"joypad_count"
+description = "Number of connected joypads."
+category = "Input"
+type = 3
+variant_type = 2
+display_template = "connected joypad count"
+code_template = "Input.get_connected_joypads().size()"

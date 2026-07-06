@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_string_replace"]
+
+[resource]
+script = ExtResource("1_string_replace")
+name = &"string_replace"
+description = "Replace all occurrences of one string with another."
+category = "Log"
+type = 3
+variant_type = 4
+display_template = "replace {from: STRING} with {to: STRING} in {text: STRING}"
+code_template = "{text}.replace({from}, {to})"
+defaults = {
+"text": "Hello",
+"from": "l",
+"to": "L"
+}

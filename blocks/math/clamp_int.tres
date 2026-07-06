@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_clamp_int"]
+
+[resource]
+script = ExtResource("1_clamp_int")
+name = &"clamp_int"
+description = "Clamp an integer between a minimum and maximum."
+category = "Math"
+type = 3
+variant_type = 2
+display_template = "clamp integer {value: INT} between {min: INT} and {max: INT}"
+code_template = "clampi({value}, {min}, {max})"
+defaults = {
+"max": 10,
+"min": 0,
+"value": 0
+}

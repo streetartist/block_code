@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_string_sha256"]
+
+[resource]
+script = ExtResource("1_string_sha256")
+name = &"string_sha256"
+description = "SHA-256 hash of a string."
+category = "Log"
+type = 3
+variant_type = 4
+display_template = "SHA256 of {text: STRING}"
+code_template = "{text}.sha256_text()"
+defaults = {
+"text": ""
+}

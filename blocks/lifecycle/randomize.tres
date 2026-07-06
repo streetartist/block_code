@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_randomize"]
+
+[resource]
+script = ExtResource("1_randomize")
+name = &"randomize"
+description = "Randomize the random number generator seed."
+category = "Lifecycle | Game"
+type = 2
+variant_type = 0
+display_template = "randomize"
+code_template = "randomize()"
+defaults = {}

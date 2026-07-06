@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_random_bool_chance"]
+
+[resource]
+script = ExtResource("1_random_bool_chance")
+name = &"random_bool_chance"
+description = "Return true randomly using a chance from 0 to 1."
+category = "Math"
+type = 3
+variant_type = 1
+display_template = "random chance {chance: FLOAT}"
+code_template = "randf() < {chance}"
+defaults = {
+"chance": 0.5
+}

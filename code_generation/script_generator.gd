@@ -46,7 +46,7 @@ static func generate_script(ast_list: ASTList, block_script: BlockScriptSerializ
 
 	# Generate variables
 	for variable in block_script.variables:
-		script += "var %s: %s\n\n" % [variable.var_name, type_string(variable.var_type)]
+		script += "var %s: %s\n\n" % [variable.get_script_identifier(), type_string(variable.var_type)]
 
 	script += "\n"
 

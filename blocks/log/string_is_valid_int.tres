@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/block_code/code_generation/block_definition.gd" id="1_string_is_valid_int"]
+
+[resource]
+script = ExtResource("1_string_is_valid_int")
+name = &"string_is_valid_int"
+description = "Whether a string can be parsed as an integer."
+category = "Log"
+type = 3
+variant_type = 1
+display_template = "{text: STRING} is valid integer"
+code_template = "{text}.is_valid_int()"
+defaults = {
+"text": "0"
+}
