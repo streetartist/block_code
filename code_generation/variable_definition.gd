@@ -1,3 +1,4 @@
+@tool
 extends Resource
 
 const SCRIPT_IDENTIFIER_PREFIX = "__block_code_var_"
