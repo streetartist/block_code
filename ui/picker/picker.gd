@@ -76,7 +76,13 @@ func reload_blocks():
 static func _sort_blocks_by_list_order(block_definition_a, block_definition_b, name_order: Array) -> bool:
 	var a_order = name_order.find(block_definition_a.name)
 	var b_order = name_order.find(block_definition_b.name)
-	return a_order >= 0 and a_order < b_order or b_order == -1
+	if a_order == -1 and b_order == -1:
+		return String(block_definition_a.name).naturalcasecmp_to(String(block_definition_b.name)) < 0
+	if a_order == -1:
+		return false
+	if b_order == -1:
+		return true
+	return a_order < b_order
 
 
 func _update_block_components():
